@@ -14,23 +14,24 @@ body {
   display: table; }
 
 .wrapper {
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
+  padding-top: 100px;
+  position: relative;
   /* Blinking Cursor */ }
   .wrapper .logo {
-    max-width: 175px;
-    margin-bottom: 25px; }
+    max-width: 175px; }
     @media screen and (min-width: 768px) {
       .wrapper .logo {
         max-width: 275px; } }
   .wrapper .blinking-cursor {
-    height: 260px;
-    width: 30px;
+    height: 30px;
+    width: 10px;
     background-color: #00ba56;
     display: inline-block;
-    position: relative;
-    bottom: 33px;
-    left: 10px;
+    position: absolute;
+    bottom: 26px;
+    right: -11px;
     float: none;
     opacity: 0.75;
     -webkit-animation: 1s blink step-end infinite;
@@ -38,6 +39,9 @@ body {
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite; }
+    @media screen and (min-width: 768px) {
+      .wrapper .blinking-cursor {
+        bottom: 34px; } }
 @keyframes "blink" {
   from, to {
     background-color: transparent; }
@@ -70,12 +74,13 @@ body {
     -o-animation: none;
     animation: none; }
   .wrapper h2 {
-    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 300; }
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0.5px; }
     @media screen and (min-width: 768px) {
       .wrapper h2 {
-        font-size: 30px; } }
+        font-size: 32px; } }
 
 .footer {
   position: absolute;
@@ -96,7 +101,10 @@ body {
           margin-right: 0; }
         .footer .social ul li a {
           color: #00ba56;
-          font-size: 30px; }
+          font-size: 30px;
+          transition: opacity 0.3s; }
+          .footer .social ul li a:hover {
+            opacity: 0.65; }
           .footer .social ul li a i {
             font-family: 'FontAwesome', sans-serif; }
 
