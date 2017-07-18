@@ -1,0 +1,139 @@
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	display: table;
+}
+
+.wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	.logo {
+		max-width: 175px;
+		margin-bottom: 25px;
+		@media screen and (min-width: 768px) {
+			max-width: 275px;
+		}
+	}
+	
+	/* Blinking Cursor */
+	.blinking-cursor {
+		height: 260px;
+		width: 30px;
+		background-color: #00ba56;
+		display: inline-block;
+		position: relative;
+		bottom: 33px;
+		left: 10px;
+		float: none;
+		opacity: 0.75;
+		-webkit-animation: 1s blink step-end infinite;
+		-moz-animation: 1s blink step-end infinite;
+		-ms-animation: 1s blink step-end infinite;
+		-o-animation: 1s blink step-end infinite;
+		animation: 1s blink step-end infinite;
+	}
+	
+	@keyframes "blink" {
+		from, to {
+			background-color: transparent;
+		}
+		50% {
+			background-color: #00ba56;
+		}
+	}
+	
+	@-moz-keyframes blink {
+		from, to {
+			background-color: transparent;
+		}
+		50% {
+			background-color: #00ba56;
+		}
+	}
+	
+	@-webkit-keyframes "blink" {
+		from, to {
+			background-color: transparent;
+		}
+		50% {
+			background-color: #00ba56;
+		}
+	}
+	
+	@-ms-keyframes "blink" {
+		from, to {
+			background-color: transparent;
+		}
+		50% {
+			background-color: #00ba56;
+		}
+	}
+	
+	@-o-keyframes "blink" {
+		from, to {
+			background-color: transparent;
+		}
+		50% {
+			background-color: #00ba56;
+		}
+	}
+	
+	.blinking-cursor:hover {
+		-webkit-animation: none;
+		-moz-animation: none;
+		-ms-animation: none;
+		-o-animation: none;
+		animation: none;
+	}
+	
+	h2 {
+		font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+		font-size: 26px;
+		font-weight: 300;
+		@media screen and (min-width: 768px) {
+			font-size: 30px;
+		}
+	}
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	.social {
+		text-align: center;
+		display: inline-block;
+		ul {
+			padding: 0;
+			margin: 25px 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin-right: 30px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					color: #00ba56;
+					font-size: 30px;
+					i {
+						font-family: 'FontAwesome', sans-serif;
+					}
+				}
+			}
+		}
+	}
+}
