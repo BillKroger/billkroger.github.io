@@ -32,13 +32,13 @@ body {
 	
 	/* Blinking Cursor */
 	.blinking-cursor {
-		height: 30px;
-		width: 10px;
+		height: 20px;
+		width: 8px;
 		background-color: #00ba56;
 		display: inline-block;
 		position: absolute;
 		bottom: 26px;
-		right: -11px;
+		right: -10px;
 		float: none;
 		opacity: 0.75;
 		-webkit-animation: 1s blink step-end infinite;
@@ -47,7 +47,10 @@ body {
 		-o-animation: 1s blink step-end infinite;
 		animation: 1s blink step-end infinite;
 		@media screen and (min-width: 768px) {
+			height: 27px;
+			width: 10px;
 			bottom: 34px;
+			right: -13px;
 		}
 	}
 	
