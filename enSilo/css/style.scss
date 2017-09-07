@@ -36,29 +36,46 @@ line {
 	}
 }
 
-.animation-content {
+.animation-content-1 {
 	background: #eee;
 	width: 100%;
 	height: 100vh;
-	color: #333;
 	display: table;
-	.animation-inner {
+	.animation-inner-1 {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
-		h1 {
-			text-align: center;
-			font-family: helvetica;
-			font-size: 3em;
+		#horizontal-line {
+			transform: translateX(-100%);
+		}
+		#text-primary {
+			opacity: 0;
 		}
 	}
 }
 
-
-#horizontal-line {
-	transform: translateX(-100%);
+.animation-content-2 {
+	 background: #eee;
+	 width: 100%;
+	 height: 100vh;
+	 display: table;
+	 .animation-inner-2 {
+		 display: table-cell;
+		 vertical-align: middle;
+		 text-align: center;
+	 }
 }
 
-#text-primary {
-	opacity: 0;
+.animation-content-3 {
+	background: #eee;
+	width: 100%;
+	height: 100vh;
+	display: table;
+	.animation-inner-3 {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
 }
+
+
