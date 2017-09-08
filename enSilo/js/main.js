@@ -50,6 +50,23 @@ jQuery(document).ready(function($) {
 
 
     /**
+     * Response Gap animation - mobile
+     */
+    var $rgMobile = $('#rg-mobile');
+    var scrollMagicControllerMobile1 = new ScrollMagic();
+    var tlMobile1 = new TimelineMax();
+    tlMobile1.set($rgMobile, {opacity: 0});
+    tlMobile1.to($rgMobile, 2, {opacity: 1, ease:Power1.easeInOut});
+    var sceneMobile1 = new ScrollScene({
+        triggerElement: '#trigger-1-mobile',
+        duration: 200
+    })
+        .setTween(tlMobile1)
+        .addTo(scrollMagicControllerMobile1);
+
+
+
+    /**
      * Automated Response animation
      */
 
@@ -133,6 +150,21 @@ jQuery(document).ready(function($) {
         .setTween(tl2)
         .addTo(scrollMagicController2);
 
+    /**
+     * Automated Response animation - mobile
+     */
+    var $arMobile = $('#ar-mobile');
+    var scrollMagicControllerMobile2 = new ScrollMagic();
+    var tlMobile2 = new TimelineMax();
+    tlMobile2.set($arMobile, {opacity: 0});
+    tlMobile2.to($arMobile, 2, {opacity: 1, ease:Power1.easeInOut});
+    var sceneMobile2 = new ScrollScene({
+        triggerElement: '#trigger-2-mobile',
+        duration: 200
+    })
+        .setTween(tlMobile2)
+        .addTo(scrollMagicControllerMobile2);
+
 
     /**
      * Post-Infection animation
@@ -214,5 +246,20 @@ jQuery(document).ready(function($) {
     })
         .setTween(tl3)
         .addTo(scrollMagicController3);
+
+    /**
+     * Post-Infection animation - mobile
+     */
+    var $piMobile = $('#pi-mobile');
+    var scrollMagicControllerMobile3 = new ScrollMagic();
+    var tlMobile3 = new TimelineMax();
+    tlMobile3.set($piMobile, {opacity: 0});
+    tlMobile3.to($piMobile, 2, {opacity: 1, ease:Power1.easeInOut});
+    var sceneMobile3 = new ScrollScene({
+        triggerElement: '#trigger-3-mobile',
+        duration: 200
+    })
+        .setTween(tlMobile3)
+        .addTo(scrollMagicControllerMobile3);
 
 });

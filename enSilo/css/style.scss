@@ -43,29 +43,11 @@ line {
 		width: 100%;
 		height: 100vh;
 		display: table;
-		.animation-inner-1 {
+		.animation-inner {
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
-			#horizontal-line {
-				transform: translateX(-100%);
-			}
-			#text-primary {
-				opacity: 0;
-			}
 		}
-	}
-}
-
-.animation-1-mobile {
-	display: table;
-	@media screen and (min-width: 1024px) {
-		display: none;
-	}
-	.animation-inner-mobile {
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
 	}
 }
 
@@ -76,23 +58,11 @@ line {
 		width: 100%;
 		height: 100vh;
 		display: table;
-		.animation-inner-2 {
+		.animation-inner {
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
 		}
-	}
-}
-
-.animation-2-mobile {
-	display: table;
-	@media screen and (min-width: 1024px) {
-		display: none;
-	}
-	.animation-inner-mobile {
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
 	}
 }
 
@@ -103,7 +73,7 @@ line {
 		width: 100%;
 		height: 100vh;
 		display: table;
-		.animation-inner-3 {
+		.animation-inner {
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
@@ -111,8 +81,11 @@ line {
 	}
 }
 
-.animation-3-mobile {
+.animation-1-mobile, .animation-2-mobile, .animation-3-mobile {
 	display: table;
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
 	@media screen and (min-width: 1024px) {
 		display: none;
 	}
@@ -120,7 +93,9 @@ line {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: center;
+		img {
+			max-width: 100%;
+		}
 	}
 }
-
 
