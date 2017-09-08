@@ -30,36 +30,75 @@ line {
     color: #eee;
     font-size: 3em; }
 
-.animation-content-1 {
-  background: #eee;
-  width: 100%;
-  height: 100vh;
+.animation-1 {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .animation-1 {
+      background: #eee;
+      width: 100%;
+      height: 100vh;
+      display: table; }
+      .animation-1 .animation-inner-1 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+        .animation-1 .animation-inner-1 #horizontal-line {
+          transform: translateX(-100%); }
+        .animation-1 .animation-inner-1 #text-primary {
+          opacity: 0; } }
+
+.animation-1-mobile {
   display: table; }
-  .animation-content-1 .animation-inner-1 {
+  @media screen and (min-width: 1024px) {
+    .animation-1-mobile {
+      display: none; } }
+  .animation-1-mobile .animation-inner-mobile {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
-    .animation-content-1 .animation-inner-1 #horizontal-line {
-      transform: translateX(-100%); }
-    .animation-content-1 .animation-inner-1 #text-primary {
-      opacity: 0; }
 
-.animation-content-2 {
-  background: #eee;
-  width: 100%;
-  height: 100vh;
+.animation-2 {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .animation-2 {
+      background: #eee;
+      width: 100%;
+      height: 100vh;
+      display: table; }
+      .animation-2 .animation-inner-2 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; } }
+
+.animation-2-mobile {
   display: table; }
-  .animation-content-2 .animation-inner-2 {
+  @media screen and (min-width: 1024px) {
+    .animation-2-mobile {
+      display: none; } }
+  .animation-2-mobile .animation-inner-mobile {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
 
-.animation-content-3 {
-  background: #eee;
-  width: 100%;
-  height: 100vh;
+.animation-3 {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .animation-3 {
+      background: #eee;
+      width: 100%;
+      height: 100vh;
+      display: table; }
+      .animation-3 .animation-inner-3 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; } }
+
+.animation-3-mobile {
   display: table; }
-  .animation-content-3 .animation-inner-3 {
+  @media screen and (min-width: 1024px) {
+    .animation-3-mobile {
+      display: none; } }
+  .animation-3-mobile .animation-inner-mobile {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
