@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-
     /**
      * Response Gap animation
      */
@@ -153,6 +152,7 @@ jQuery(document).ready(function($) {
     /**
      * Automated Response animation - mobile
      */
+
     var $arMobile = $('#ar-mobile');
     var scrollMagicControllerMobile2 = new ScrollMagic();
     var tlMobile2 = new TimelineMax();
@@ -219,37 +219,45 @@ jQuery(document).ready(function($) {
     tl3.set($piStop2, {opacity: 0});
 
     // build the tweens
-    tl3.to($piTextPostInfection, 1.5, {opacity: 1, ease:Power1.easeInOut})
-        .to($piBlackArrow1, 1.5, {opacity: 1, xPercent: 0, ease:Power1.easeInOut})
-        .to($piBlackArrow2, 1.5, {opacity: 1, xPercent: 0, ease:Power1.easeInOut})
-        .to($piBlackArrow3, 1.5, {opacity: 1, xPercent: 0, ease:Power1.easeInOut})
-        .to($piTextGreenRed, 1.5, {opacity: 1, ease:Power1.easeInOut})
-        .to($piEndPoints, 1.5, {opacity: 1, yPercent: 0, bounce: true, ease:Power1.easeInOut})
-        .to($piTextInfection, 1.5, {opacity: 1, ease:Power1.easeInOut})
-        .to($piGreenLine, 1.5, {opacity: 1, yPercent: 0, ease:Power1.easeInOut})
-        .to($piStop1, 1.5, {opacity: 1, ease:Power1.easeInOut})
-        .to($piRedLine, 1.5, {opacity: 1, yPercent: 0, ease:Power1.easeInOut})
-        .to($piGreenAlert, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piRedAlert1, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piRedAlert2, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piRedAlert3, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piRedAlert4, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piRedAlert5, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piRedAlert6, 1.5, {opacity: 1, transform: 'scale(1)', ease:Power1.easeInOut})
-        .to($piGreyLine, 1.5, {opacity: 1, yPercent: 0, ease:Power1.easeInOut})
-        .to($piStop2, 1.5, {opacity: 1, ease:Power1.easeInOut});
+    tl3.to($piTextPostInfection, 3, {opacity: 1, ease:Circ.easeIn})
+        .to($piBlackArrow1, 3, {opacity: 1, xPercent: 0, ease:Circ.easeIn})
+        .to($piBlackArrow2, 3, {opacity: 1, xPercent: 0, ease:Circ.easeIn})
+        .to($piBlackArrow3, 3, {opacity: 1, xPercent: 0, ease:Circ.easeIn})
+        .to($piTextGreenRed, 3, {opacity: 1, ease:Circ.easeIn})
+        .to($piEndPoints, 10, {opacity: 1, yPercent: 0, bounce: true, ease:Bounce.easeOut})
+        .to($piTextInfection, 3, {opacity: 1, ease:Circ.easeIn})
+        .to($piGreenLine, 3, {opacity: 1, yPercent: 0, ease:Circ.easeIn})
+        .to($piStop1, 3, {opacity: 1, ease:Circ.easeIn})
+        .to($piRedLine, 3, {opacity: 1, yPercent: 0, ease:Circ.easeIn})
+        .to($piGreenAlert, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piRedAlert1, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piRedAlert2, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piRedAlert3, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piRedAlert4, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piRedAlert5, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piRedAlert6, 3, {opacity: 1, transform: 'scale(1)', ease:Circ.easeIn})
+        .to($piGreyLine, 3, {opacity: 1, yPercent: 0, ease:Circ.easeIn})
+        .to($piStop2, 3, {opacity: 1, ease:Circ.easeIn});
 
     // build scene and link scrolling to animation
     var scene3 = new ScrollScene({
         triggerElement: '#trigger-3',
-        duration: 450
+        duration: 1500,
+        triggerHook: 0,
+        reverse: true
     })
+        .setPin('#animation-3-pinned')
         .setTween(tl3)
         .addTo(scrollMagicController3);
+
+    if($(window).width() < 1025) {
+        scene3.destroy(true);
+    }
 
     /**
      * Post-Infection animation - mobile
      */
+
     var $piMobile = $('#pi-mobile');
     var scrollMagicControllerMobile3 = new ScrollMagic();
     var tlMobile3 = new TimelineMax();
