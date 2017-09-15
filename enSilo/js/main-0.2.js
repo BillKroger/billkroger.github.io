@@ -15,12 +15,11 @@ jQuery(document).ready(function($) {
     var tl1 = new TimelineMax();
 
     // clear the stage
-    tl1.set($responseGap1, {opacity: 0});
+    tl1.set($responseGap1, {opacity: 1});
     tl1.set($responseGap2, {opacity: 0});
 
     // build the tweens
-    tl1.to($responseGap1, 2, {opacity: 1, ease:Power1.easeInOut})
-        .add("end", 2)
+    tl1.add("end", 2)
         .to($responseGap2, 2, {opacity: 1, ease:Power1.easeInOut}, "end")
         .to($responseGap1, 2, {opacity: 0, ease:Power1.easeInOut}, "end");
 
