@@ -44,9 +44,17 @@ line {
 		height: 100vh;
 		display: table;
 		.animation-inner {
-			display: table-cell;
-			vertical-align: middle;
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			height: 100%;
 			text-align: center;
+			.response-gap-img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 	}
 }
@@ -66,23 +74,39 @@ line {
 	}
 }
 
+//.animation-3 {
+//	visibility: hidden;
+//	height: 0;
+//	@media screen and (min-width: 1025px) {
+//		visibility: visible;
+//		background: #eee;
+//		width: 100%;
+//		height: 100vh;
+//		display: table;
+//		padding-top: 20vh;
+//		padding-bottom: 20vh;
+//		.scrollmagic-pin-spacer {
+//			text-align: center;
+//			.animation-inner {
+//				//display: table-cell;
+//				vertical-align: middle;
+//				text-align: center;
+//			}
+//		}
+//	}
+//}
+
 .animation-3 {
 	display: none;
-	height: 0;
 	@media screen and (min-width: 1025px) {
 		background: #eee;
 		width: 100%;
 		height: 100vh;
 		display: table;
-		padding-top: 20vh;
-		padding-bottom: 20vh;
-		.scrollmagic-pin-spacer {
+		.animation-inner {
+			display: table-cell;
+			vertical-align: middle;
 			text-align: center;
-			.animation-inner {
-				//display: table-cell;
-				vertical-align: middle;
-				text-align: center;
-			}
 		}
 	}
 }
