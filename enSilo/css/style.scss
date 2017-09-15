@@ -37,8 +37,8 @@ body {
 }
 
 .animation-1 {
-	display: none;
-	@media screen and (min-width: 1025px) {
+	//display: none;
+	//@media screen and (min-width: 1025px) {
 		background: #eee;
 		width: 100%;
 		height: 100vh;
@@ -54,9 +54,12 @@ body {
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				@media (max-width: 768px) {
+					max-width: 90%;
+				}
 			}
 		}
-	}
+	//}
 }
 
 .animation-2 {
@@ -111,7 +114,7 @@ body {
 	}
 }
 
-.animation-1-mobile, .animation-2-mobile, .animation-3-mobile {
+.animation-2-mobile, .animation-3-mobile {
 	display: table;
 	width: 100%;
 	height: 100vh;

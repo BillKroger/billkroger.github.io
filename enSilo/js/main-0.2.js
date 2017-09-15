@@ -36,17 +36,17 @@ jQuery(document).ready(function($) {
     /**
      * Response Gap animation - mobile
      */
-    var $rgMobile = $('#rg-mobile');
-    var scrollMagicControllerMobile1 = new ScrollMagic();
-    var tlMobile1 = new TimelineMax();
-    tlMobile1.set($rgMobile, {opacity: 0});
-    tlMobile1.to($rgMobile, 2, {opacity: 1, ease:Power1.easeInOut});
-    var sceneMobile1 = new ScrollScene({
-        triggerElement: '#trigger-1-mobile',
-        duration: 400
-    })
-        .setTween(tlMobile1)
-        .addTo(scrollMagicControllerMobile1);
+    // var $rgMobile = $('#rg-mobile');
+    // var scrollMagicControllerMobile1 = new ScrollMagic();
+    // var tlMobile1 = new TimelineMax();
+    // tlMobile1.set($rgMobile, {opacity: 0});
+    // tlMobile1.to($rgMobile, 2, {opacity: 1, ease:Power1.easeInOut});
+    // var sceneMobile1 = new ScrollScene({
+    //     triggerElement: '#trigger-1-mobile',
+    //     duration: 400
+    // })
+    //     .setTween(tlMobile1)
+    //     .addTo(scrollMagicControllerMobile1);
 
 
 
