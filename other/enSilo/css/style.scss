@@ -1,0 +1,106 @@
+//* {
+//	box-sizing: border-box;
+//}
+
+//body {
+//	margin: 0;
+//	font-size: 14px;
+//	overflow-x: hidden;
+//}
+
+//.wrapper {
+//	width: 100%;
+//	height: 100vh;
+//	display: inline-block;
+//	padding: 0;
+//	margin: 0;
+//}
+
+//.intro-content, .more-content {
+//	width: 100%;
+//	height: 100vh;
+//	background: #333;
+//	display: table;
+//	border-bottom: 2px solid #eee;
+//	h1 {
+//		display: table-cell;
+//		vertical-align: middle;
+//		text-align: center;
+//		font-family: Helvetica, sans-serif;
+//		color: #eee;
+//		font-size: 3em;
+//	}
+//}
+
+.animation-1 {
+	width: 100%;
+	height: 100vh;
+	display: table;
+	box-sizing: border-box;
+	.animation-inner {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		.response-gap-img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			@media (max-width: 768px) {
+				max-width: 90%;
+			}
+		}
+	}
+}
+
+.animation-2 {
+	display: none;
+	box-sizing: border-box;
+	@media screen and (min-width: 1025px) {
+		width: 100%;
+		height: 100vh;
+		display: table;
+		.animation-inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+}
+
+.animation-3 {
+	display: none;
+	box-sizing: border-box;
+	@media screen and (min-width: 1025px) {
+		width: 100%;
+		height: 100vh;
+		display: table;
+		.animation-inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+}
+
+.animation-2-mobile, .animation-3-mobile {
+	display: table;
+	width: 100%;
+	height: 100vh;
+	padding: 20px;
+	box-sizing: border-box;
+	@media screen and (min-width: 1025px) {
+		display: none;
+	}
+	.animation-inner-mobile {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
