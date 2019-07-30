@@ -8,11 +8,32 @@
 	padding: 20px 45px;
 	text-align: left;
 	
+	@media (max-width: 768px) {
+		width: calc(100% - 40px);
+		padding: 20px;
+	}
+	
 	.logo-home {
-		width: 40px;
+		width: 60px;
+		height: 60px;
 		display: inline-block;
-		img {
-			max-width: 100%;
+		background-image: url('../img/bk-logo-new-white-on-gold.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		transition: background-image 1s ease;
+		
+		//img {
+		//	max-width: 100%;
+		//}
+	}
+}
+
+.fp-viewing-0, .fp-viewing-3 {
+	.bk-header {
+		.logo-home {
+			background-image: url('../img/gold-on-whitesmoke.png');
 		}
 	}
 }
