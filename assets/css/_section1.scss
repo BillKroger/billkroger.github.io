@@ -1,0 +1,20 @@
+#section1 {
+	color: #eafef5;
+	//background-image: url('../img/pieces-overlay-2.jpg');
+	//background-repeat: no-repeat;
+	//background-size: cover;
+	//background-position: bottom center;
+	.container {
+		text-align: center;
+		.bk-big-img {
+			max-width: 100px;
+			position: relative;
+			vertical-align: middle;
+		}
+		h1 {
+			font-family: 'Montserrat';
+			font-size: 4em;
+			color: whitesmoke;
+		}
+	}
+}

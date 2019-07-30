@@ -1,9 +1,11 @@
 * {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 html {
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 body {
   width: 100%;
@@ -11,106 +13,211 @@ body {
   margin: 0;
   text-align: center;
   background: #333;
-  color: #fff;
+  color: #222;
   display: table;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 14px;
+}
 
 .wrapper {
   display: inline-block;
   vertical-align: middle;
   padding-top: 100px;
   position: relative;
-  /* Blinking Cursor */ }
+  /* Blinking Cursor */
+}
+.wrapper .logo {
+  max-width: 175px;
+}
+@media screen and (min-width: 768px) {
   .wrapper .logo {
-    max-width: 175px; }
-    @media screen and (min-width: 768px) {
-      .wrapper .logo {
-        max-width: 275px; } }
+    max-width: 275px;
+  }
+}
+.wrapper .blinking-cursor {
+  height: 20px;
+  width: 8px;
+  background-color: #00ba56;
+  display: inline-block;
+  position: absolute;
+  bottom: 26px;
+  right: -10px;
+  float: none;
+  opacity: 0.75;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@media screen and (min-width: 768px) {
   .wrapper .blinking-cursor {
-    height: 20px;
-    width: 8px;
-    background-color: #00ba56;
-    display: inline-block;
-    position: absolute;
-    bottom: 26px;
-    right: -10px;
-    float: none;
-    opacity: 0.75;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite; }
-    @media screen and (min-width: 768px) {
-      .wrapper .blinking-cursor {
-        height: 27px;
-        width: 10px;
-        bottom: 34px;
-        right: -13px; } }
+    height: 27px;
+    width: 10px;
+    bottom: 34px;
+    right: -13px;
+  }
+}
 @keyframes "blink" {
   from, to {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   50% {
-    background-color: #00ba56; } }
+    background-color: #00ba56;
+  }
+}
 @-moz-keyframes blink {
   from, to {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   50% {
-    background-color: #00ba56; } }
+    background-color: #00ba56;
+  }
+}
 @-webkit-keyframes "blink" {
   from, to {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   50% {
-    background-color: #00ba56; } }
+    background-color: #00ba56;
+  }
+}
 @-ms-keyframes "blink" {
   from, to {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   50% {
-    background-color: #00ba56; } }
+    background-color: #00ba56;
+  }
+}
 @-o-keyframes "blink" {
   from, to {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   50% {
-    background-color: #00ba56; } }
-  .wrapper .blinking-cursor:hover {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-    animation: none; }
+    background-color: #00ba56;
+  }
+}
+.wrapper .blinking-cursor:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+.wrapper h2 {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 768px) {
   .wrapper h2 {
-    font-family: 'Oswald', Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 200;
-    letter-spacing: 0.5px; }
-    @media screen and (min-width: 768px) {
-      .wrapper h2 {
-        font-size: 32px; } }
+    font-size: 32px;
+  }
+}
 
 .footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; }
-  .footer .social {
-    text-align: center;
-    display: inline-block; }
-    .footer .social ul {
-      padding: 0;
-      margin: 25px 0;
-      list-style: none; }
-      .footer .social ul li {
-        display: inline-block;
-        margin-right: 30px; }
-        .footer .social ul li:last-child {
-          margin-right: 0; }
-        .footer .social ul li a {
-          color: #00ba56;
-          font-size: 30px;
-          transition: opacity 0.3s; }
-          .footer .social ul li a:hover {
-            opacity: 0.65; }
-          .footer .social ul li a i {
-            font-family: 'FontAwesome', sans-serif; }
+  width: 100%;
+}
+.footer .social {
+  text-align: center;
+  display: inline-block;
+}
+.footer .social ul {
+  padding: 0;
+  margin: 25px 0;
+  list-style: none;
+}
+.footer .social ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.footer .social ul li:last-child {
+  margin-right: 0;
+}
+.footer .social ul li a {
+  color: #00ba56;
+  font-size: 30px;
+  transition: opacity 0.3s;
+}
+.footer .social ul li a:hover {
+  opacity: 0.65;
+}
+.footer .social ul li a i {
+  font-family: "FontAwesome", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+.container .col-50 {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+.container .col-50.left {
+  float: left;
+}
+.container .col-50.right {
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  .container .col-50.left, .container .col-50.right {
+    float: none;
+  }
+}
+.container .col-50 .inner-col {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  #fp-nav {
+    display: none;
+  }
+}
+
+.bk-header {
+  width: calc(100% - 90px);
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 20px 45px;
+  text-align: left;
+}
+.bk-header .logo-home {
+  width: 40px;
+  display: inline-block;
+}
+.bk-header .logo-home img {
+  max-width: 100%;
+}
+
+#fullpage {
+  position: relative;
+}
+
+#section1 {
+  color: #eafef5;
+}
+#section1 .container {
+  text-align: center;
+}
+#section1 .container .bk-big-img {
+  max-width: 100px;
+  position: relative;
+  vertical-align: middle;
+}
+#section1 .container h1 {
+  font-family: "Montserrat";
+  font-size: 4em;
+  color: whitesmoke;
+}
 
 /*# sourceMappingURL=style.css.map */
