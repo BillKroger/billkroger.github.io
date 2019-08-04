@@ -1,12 +1,18 @@
 .bk-header {
 	width: calc(100% - 90px);
-	height: 75px;
-	position: absolute;
-	top: 0;
-	left: 0;
+	//height: 75px;
+	//position: absolute;
+	//top: 0;
+	//left: 0;
 	z-index: 2;
-	padding: 20px 45px;
+	padding: 35px 45px;
 	text-align: left;
+	position: fixed;
+	
+	.container {
+		position: relative;
+		width: 100%;
+	}
 	
 	@media (max-width: 768px) {
 		width: calc(100% - 40px);
@@ -14,18 +20,75 @@
 	}
 	
 	.logo-home {
-		width: 60px;
-		height: 60px;
+		width: 40px;
+		height: 40px;
 		display: inline-block;
 		background-image: url('../img/bk-logo-new-white-on-gold.png');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		
 		transition: background-image 1s ease;
 		
 		//img {
 		//	max-width: 100%;
+		//}
+		
+		@media (min-width: 769px) {
+			width: 60px;
+			height: 60px;
+		}
+	}
+	
+	.burger-menu {
+		float: right;
+		position: relative;
+		padding-left: 1em;
+		z-index: 200;
+		//&:before {
+		//	content: "";
+		//	position: absolute;
+		//	left: 0;
+		//	top: 0.25em;
+		//	width: 1em;
+		//	height: 0.15em;
+		//	background: black;
+		//	box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+		//}
+		.line {
+			display: block;
+			height: 5px;
+			width: 60px;
+			margin: 10px auto;
+			background-color: whitesmoke;
+			transition: all .4s ease;
+			&.active {
+				background-color: #c6a437;
+				&.top {
+					-webkit-transform: translateY(15px) rotateZ(45deg);
+					-ms-transform: translateY(15px) rotateZ(45deg);
+					transform: translateY(15px) rotateZ(45deg);
+				}
+				
+				&.middle {
+					//width: 0;
+					opacity: 0;
+				}
+				
+				&.bottom {
+					-webkit-transform: translateY(-15px) rotateZ(-45deg);
+					-ms-transform: translateY(-15px) rotateZ(-45deg);
+					transform: translateY(-15px) rotateZ(-45deg);
+				}
+			}
+		}
+		
+		//&:hover {
+		//	.line {
+		//		background-color: #c6a437;
+		//
+		//
+		//
+		//	}
 		//}
 	}
 }
