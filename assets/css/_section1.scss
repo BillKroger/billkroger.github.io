@@ -1,20 +1,103 @@
 #section1 {
-	color: #eafef5;
+	color: whitesmoke;
 	//background-image: url('../img/pieces-overlay-2.jpg');
 	//background-repeat: no-repeat;
 	//background-size: cover;
 	//background-position: bottom center;
 	.container {
 		text-align: center;
+		max-width: 900px;
+		margin: 0 auto;
+		
 		.bk-big-img {
 			max-width: 100px;
 			position: relative;
 			vertical-align: middle;
 		}
+		
 		h1 {
-			font-family: 'Montserrat';
-			font-size: 4em;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 3rem;
+			font-weight: 500;
 			color: whitesmoke;
 		}
+		
+		.intro-block {
+			display: inline-block;
+			position: relative;
+			vertical-align: bottom;
+			margin-bottom: 40px;
+			
+			.cliche-intro-info {
+				display: block;
+				position: relative;
+				margin-top: 25px;
+				font-size: 1rem;
+				font-style: italic;
+				
+				&:before {
+					content: '';
+					position: absolute;
+					top: -15px;
+					left: 0;
+					height: 5px;
+					width: 100%;
+					background: whitesmoke;
+				}
+			}
+			
+			&.hello {
+				margin-right: 20px;
+				
+				&:after {
+					content: '!';
+					position: absolute;
+					bottom: 35px;
+					right: -5px;
+					font-size: 5rem;
+					font-style: normal;
+				}
+				
+				img.smile {
+					display: block;
+					max-width: 200px;
+					margin-right: 15px;
+				}
+				
+			}
+			
+			&.name {
+				h1 {
+					margin: 0;
+					span {
+						text-decoration: line-through;
+						margin-right: 10px;
+						opacity: 0.7;
+					}
+				}
+			}
+			
+			&.and {
+				margin-right: 10px;
+				h1 {
+					margin: 0 0 43px;
+				}
+			}
+			
+			&.what-i-do {
+				h1, img {
+					display: inline-block;
+					vertical-align: middle;
+				}
+				h1 {
+					margin: 0;
+				}
+				img.www {
+					max-width: 50px;
+					margin: 0 15px;
+				}
+			}
+		}
+		
 	}
 }
