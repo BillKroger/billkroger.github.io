@@ -1,48 +1,48 @@
-/**
- * Toggle header classes on scroll
- */
-// $(document).ready(function() {
-//
-//     console.log('ready!');
-//
-//     function isElementInView(element, fullyInView) {
-//         const pageTop = $(window).scrollTop();
-//         const pageBottom = pageTop + $(window).height();
-//         const elementTop = $(element).offset().top;
-//         const elementBottom = elementTop + $(element).height();
-//
-//         if (fullyInView === true) {
-//             return ((pageTop < elementTop) && (pageBottom > elementBottom));
-//         } else {
-//             return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
-//         }
-//     }
-//
-//     $(window).on('scroll', function() {
-//         console.log('scrolling!');
-//         const header = $('#header');
-//         const section = $('#section1');
-//         if (isElementInView(section, true)) {
-//             console.log('in view!');
-//         }
-//     });
-//
-// });
-
 (function() {
 
     /**
      * Burger menu toggle
      */
-    const menu = document.getElementById('menu-toggle');
-    menu.onclick = function() {
+
+    // animate menu button
+    const animateMenu = () => {
         const lines = document.getElementsByClassName('line');
         for (const line of lines) {
             line.classList.toggle('active');
         }
-
-        document.getElementById('menu-wrapper').classList.toggle('open');
     };
+
+    // toggle classes for body, burger and menu
+    const toggleOpenClass = () => {
+        document.getElementById('menu-wrapper').classList.toggle('open');
+        document.body.classList.toggle('nav-open');
+        document.getElementById('menu-toggle').classList.toggle('open');
+    };
+
+    const menu = document.getElementById('menu-toggle');
+    const content = document.getElementById('content');
+
+    menu.onclick = function() {
+        animateMenu();
+        toggleOpenClass();
+
+        // disable scrolling of main content
+        if (document.getElementById('menu-toggle').classList.contains('open')) {
+            console.log('disable scrolling');
+            fullpage_api.setAllowScrolling(false);
+        } else {
+            fullpage_api.setAllowScrolling(true);
+        }
+
+    };
+
+    content.onclick = function() {
+        if (document.body.classList.contains('nav-open')) {
+            animateMenu();
+            toggleOpenClass();
+            fullpage_api.setAllowScrolling(true);
+        }
+    }
 })();
 
 
