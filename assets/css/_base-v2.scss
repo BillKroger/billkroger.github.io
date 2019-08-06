@@ -1,6 +1,35 @@
+$accent-dark: #c6a437;
+$accent-light: whitesmoke;
+
+
 body {
 	font-family: 'Montserrat', sans-serif;
+	
+	#content {
+		&:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: #000;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.8s cubic-bezier(.6,.04,.98,.335);
+		}
+	}
+	
+	&.nav-open {
+		#content {
+			&:after {
+				opacity: 0.95;
+				visibility: visible;
+			}
+		}
+	}
 }
+
 
 .container {
 	width: 100%;
@@ -36,4 +65,13 @@ body {
 
 p {
 	margin-bottom: 30px;
+}
+
+.section {
+	&.dark-bg {
+		color: whitesmoke;
+	}
+	&.light-bg {
+		color: #333;
+	}
 }

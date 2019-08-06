@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bill Kroger | Web Developer and Software Engineer</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
+
     <!-- Local CSS -->
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/fullpage.min.css" rel="stylesheet" type="text/css" />
@@ -27,73 +32,81 @@
 
 </head>
 <body>
-    <!--<div class="wrapper">-->
-        <!--<img class="logo" src="./assets/img/bk-logo.png" />-->
-
-        <!--<h2>Out to lunch, be back soon</h2>-->
-
-        <!--&lt;!&ndash; blinking-cursor &ndash;&gt;-->
-        <!--<div class="blinking-cursor"></div>-->
-    <!--</div>-->
 
     <div id="header" class="bk-header">
-        <div class="container">
-            <a href="#" class="logo-home"></a>
-            <a href="#" class="burger-menu" id="menu-toggle" role="button">
+        <a href="#" class="logo-home"></a>
+        <a href="#" class="burger-menu" id="menu-toggle" role="button">
+            <div class="lines">
                 <div class="line top"></div>
                 <div class="line middle"></div>
                 <div class="line bottom"></div>
-            </a>
-            <div id="menu-wrapper">
-                <a href="#" class="link" role="button">Work</a>
-                <a href="#" class="link" role="button">About</a>
-                <a href="#" class="link" role="button">Contact</a>
             </div>
-        </div>
+        </a>
+
     </div>
 
+    <nav id="menu-wrapper">
+        <ul>
+            <li><a href="#" class="link" role="button">Work</a></li>
+            <li><a href="#" class="link" role="button">About</a></li>
+            <li><a href="#" class="link" role="button">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div id="content">
 
-    <div id="fullpage">
+        <div id="fullpage">
 
-        <div id="section1" class="section dark-bg">
-            <div class="container">
+            <div id="section1" class="section intro dark-bg">
+                <div class="container">
+                    <!--<h1>Bill Kroger</h1>-->
+                    <!--<h2 style="font-weight: 500; font-size: 2.5rem;">Software Engineer</h2>-->
 
-                <div class="intro-block hello">
-                    <img class="smile" src="./assets/img/smile.png" />
-                    <span class="cliche-intro-info">say "Hi!" or "Hello!"</span>
+                    <div class="centerpiece">
+                        <div class="tile"><span>B</span></div><div class="tile"><span>I</span></div><div class="tile"><span>L</span></div><div class="tile"><span>L</span></div><div class="tile"><span>K</span></div><div class="tile"><span>R</span></div><div class="tile"><span>O</span></div><div class="tile"><span>G</span></div><div class="tile"><span>E</span></div><div class="tile"><span>R</span></div><div class="tile"><span>&lt;</span></div><div class="tile"><span>&gt;</span></div>
+                    </div>
+
                 </div>
-
-                <div class="intro-block name">
-                    <h1><span style="">William</span><strong>Bill Kroger </strong>here,</h1>
-                    <span class="cliche-intro-info">state your first name only, i.e. "My name is Bob"</span>
-                </div>
-
-                <div class="intro-block and">
-                    <h1>and</h1>
-                </div>
-
-                <div class="intro-block what-i-do">
-                    <h1>I'm a front-end</h1><img class="www" src="./assets/img/www-trans.png" /><h1>engineer.</h1>
-                    <span class="cliche-intro-info">dumb down your expertise, i.e. "I build things" or "I make stuff"</span>
-                </div>
-
             </div>
+
+            <div id="section2" class="section work light-bg">
+                <p>This is a work slide</p>
+                <p>This is a work slide</p>
+                <p>This is a work slide</p>
+                <p>This is a work slide</p>
+                <p>This is a work slide</p>
+            </div>
+
+            <div id="section3" class="section work light-bg">Some work</div>
+
+            <div id="section4" class="section work light-bg">Some work</div>
+
+            <div id="section5" class="section about dark-bg">
+                <div class="container">
+                    <div class="about-block hello">
+                        <img class="smile" src="./assets/img/smile.png" />
+                        <span class="cliche-about-info">say "Hi!" or "Hello!"</span>
+                    </div>
+
+                    <div class="about-block name">
+                        <h1><span style="">William</span><strong>Bill Kroger </strong>here,</h1>
+                        <span class="cliche-about-info">state your first name only, i.e. "My name is Bob"</span>
+                    </div>
+
+                    <div class="about-block and">
+                        <h1>and</h1>
+                    </div>
+
+                    <div class="about-block what-i-do">
+                        <h1>I'm a front-end</h1><img class="www" src="./assets/img/www-trans.png" /><h1>engineer.</h1>
+                        <span class="cliche-about-info">dumb down your expertise, i.e. "I build things" or "I make stuff"</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="section6" class="section contact dark-bg">Contact</div>
+
         </div>
-
-        <div id="section2" class="section light-bg">
-            <p>This is a paragraph</p>
-            <p>This is a paragraph</p>
-            <p>This is a paragraph</p>
-            <p>This is a paragraph</p>
-            <p>This is a paragraph</p>
-        </div>
-
-        <div id="section3" class="section light-bg">Some section</div>
-
-        <div id="section4" class="section dark-bg">Some section</div>
-
-        <div id="section5" class="section light-bg">Some section</div>
 
     </div>
 
@@ -136,8 +149,8 @@
 
     <script type="text/javascript">
         const myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#c6a437', 'whitesmoke', 'whitesmoke', '#c6a437', 'whitesmoke'],
-            scrollingSpeed: 700,
+            sectionsColor: ['#c6a437', 'whitesmoke', 'whitesmoke', 'whitesmoke', '#c6a437', '#333333'],
+            scrollingSpeed: 600,
             fitToSection: true,
             //normalScrollElements: '#section3',
             navigation: true
