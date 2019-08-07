@@ -1,0 +1,6 @@
+/* vendor prefixes for css transforms */
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
