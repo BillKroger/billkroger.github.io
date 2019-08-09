@@ -28,7 +28,6 @@
 
         // disable scrolling of main content
         if (document.getElementById('menu-toggle').classList.contains('open')) {
-            console.log('disable scrolling');
             fullpage_api.setAllowScrolling(false);
         } else {
             fullpage_api.setAllowScrolling(true);
@@ -42,7 +41,17 @@
             toggleOpenClass();
             fullpage_api.setAllowScrolling(true);
         }
-    }
+    };
+
+    /**
+     * Toggle .hover class ontouchstart for card flippers
+     * */
+    document.querySelectorAll('.tile').forEach(tile => {
+        tile.ontouchstart = function() {
+            this.classList.toggle('hover');
+        }
+    })
+
 })();
 
 
