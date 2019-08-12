@@ -26,94 +26,94 @@ body {
 	position: relative;
 	.logo {
 		max-width: 175px;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 769px) {
 			max-width: 275px;
 		}
 	}
 	
 	/* Blinking Cursor */
-	.blinking-cursor {
-		height: 20px;
-		width: 8px;
-		background-color: #00ba56;
-		display: inline-block;
-		position: absolute;
-		bottom: 26px;
-		right: -10px;
-		float: none;
-		opacity: 0.75;
-		-webkit-animation: 1s blink step-end infinite;
-		-moz-animation: 1s blink step-end infinite;
-		-ms-animation: 1s blink step-end infinite;
-		-o-animation: 1s blink step-end infinite;
-		animation: 1s blink step-end infinite;
-		@media screen and (min-width: 768px) {
-			height: 27px;
-			width: 10px;
-			bottom: 34px;
-			right: -13px;
-		}
-	}
-	
-	@keyframes "blink" {
-		from, to {
-			background-color: transparent;
-		}
-		50% {
-			background-color: #00ba56;
-		}
-	}
-	
-	@-moz-keyframes blink {
-		from, to {
-			background-color: transparent;
-		}
-		50% {
-			background-color: #00ba56;
-		}
-	}
-	
-	@-webkit-keyframes "blink" {
-		from, to {
-			background-color: transparent;
-		}
-		50% {
-			background-color: #00ba56;
-		}
-	}
-	
-	@-ms-keyframes "blink" {
-		from, to {
-			background-color: transparent;
-		}
-		50% {
-			background-color: #00ba56;
-		}
-	}
-	
-	@-o-keyframes "blink" {
-		from, to {
-			background-color: transparent;
-		}
-		50% {
-			background-color: #00ba56;
-		}
-	}
-	
-	.blinking-cursor:hover {
-		-webkit-animation: none;
-		-moz-animation: none;
-		-ms-animation: none;
-		-o-animation: none;
-		animation: none;
-	}
+	//.blinking-cursor {
+	//	height: 20px;
+	//	width: 8px;
+	//	background-color: #00ba56;
+	//	display: inline-block;
+	//	position: absolute;
+	//	bottom: 26px;
+	//	right: -10px;
+	//	float: none;
+	//	opacity: 0.75;
+	//	-webkit-animation: 1s blink step-end infinite;
+	//	-moz-animation: 1s blink step-end infinite;
+	//	-ms-animation: 1s blink step-end infinite;
+	//	-o-animation: 1s blink step-end infinite;
+	//	animation: 1s blink step-end infinite;
+	//	@media screen and (min-width: 769px) {
+	//		height: 27px;
+	//		width: 10px;
+	//		bottom: 34px;
+	//		right: -13px;
+	//	}
+	//}
+	//
+	//@keyframes "blink" {
+	//	from, to {
+	//		background-color: transparent;
+	//	}
+	//	50% {
+	//		background-color: #00ba56;
+	//	}
+	//}
+	//
+	//@-moz-keyframes blink {
+	//	from, to {
+	//		background-color: transparent;
+	//	}
+	//	50% {
+	//		background-color: #00ba56;
+	//	}
+	//}
+	//
+	//@-webkit-keyframes "blink" {
+	//	from, to {
+	//		background-color: transparent;
+	//	}
+	//	50% {
+	//		background-color: #00ba56;
+	//	}
+	//}
+	//
+	//@-ms-keyframes "blink" {
+	//	from, to {
+	//		background-color: transparent;
+	//	}
+	//	50% {
+	//		background-color: #00ba56;
+	//	}
+	//}
+	//
+	//@-o-keyframes "blink" {
+	//	from, to {
+	//		background-color: transparent;
+	//	}
+	//	50% {
+	//		background-color: #00ba56;
+	//	}
+	//}
+	//
+	//.blinking-cursor:hover {
+	//	-webkit-animation: none;
+	//	-moz-animation: none;
+	//	-ms-animation: none;
+	//	-o-animation: none;
+	//	animation: none;
+	//}
 	
 	h2 {
 		font-family: 'Oswald', Helvetica, Arial, sans-serif;
 		font-size: 24px;
 		font-weight: 200;
 		letter-spacing: 0.5px;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 769px) {
 			font-size: 32px;
 		}
 	}

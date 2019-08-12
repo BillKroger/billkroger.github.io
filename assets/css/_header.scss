@@ -1,14 +1,31 @@
 .bk-header {
-	
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	z-index: 100;
+	transition: all 0.3s ease;
+	&.active {
+		height: 65px;
+		background: #c6a437;
+		.logo-home, .burger-menu {
+			top: 12.5px;
+			width: 40px;
+			height: 40px;
+		}
+		.burger-menu .lines .line {
+			width: 40px;
+		}
+	}
 	.logo-home {
 		width: 40px;
 		height: 40px;
-		background-image: url('../img/bk-logo-new-white-on-gold.png');
+		//background-image: url('../img/bk-logo-new-white-on-gold.png');
+		background-image: url('../img/gold-on-whitesmoke.png');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		transition: background-image 1s ease;
-		position: fixed;
+		transition: all 0.3s ease;
+		position: absolute;
 		z-index: 101;
 		top: 20px;
 		left: 20px;
@@ -17,6 +34,10 @@
 			width: 60px;
 			height: 60px;
 			left: 60px;
+		}
+		
+		&.open {
+			display: none;
 		}
 	}
 	
@@ -28,6 +49,8 @@
 		right: 20px;
 		width: 40px;
 		height: 40px;
+		transition: all 0.3s ease;
+		cursor: pointer;
 		@media (min-width: 769px) {
 			height: 60px;
 			width: 50px;
@@ -43,7 +66,7 @@
 				height: 2px;
 				width: 40px;
 				margin: 0 auto 8px;
-				background-color: $accent-dark;
+				background-color: $accent-light;
 				transition: all .4s ease;
 				
 				@media only screen and (min-width: 769px) {
@@ -54,11 +77,11 @@
 					margin-bottom: 0;
 				}
 				&.active {
-					background-color: $accent-dark;
+					background-color: $accent-light;
 					&.top {
-						-webkit-transform: translateY(6px) rotateZ(45deg);
-						-ms-transform: translateY(6px) rotateZ(45deg);
-						transform: translateY(6px) rotateZ(45deg);
+						-webkit-transform: translateY(12px) rotateZ(45deg);
+						-ms-transform: translateY(12px) rotateZ(45deg);
+						transform: translateY(12px) rotateZ(45deg);
 					}
 					
 					&.middle {
@@ -66,9 +89,9 @@
 					}
 					
 					&.bottom {
-						-webkit-transform: translateY(-15px) rotateZ(-45deg);
-						-ms-transform: translateY(-15px) rotateZ(-45deg);
-						transform: translateY(-15px) rotateZ(-45deg);
+						-webkit-transform: translateY(-9px) rotateZ(-45deg);
+						-ms-transform: translateY(-9px) rotateZ(-45deg);
+						transform: translateY(-9px) rotateZ(-45deg);
 					}
 				}
 			}
@@ -90,8 +113,13 @@
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
-	transition: all 0.8s cubic-bezier(.6,.04,.98,.335);
-	width: 25vw;
+	//transition: all 0.5s cubic-bezier(.6,.04,.98,.335);
+	
+	width: 100vw;
+	
+	@media only screen and (min-width: 769px) {
+		width: 25vw;
+	}
 	//&:after {
 	//	position: absolute;
 	//	content: '';
@@ -121,13 +149,14 @@
 		position: relative;
 		li {
 			display: block;
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 			&:last-child {
 				margin-bottom: 0;
 			}
-			.link {
-				font-size: 3.75rem;
-				color: $accent-dark;
+			.menu-link {
+				font-size: 2rem;
+				text-transform: uppercase;
+				color: #eee;
 				font-weight: 500;
 				display: inline-block;
 				margin: 0 auto;
@@ -135,27 +164,58 @@
 				text-align: right;
 				text-decoration: none;
 				z-index: 101;
+				
+				&:hover {
+					span {
+						&:after {
+							transform: scale(1, 1) translateY(-50%);
+							transform-origin: left center;
+							transition: 0.4s transform;
+							transition-timing-function: cubic-bezier(0,0,.5,0);
+						}
+					}
+				}
+				
+				span {
+					padding: 0 15px;
+					&:after {
+						content: '';
+						width: 100%;
+						height: 8px;
+						background: rgba(198, 164, 55, 0.65);
+						/* background: rgba(255, 99, 71, 0.65); */
+						/*   opacity: 0.65; */
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: scale(0, 1) translateY(-50%);
+						transform-origin: right;
+						transition: 0.4s transform;
+						transition-timing-function: ease-out;
+					}
+				}
 			}
 		}
 	}
 	
 }
-
-.fp-viewing-0, .fp-viewing-4, .fp-viewing-5 {
-	.bk-header {
-		.logo-home {
-			background-image: url('../img/gold-on-whitesmoke.png');
-		}
-		.burger-menu {
-			.line {
-				background-color: $accent-light;
-			}
-		}
-		#menu-wrapper {
-			.link {
-				color: $accent-light;
-			}
-		}
-		
-	}
-}
+//
+//.fp-viewing-0, .fp-viewing-2, .fp-viewing-3 {
+//	.bk-header {
+//		.logo-home {
+//			background-image: url('../img/gold-on-whitesmoke.png');
+//		}
+//		.burger-menu {
+//			.line {
+//				background-color: $accent-light;
+//			}
+//		}
+//		#menu-wrapper {
+//			.link {
+//				color: $accent-light;
+//			}
+//		}
+//
+//	}
+//}

@@ -17,6 +17,7 @@
         document.getElementById('menu-wrapper').classList.toggle('open');
         document.body.classList.toggle('nav-open');
         document.getElementById('menu-toggle').classList.toggle('open');
+        document.getElementById('bk-logo').classList.toggle('open');
     };
 
     const menu = document.getElementById('menu-toggle');
@@ -27,11 +28,11 @@
         toggleOpenClass();
 
         // disable scrolling of main content
-        if (document.getElementById('menu-toggle').classList.contains('open')) {
-            fullpage_api.setAllowScrolling(false);
-        } else {
-            fullpage_api.setAllowScrolling(true);
-        }
+        // if (document.getElementById('menu-toggle').classList.contains('open')) {
+        //     fullpage_api.setAllowScrolling(false);
+        // } else {
+        //     fullpage_api.setAllowScrolling(true);
+        // }
 
     };
 
@@ -39,9 +40,20 @@
         if (document.body.classList.contains('nav-open')) {
             animateMenu();
             toggleOpenClass();
-            fullpage_api.setAllowScrolling(true);
+            //fullpage_api.setAllowScrolling(true);
         }
     };
+
+
+    // close menu when a link is clicked
+    const links = document.getElementsByClassName('menu-link');
+    for (let link of links) {
+        link.onclick = () => {
+            animateMenu();
+            toggleOpenClass();
+            //fullpage_api.setAllowScrolling(true);
+        }
+    }
 
     /**
      * Toggle .hover class ontouchstart for card flippers
@@ -55,4 +67,13 @@
 })();
 
 
+$(document).ready(function() {
+    $(window).on("load scroll resize orientationchange", function() {
+        if($(window).scrollTop() > 75) {
+            $("#header").addClass("active");
+        } else {
+            $("#header").removeClass("active");
+        }
+    });
+});
 

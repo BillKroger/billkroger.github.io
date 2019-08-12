@@ -34,8 +34,8 @@
 <body>
 
     <div id="header" class="bk-header">
-        <a href="#" class="logo-home"></a>
-        <a href="#" class="burger-menu" id="menu-toggle" role="button">
+        <a href="#top" id="bk-logo" class="logo-home"></a>
+        <a class="burger-menu" id="menu-toggle" role="button">
             <div class="lines">
                 <div class="line top"></div>
                 <div class="line middle"></div>
@@ -47,9 +47,15 @@
 
     <nav id="menu-wrapper">
         <ul>
-            <li><a href="#" class="link" role="button">Work</a></li>
-            <li><a href="#" class="link" role="button">About</a></li>
-            <li><a href="#" class="link" role="button">Contact</a></li>
+            <li data-menuanchor="work">
+                <a href="#work" class="menu-link" role="button"><span>Work</span></a>
+            </li>
+            <li data-menuanchor="about">
+                <a href="#about" class="menu-link" role="button"><span>About me</span></a>
+            </li>
+            <li data-menuanchor="contact">
+                <a href="#contact" class="menu-link" role="button"><span>Let's talk</span></a>
+            </li>
         </ul>
     </nav>
 
@@ -57,72 +63,70 @@
 
         <div id="fullpage">
 
-            <div id="section1" class="section intro dark-bg">
+            <div id="top" class="section intro dark-bg">
                 <div class="container">
-                    <!--<h1>Bill Kroger</h1>-->
-                    <!--<h2 style="font-weight: 500; font-size: 2.5rem;">Software Engineer</h2>-->
 
                     <div class="centerpiece">
 
                         <div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>B</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>I</span></div>
-                                <div class="face back"><p>This is another test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>L</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>L</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>K</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>R</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>O</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>G</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>E</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>R</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>&lt;</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div><div class="tile">
                             <div class="tile-inner">
                                 <div class="face front"><span>&gt;</span></div>
-                                <div class="face back"><p>This is a test</p></div>
+                                <div class="face back"></div>
                             </div>
                         </div>
 
@@ -131,19 +135,11 @@
                 </div>
             </div>
 
-            <div id="section2" class="section work light-bg">
-                <p>This is a work slide</p>
-                <p>This is a work slide</p>
-                <p>This is a work slide</p>
-                <p>This is a work slide</p>
-                <p>This is a work slide</p>
+            <div id="work" class="section work light-bg">
+
             </div>
 
-            <div id="section3" class="section work light-bg">Some work</div>
-
-            <div id="section4" class="section work light-bg">Some work</div>
-
-            <div id="section5" class="section about dark-bg">
+            <div id="about" class="section about light-bg">
                 <div class="container">
                     <div class="about-block hello">
                         <img class="smile" src="../assets/img/smile.png" />
@@ -166,7 +162,9 @@
                 </div>
             </div>
 
-            <div id="section6" class="section contact dark-bg">Contact</div>
+            <div id="contact" class="section contact light-bg">
+                <p>Contact</p>
+            </div>
 
         </div>
 
@@ -178,15 +176,17 @@
 
     <script src="../dist/main.js"></script>
 
-    <script type="text/javascript">
-        const myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#c6a437', 'whitesmoke', 'whitesmoke', 'whitesmoke', '#c6a437', '#333333'],
-            scrollingSpeed: 600,
-            fitToSection: true,
-            //normalScrollElements: '#section3',
-            navigation: true
-        });
-    </script>
+    <!--<script type="text/javascript">-->
+        <!--const myFullpage = new fullpage('#fullpage', {-->
+            <!--sectionsColor: ['#c6a437', '#eee', '#eee', '#eee'],-->
+            <!--anchors: ['top', 'work', 'about', 'contact'],-->
+            <!--menu: '#menu-wrapper',-->
+            <!--scrollingSpeed: 600,-->
+            <!--fitToSection: true,-->
+            <!--navigation: true,-->
+            <!--lockAnchors: true,-->
+        <!--});-->
+    <!--</script>-->
 
     <script src="../assets/js/custom.js" type="text/javascript"></script>
 
