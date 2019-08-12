@@ -562,5 +562,22 @@ p {
       color: #eee; }
     #work .work-container .portfolio-item a:hover .text:after {
       left: 0; }
+#work .work-container .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 101; }
+  #work .work-container .modal.visible {
+    display: block; }
+  #work .work-container .modal.hidden {
+    display: none; }
+  #work .work-container .modal .modal-content {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
