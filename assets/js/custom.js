@@ -77,7 +77,7 @@ $(document).ready(function() {
         $(document.body).css("overflow", "hidden");
     });
 
-    $('.modal-content button').on("click", function() {
+    $('.modal-content .close-btn').on("click", function() {
         $(document.body).css("overflow", "auto");
     });
 });

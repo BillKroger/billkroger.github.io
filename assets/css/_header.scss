@@ -1,26 +1,19 @@
 .bk-header {
 	position: fixed;
-	width: 100%;
-	height: 100px;
+	width: 110px;
+	height: 100vh;
 	z-index: 100;
 	transition: all 0.3s ease;
-	&.active {
-		height: 65px;
-		background: #c6a437;
-		.logo-home, .burger-menu {
-			top: 12.5px;
-			width: 40px;
-			height: 40px;
-		}
-		.burger-menu .lines .line {
-			width: 40px;
-		}
-	}
+	background-color: #222;
+	//background-image: url('../../assets/img/bg-test.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
 	.logo-home {
-		width: 40px;
-		height: 40px;
-		//background-image: url('../img/bk-logo-new-white-on-gold.png');
-		background-image: url('../img/gold-on-whitesmoke.png');
+		width: 60px;
+		height: 60px;
+		background-image: url('../img/bk-logo-new-white-on-gold.png');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -28,13 +21,7 @@
 		position: absolute;
 		z-index: 101;
 		top: 20px;
-		left: 20px;
-		
-		@media (min-width: 769px) {
-			width: 60px;
-			height: 60px;
-			left: 60px;
-		}
+		left: 25px;
 		
 		&.open {
 			display: none;
@@ -42,20 +29,15 @@
 	}
 	
 	.burger-menu {
-		//padding-left: 1em;
 		position: fixed;
 		z-index: 101;
-		top: 20px;
-		right: 20px;
+		top: 50%;
+		@include transform(translateY(-50%));
+		left: 35px;
 		width: 40px;
 		height: 40px;
 		transition: all 0.3s ease;
 		cursor: pointer;
-		@media (min-width: 769px) {
-			height: 60px;
-			width: 50px;
-			right: 60px;
-		}
 		
 		.lines {
 			position: absolute;
@@ -66,18 +48,14 @@
 				height: 2px;
 				width: 40px;
 				margin: 0 auto 8px;
-				background-color: $accent-light;
+				background-color: #c6a437;
 				transition: all .4s ease;
-				
-				@media only screen and (min-width: 769px) {
-					width: 50px;
-				}
 				
 				&:last-child {
 					margin-bottom: 0;
 				}
 				&.active {
-					background-color: $accent-light;
+					background-color: $color-light;
 					&.top {
 						-webkit-transform: translateY(12px) rotateZ(45deg);
 						-ms-transform: translateY(12px) rotateZ(45deg);
@@ -99,6 +77,19 @@
 		
 	}
 	
+	&.active {
+		width: 75px;
+		background: #222;
+		box-shadow: 1px 0 2px 1px rgba(0,0,0,0.25);
+		.logo-home, .burger-menu {
+			width: 40px;
+			height: 40px;
+			left: 17.5px;
+		}
+		.burger-menu .lines .line {
+			width: 40px;
+		}
+	}
 	
 }
 
@@ -208,12 +199,12 @@
 //		}
 //		.burger-menu {
 //			.line {
-//				background-color: $accent-light;
+//				background-color: $color-light;
 //			}
 //		}
 //		#menu-wrapper {
 //			.link {
-//				color: $accent-light;
+//				color: $color-light;
 //			}
 //		}
 //

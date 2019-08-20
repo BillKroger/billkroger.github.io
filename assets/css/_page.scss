@@ -1,6 +1,6 @@
 /* Temporary landing page while under construction */
 .temp-landing {
-	background: #c6a437;
+	background: $color-gold;
 }
 
 .wrap {
@@ -27,7 +27,7 @@
 				}
 			}
 			p {
-				color: whitesmoke;
+				color: $color-light;
 				font-size: 24px;
 				margin: 0;
 			}
@@ -53,7 +53,7 @@
 							opacity: 0.7;
 						}
 						i {
-							color: whitesmoke;
+							color: $color-light;
 							font-size: 40px;
 							
 						}
