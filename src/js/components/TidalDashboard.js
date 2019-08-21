@@ -6,12 +6,14 @@ class TidalDashboard extends Component {
     render() {
         return (
             <div className="case-study tidal-dashboard">
+
                 <div className="header">
                     <div className="center">
                         <h1>CMS Development</h1>
                         <img src="../assets/img/work/tidal-dashboard/tidal-labs-wh.png" />
                     </div>
                 </div>
+
                 <div className="main">
 
                     <div className="meta cs-block">
@@ -34,20 +36,6 @@ class TidalDashboard extends Component {
                             <p>2016 - 2019</p>
                         </div>
                     </div>
-
-                    {/*<div className="intro">*/}
-                        {/*<div className="left">*/}
-                            {/*<h1>CMS Development</h1>*/}
-                            {/*<h3><em>Tidal Labs, Inc.</em></h3>*/}
-                        {/*</div>*/}
-                        {/*<div className="right">*/}
-                            {/*<ul>*/}
-                                {/*<li><strong>Role:</strong><span>Full-Stack Software Engineer</span></li>*/}
-                                {/*<li><strong>Context:</strong><span>Product Development</span></li>*/}
-                                {/*<li><strong>Period:</strong><span>2016 - 2019</span></li>*/}
-                            {/*</ul>*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
 
                     <div className="content">
                         <div className="job-desc cs-block">

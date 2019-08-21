@@ -555,6 +555,27 @@
 				.header {
 					background-image: url('../../assets/img/work/tidal-styleguide/styleguide-bg-test.png');
 				}
+				
+				.main .content .job-desc .right .device-screens .device-screen{
+					&.phone {
+						left: 35%;
+					}
+					&.tablet {
+						top: 10%;
+						left: 50%;
+					}
+					&.desktop {
+						left: 40%;
+					}
+				}
+				
+				.main .content .screens {
+					background: #222;
+					.cs-block .single-screen strong {
+						color: $color-light;
+					}
+				}
+				
 			}
 		}
 		

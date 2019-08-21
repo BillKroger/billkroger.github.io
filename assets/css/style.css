@@ -854,6 +854,17 @@ p {
       background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
     .work-container .modal .case-study.tidal-styleguide .header {
       background-image: url("../../assets/img/work/tidal-styleguide/styleguide-bg-test.png"); }
+    .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.phone {
+      left: 35%; }
+    .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.tablet {
+      top: 10%;
+      left: 50%; }
+    .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.desktop {
+      left: 40%; }
+    .work-container .modal .case-study.tidal-styleguide .main .content .screens {
+      background: #222; }
+      .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
+        color: whitesmoke; }
   .work-container .modal .modal-content {
     position: relative;
     background: whitesmoke;
