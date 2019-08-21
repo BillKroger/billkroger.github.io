@@ -22,6 +22,7 @@ class TidalStyleguide extends Component {
                                 <strong>Role:</strong>
                             </div>
                             <p>Front-End Developer</p>
+                            <p>SCSS Architect</p>
                         </div>
                         <div className="meta-col">
                             <div className="meta-col-header">
