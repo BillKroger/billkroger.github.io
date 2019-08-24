@@ -303,6 +303,25 @@
 					}
 				}
 				
+				.site-link {
+					text-decoration: none;
+					display: block;
+					transition: all 0.3s;
+					color: $color-light;
+					&:hover {
+						color: $color-gold;
+					}
+					span {
+						margin-right: 10px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					i {
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+				
 				//.intro {
 				//	text-align: center;
 				//	font-family: 'Gilroy W05 Light', Helvetica, Arial, sans-serif;
@@ -385,7 +404,10 @@
 									display: block;
 								}
 								img {
-									box-shadow: 2px 10px 16px 0px rgba(0, 0, 0, 0.18);
+									box-shadow: 2px 10px 16px 0 rgba(0, 0, 0, 0.18);
+									&.no-shadow {
+										box-shadow: none;
+									}
 								}
 								
 								&.nav {
@@ -539,6 +561,36 @@
 								}
 							}
 						}
+						
+						//&.live-sites {
+						//	ul {
+						//		li {
+						//			width: auto;
+						//			height: auto;
+						//			a {
+						//				text-decoration: none;
+						//				color: $color-light;
+						//				transition: all 0.3s ease;
+						//				&:hover {
+						//					color: $color-gold;
+						//				}
+						//				.fa {
+						//					display: inline-block;
+						//					vertical-align: middle;
+						//					margin-right: 5px;
+						//					font-size: 2rem;
+						//				}
+						//				span {
+						//					display: inline-block;
+						//					vertical-align: middle;
+						//					font-size: 1.35rem;
+						//					font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif;
+						//					text-transform: uppercase;
+						//				}
+						//			}
+						//		}
+						//	}
+						//}
 					}
 					
 				}
@@ -576,6 +628,12 @@
 					}
 				}
 				
+			}
+			
+			&.tidal-marketing {
+				.header {
+					background-image: url('../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg');
+				}
 			}
 		}
 		

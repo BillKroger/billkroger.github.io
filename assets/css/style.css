@@ -277,6 +277,55 @@ p {
             transition: 0.4s transform;
             transition-timing-function: ease-out; }
 
+/* Temporary landing page while under construction */
+.temp-landing {
+  background: #c6a437; }
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: table; }
+  .wrap .content {
+    display: table-cell;
+    vertical-align: middle; }
+    .wrap .content .center {
+      margin-bottom: 50px;
+      text-align: center; }
+      .wrap .content .center img {
+        max-width: none;
+        margin-bottom: 20px; }
+        @media only screen and (max-width: 768px) {
+          .wrap .content .center img {
+            max-width: 35vh; } }
+      .wrap .content .center p {
+        color: whitesmoke;
+        font-size: 24px;
+        margin: 0; }
+    .wrap .content .footer {
+      text-align: center;
+      position: relative; }
+      .wrap .content .footer ul {
+        padding: 0;
+        margin: 0; }
+        .wrap .content .footer ul li {
+          display: inline-block;
+          list-style: none;
+          margin-right: 50px; }
+          .wrap .content .footer ul li:last-child {
+            margin-right: 0; }
+          .wrap .content .footer ul li a {
+            display: inline;
+            transition: all 0.3s; }
+            .wrap .content .footer ul li a:hover {
+              opacity: 0.7; }
+            .wrap .content .footer ul li a i {
+              color: whitesmoke;
+              font-size: 40px; }
+
+#fullpage {
+  position: relative; }
+
 .section {
   color: #c6a437;
   height: 100vh;
@@ -718,6 +767,20 @@ p {
           display: block;
           text-transform: uppercase;
           letter-spacing: 2px; }
+      .work-container .modal .case-study .main .site-link {
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s;
+        color: whitesmoke; }
+        .work-container .modal .case-study .main .site-link:hover {
+          color: #c6a437; }
+        .work-container .modal .case-study .main .site-link span {
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle; }
+        .work-container .modal .case-study .main .site-link i {
+          display: inline-block;
+          vertical-align: middle; }
       .work-container .modal .case-study .main .content .mockup-full-pg {
         width: 100%;
         background-size: cover;
@@ -744,7 +807,9 @@ p {
             margin-bottom: 20px;
             display: block; }
           .work-container .modal .case-study .main .content .screens .cs-block .single-screen img {
-            box-shadow: 2px 10px 16px 0px rgba(0, 0, 0, 0.18); }
+            box-shadow: 2px 10px 16px 0 rgba(0, 0, 0, 0.18); }
+            .work-container .modal .case-study .main .content .screens .cs-block .single-screen img.no-shadow {
+              box-shadow: none; }
           .work-container .modal .case-study .main .content .screens .cs-block .single-screen.nav {
             position: relative; }
             .work-container .modal .case-study .main .content .screens .cs-block .single-screen.nav img.dropdowns {
@@ -865,6 +930,8 @@ p {
       background: #222; }
       .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
         color: whitesmoke; }
+    .work-container .modal .case-study.tidal-marketing .header {
+      background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
   .work-container .modal .modal-content {
     position: relative;
     background: whitesmoke;

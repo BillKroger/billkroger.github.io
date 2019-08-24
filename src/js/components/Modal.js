@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 /* Import views */
 import TidalDashboard from './TidalDashboard';
 import TidalStyleguide from './TidalStyleguide';
+import TidalMarketing from "./TidalMarketing";
 
 class Modal extends Component {
 
@@ -14,6 +15,9 @@ class Modal extends Component {
                 break;
             case 'tidal-styleguide':
                 return <TidalStyleguide />;
+                break;
+            case 'tidal-marketing':
+                return <TidalMarketing />;
                 break;
         }
     }
