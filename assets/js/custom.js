@@ -35,12 +35,6 @@
         }
     };
 
-    // if (document.getElementById('modal-window').classList.contains('visible')) {
-    //     document.body.style.overflow = "hidden";
-    // } else {
-    //     document.body.style.overflow = "auto";
-    // }
-
     // close menu when a nav link is clicked
     const links = document.getElementsByClassName('menu-link');
     for (let link of links) {

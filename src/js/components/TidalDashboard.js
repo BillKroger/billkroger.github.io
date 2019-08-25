@@ -95,7 +95,7 @@ class TidalDashboard extends Component {
                         <div className="mockup-full-pg cs-block" style={{backgroundImage: 'url(../assets/img/work/tidal-dashboard/mockup-imac-gold-trans.png)'}}></div>
 
                         <div className="screens">
-                            <img src="../assets/img/work/tidal-dashboard/mobile-devices-mockup-manage.jpg" />
+                            <img src="../assets/img/work/tidal-dashboard/mobile-devices-mockup-manage-2.jpg" />
                             {/*<img src="../assets/img/work/tidal-dashboard/mockup-mobile-devices.jpg" />*/}
                             <div className="cs-block">
                                 <div className="single-screen">

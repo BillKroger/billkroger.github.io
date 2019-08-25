@@ -45,12 +45,12 @@ class TidalStyleguide extends Component {
 
                         <div className="job-desc cs-block">
                             <div className="left">
-                                <p>As the influencer marketing space evolves and competition continues to grow at an abnormally fast rate, it is necessary to stay in line with what brands need from the software they use. Being one of the first platforms to exist in this industry, Tidal Labs has always done a good job with this. Every 6 - 12 months the company reviews the content of its marketing websites -- which often results in a major design update.</p>
+                                <p>As the influencer marketing space evolves and competition continues to grow at an abnormally fast rate, it is necessary to stay in line with what brands need from the software they use. Being one of the first platforms to exist in this industry, Tidal Labs has always done a good job with this. Every 6 to 12 months the company reviews the content of its marketing websites, which often results in a major design update.</p>
                                 <p>Since my first day at Tidal Labs, I have been responsible for developing and maintaining all of these web properties. Although the initial compositions are created by the design team, I often assist with the web design process as well.</p>
                             </div>
                             <div className="right">
                                 <div className="device-screens">
-                                    <img className="device-screen" src="https://via.placeholder.com/800x600?text=Mockups+Needed" />
+                                    <div className="device-screen tidal-marketing"></div>
                                 </div>
                             </div>
                         </div>
