@@ -40,17 +40,18 @@ export const portfolioWorks = [
     //     image: '../../../billkroger.github.io/assets/img/work/dw1.jpg',
     // },
     {
+        view_name: 'vssl-calc',
+        job_name: 'Custom JS Widgets',
+        client_name: 'VSSL Agency',
+        logo: '../../../billkroger.github.io/assets/img/work/vssl-logo-dark.png',
+        image: '../../../billkroger.github.io/assets/img/work/vssl-stripe.jpg',
+    },
+    {
         view_name: 'concern',
         job_name: 'Email development',
         client_name: 'Concern Worldwide',
         logo: '../../../billkroger.github.io/assets/img/work/concern-logo.svg',
         image: '../../../billkroger.github.io/assets/img/work/concern-test.jpg',
-    },
-    {
-        view_name: 'vssl-calc',
-        job_name: 'Custom calculators',
-        client_name: 'VSSL Agency',
-        logo: '../../../billkroger.github.io/assets/img/work/vssl-logo-dark.png',
     },
 ];
 
@@ -108,7 +109,7 @@ class WorkContainer extends Component {
             <div className="section-inner work-container">
                 <div className="section-header">
                     {/*<span>[ 01 ]</span>*/}
-                    <h1>Work.</h1>
+                    <h1>My work.</h1>
                 </div>
 
                 {this.renderLinks()}

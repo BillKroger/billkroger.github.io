@@ -1,27 +1,30 @@
+//html, body {
+//	background: hsla(260,40%,5%,1);
+//}
+
 .section {
 	color: $color-gold;
 	height: 100vh;
 	width: 100%;
 	display: table;
+	padding: 0 0 100px 75px;
 	.section-inner {
 		display: table-cell;
 		vertical-align: middle;
 		width: 100%;
-		
-		.section-header {
-			padding: 0 60px 100px;
-			text-align: center;
-			span {
-				display: inline-block;
-				font-size: 1.5rem;
-			}
-			h1 {
-				display: inline-block;
-				font-size: 6rem;
-				line-height: 5.5rem;
-				margin: 25px 0;
-				font-family: 'Gilroy W05 ExtraBold', sans-serif;
-			}
+	}
+	.section-header {
+		padding: 100px 60px 50px;
+		text-align: center;
+		h1 {
+			display: inline-block;
+			font-size: 3rem;
+			line-height: 2.5rem;
+			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+			font-weight: 700;
+			margin: 0;
+			border-bottom: 6px solid #c6a437;
+			padding-bottom: 7px;
 		}
 	}
 	.container {
@@ -32,11 +35,71 @@
 	
 	&.intro {
 		//background-image: url('../../assets/img/bg-test.jpg');
-		background-color: $color-light;
+		background-color: #222222;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		position: relative;
+		
+		.container {
+			height: 100%;
+			max-width: none;
+			
+			//.gradient {
+			//	width: 100%;
+			//	height: 100%;
+			//	background-image: radial-gradient(at 300px 300px, rgba(198,164,55,.6) 0, #222222 80%);
+			//}
+			//
+			//#particles-js {
+			//	height: 100vh;
+			//}
+			
+			.top-canvas {
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100vh;
+					background-color: rgba(34,34,34,0.75);
+				}
+				
+				.top-text {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					/* width: 100%; */
+					transform: translate(-50%, -50%);
+					z-index: 100;
+					color: whitesmoke;
+					font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+				}
+				
+				.top-heading {
+					text-transform: uppercase;
+					font-weight: 200;
+					letter-spacing: 1px;
+					font-size: 6vw;
+					line-height: 1;
+				}
+				
+				.top-subheading {
+					font-size: 1.5vw;
+					font-weight: 100;
+					/* font-style: italic; */
+					text-align: left;
+					margin: 10px 0;
+					padding-left: 8px;
+				}
+				
+				canvas {
+					display: inline-block;
+				}
+			}
+			
+		}
 		
 		h1 {
 			font-family: 'Bebas Neue W01 Regular', sans-serif;
@@ -153,6 +216,8 @@
 	&.about {
 		display: table;
 		width: 100%;
+		padding-top: 100px;
+		
 		.container {
 			display: table-cell;
 			vertical-align: middle;
@@ -168,8 +233,7 @@
 			font-family: 'Montserrat', sans-serif;
 			font-size: 2rem;
 			font-weight: 500;
-			//color: $color-light;
-			color: #333;
+			color: #222;
 			@media only screen and (min-width: 769px) {
 				font-size: 3rem;
 			}
@@ -179,7 +243,7 @@
 			display: inline-block;
 			position: relative;
 			vertical-align: bottom;
-			margin-bottom: 40px;
+			margin-bottom: 25px;
 			max-width: 90%;
 			@media only screen and (min-width: 769px) {
 				max-width: none;
@@ -217,13 +281,14 @@
 				
 				img.smile {
 					display: block;
-					max-width: 200px;
+					max-width: 135px;
 					margin-right: 15px;
 				}
 				
 			}
 			
 			&.name {
+				margin-right: 10px;
 				h1 {
 					margin: 0;
 					span {
@@ -235,9 +300,10 @@
 			}
 			
 			&.and {
-				margin-right: 10px;
+				//margin-right: 10px;
+				margin-bottom: 63px;
 				h1 {
-					margin: 0 0 43px;
+					margin: 0;
 				}
 			}
 			
@@ -254,6 +320,52 @@
 					margin: 0 15px;
 				}
 			}
+			
+			&.personal-info {
+				max-width: 75vw;
+				h1 {
+					line-height: 4rem;
+					margin: 0;
+				}
+				img.skateboard {
+					//display: block;
+					max-width: 120px;
+					margin-right: 15px;
+					position: relative;
+					top: 10px;
+				}
+			}
 		}
+	}
+	
+	&.contact {
+	
+		h4 {
+			font-size: 1.5rem;
+			margin: 25px 0 75px;
+		}
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				margin-right: 50px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					font-size: 4rem;
+					text-decoration: none;
+					color: #222;
+					transition: all 0.2s;
+					&:hover {
+						color: #c6a437;
+					}
+				}
+			}
+		}
+	
 	}
 }

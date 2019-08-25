@@ -84,18 +84,16 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   background-color: #f5f5f5; }
-  body #content {
-    padding-left: 70px; }
-    body #content:after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: #000;
-      opacity: 0;
-      visibility: hidden; }
+  body #content:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0;
+    visibility: hidden; }
   body.nav-open {
     overflow: hidden; }
     body.nav-open #header {
@@ -147,7 +145,7 @@ p {
   height: 100vh;
   z-index: 100;
   transition: all 0.3s ease;
-  background-color: #222;
+  background-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -157,7 +155,7 @@ p {
     background-image: url("../img/bk-logo-new-white-on-gold.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transition: all 0.3s ease;
     position: absolute;
     z-index: 101;
@@ -205,7 +203,7 @@ p {
   .bk-header.active {
     width: 75px;
     background: #222;
-    box-shadow: 1px 0 2px 1px rgba(0, 0, 0, 0.25); }
+    box-shadow: 1px 0 2px 1px rgba(34, 34, 34, 0.25); }
     .bk-header.active .logo-home, .bk-header.active .burger-menu {
       width: 40px;
       height: 40px;
@@ -330,33 +328,69 @@ p {
   color: #c6a437;
   height: 100vh;
   width: 100%;
-  display: table; }
+  display: table;
+  padding: 0 0 100px 75px; }
   .section .section-inner {
     display: table-cell;
     vertical-align: middle;
     width: 100%; }
-    .section .section-inner .section-header {
-      padding: 0 60px 100px;
-      text-align: center; }
-      .section .section-inner .section-header span {
-        display: inline-block;
-        font-size: 1.5rem; }
-      .section .section-inner .section-header h1 {
-        display: inline-block;
-        font-size: 6rem;
-        line-height: 5.5rem;
-        margin: 25px 0;
-        font-family: 'Gilroy W05 ExtraBold', sans-serif; }
+  .section .section-header {
+    padding: 100px 60px 50px;
+    text-align: center; }
+    .section .section-header h1 {
+      display: inline-block;
+      font-size: 3rem;
+      line-height: 2.5rem;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      margin: 0;
+      border-bottom: 6px solid #c6a437;
+      padding-bottom: 7px; }
   .section .container {
     text-align: center;
     max-width: 900px;
     margin: 0 auto; }
   .section.intro {
-    background-color: whitesmoke;
+    background-color: #222222;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative; }
+    .section.intro .container {
+      height: 100%;
+      max-width: none; }
+      .section.intro .container .top-canvas:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(34, 34, 34, 0.75); }
+      .section.intro .container .top-canvas .top-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* width: 100%; */
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        color: whitesmoke;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
+      .section.intro .container .top-canvas .top-heading {
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 6vw;
+        line-height: 1; }
+      .section.intro .container .top-canvas .top-subheading {
+        font-size: 1.5vw;
+        font-weight: 100;
+        /* font-style: italic; */
+        text-align: left;
+        margin: 10px 0;
+        padding-left: 8px; }
+      .section.intro .container .top-canvas canvas {
+        display: inline-block; }
     .section.intro h1 {
       font-family: 'Bebas Neue W01 Regular', sans-serif;
       font-size: 10rem;
@@ -448,7 +482,8 @@ p {
           transform: rotateY(540deg); }
   .section.about {
     display: table;
-    width: 100%; }
+    width: 100%;
+    padding-top: 100px; }
     .section.about .container {
       display: table-cell;
       vertical-align: middle; }
@@ -460,7 +495,7 @@ p {
       font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
       font-weight: 500;
-      color: #333; }
+      color: #222; }
       @media only screen and (min-width: 769px) {
         .section.about h1 {
           font-size: 3rem; } }
@@ -468,7 +503,7 @@ p {
       display: inline-block;
       position: relative;
       vertical-align: bottom;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
       max-width: 90%; }
       @media only screen and (min-width: 769px) {
         .section.about .about-block {
@@ -498,18 +533,20 @@ p {
           font-style: normal; }
         .section.about .about-block.hello img.smile {
           display: block;
-          max-width: 200px;
+          max-width: 135px;
           margin-right: 15px; }
-      .section.about .about-block.name h1 {
-        margin: 0; }
-        .section.about .about-block.name h1 span {
-          text-decoration: line-through;
-          margin-right: 10px;
-          opacity: 0.7; }
-      .section.about .about-block.and {
+      .section.about .about-block.name {
         margin-right: 10px; }
+        .section.about .about-block.name h1 {
+          margin: 0; }
+          .section.about .about-block.name h1 span {
+            text-decoration: line-through;
+            margin-right: 10px;
+            opacity: 0.7; }
+      .section.about .about-block.and {
+        margin-bottom: 63px; }
         .section.about .about-block.and h1 {
-          margin: 0 0 43px; }
+          margin: 0; }
       .section.about .about-block.what-i-do h1, .section.about .about-block.what-i-do img {
         display: inline-block;
         vertical-align: middle; }
@@ -518,6 +555,35 @@ p {
       .section.about .about-block.what-i-do img.www {
         max-width: 50px;
         margin: 0 15px; }
+      .section.about .about-block.personal-info {
+        max-width: 75vw; }
+        .section.about .about-block.personal-info h1 {
+          line-height: 4rem;
+          margin: 0; }
+        .section.about .about-block.personal-info img.skateboard {
+          max-width: 120px;
+          margin-right: 15px;
+          position: relative;
+          top: 10px; }
+  .section.contact h4 {
+    font-size: 1.5rem;
+    margin: 25px 0 75px; }
+  .section.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .section.contact ul li {
+      display: inline-block;
+      margin-right: 50px; }
+      .section.contact ul li:last-child {
+        margin-right: 0; }
+      .section.contact ul li a {
+        font-size: 4rem;
+        text-decoration: none;
+        color: #222;
+        transition: all 0.2s; }
+        .section.contact ul li a:hover {
+          color: #c6a437; }
 
 @-webkit-keyframes screens {
   0% {
@@ -817,7 +883,7 @@ p {
         margin: 200px 0;
         padding: 100px 0;
         width: 100%;
-        background-color: #eee; }
+        color: whitesmoke; }
         .work-container .modal .case-study .main .content .screens img {
           max-width: 100%;
           margin: 0 auto; }
@@ -826,11 +892,13 @@ p {
           margin-bottom: 150px; }
           .work-container .modal .case-study .main .content .screens .cs-block .single-screen strong {
             text-transform: uppercase;
-            font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif;
-            font-size: 1.1rem;
-            color: #333333;
+            font-size: 1rem;
+            color: whitesmoke;
             margin-bottom: 20px;
-            display: block; }
+            display: block;
+            letter-spacing: 1px;
+            font-family: 'Lato', Helvetica, Arial, sans-serif;
+            font-weight: 600; }
           .work-container .modal .case-study .main .content .screens .cs-block .single-screen img {
             box-shadow: 2px 10px 16px 0 rgba(0, 0, 0, 0.18); }
             .work-container .modal .case-study .main .content .screens .cs-block .single-screen img.no-shadow {
@@ -985,6 +1053,22 @@ p {
 
 #work {
   font-family: 'Gilroy W05 Light', sans-serif;
-  padding: 100px 0; }
+  padding: 0 0 100px 75px; }
+
+footer {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: #222;
+  padding: 20px 0 20px 75px; }
+  footer p {
+    margin-bottom: 1em;
+    color: whitesmoke;
+    font-size: 0.75rem; }
+    footer p a {
+      color: whitesmoke;
+      transition: all 0.2s; }
+      footer p a:hover {
+        color: #c6a437; }
 
 /*# sourceMappingURL=style.css.map */

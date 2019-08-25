@@ -4,7 +4,8 @@
 	height: 100vh;
 	z-index: 100;
 	transition: all 0.3s ease;
-	background-color: #222;
+	background-color: transparent;
+	//background-color: #222;
 	//background-image: url('../../assets/img/bg-test.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -16,7 +17,7 @@
 		background-image: url('../img/bk-logo-new-white-on-gold.png');
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 		transition: all 0.3s ease;
 		position: absolute;
 		z-index: 101;
@@ -80,7 +81,7 @@
 	&.active {
 		width: 75px;
 		background: #222;
-		box-shadow: 1px 0 2px 1px rgba(0,0,0,0.25);
+		box-shadow: 1px 0 2px 1px rgba(34,34,34,0.25);
 		.logo-home, .burger-menu {
 			width: 40px;
 			height: 40px;

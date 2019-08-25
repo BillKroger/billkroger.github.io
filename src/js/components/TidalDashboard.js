@@ -134,7 +134,7 @@ class TidalDashboard extends Component {
                             </div>
                         </div>
 
-                        <div className="mockup-full-pg cs-block" style={{backgroundImage: 'url(../assets/img/work/tidal-dashboard/cont-fullscreen-mockup.png)'}}></div>
+                        <div className="mockup-full-pg cs-block" style={{backgroundImage: 'url(../assets/img/work/tidal-dashboard/creator-exchange-laptop.png)'}}></div>
 
                         <div className="screens">
                             <div className="cs-block">

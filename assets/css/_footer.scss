@@ -1,0 +1,19 @@
+footer {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background: #222;
+	padding: 20px 0 20px 75px;
+	p {
+		margin-bottom: 1em;
+		color: whitesmoke;
+		font-size: 0.75rem;
+		a {
+			color: $color-light;
+			transition: all 0.2s;
+			&:hover {
+				color: $color-gold;
+			}
+		}
+	}
+}
