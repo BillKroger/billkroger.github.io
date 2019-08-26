@@ -108,8 +108,10 @@ class WorkContainer extends Component {
         return (
             <div className="section-inner work-container">
                 <div className="section-header">
-                    {/*<span>[ 01 ]</span>*/}
-                    <h1>My work.</h1>
+                    <div className="header-text">
+                        <span className="num">02</span>
+                        <h1>work.</h1>
+                    </div>
                 </div>
 
                 {this.renderLinks()}

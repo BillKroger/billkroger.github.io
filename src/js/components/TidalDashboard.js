@@ -98,10 +98,10 @@ class TidalDashboard extends Component {
                             <img src="../assets/img/work/tidal-dashboard/mobile-devices-mockup-manage-2.jpg" />
                             {/*<img src="../assets/img/work/tidal-dashboard/mockup-mobile-devices.jpg" />*/}
                             <div className="cs-block">
-                                <div className="single-screen">
-                                    <strong>Users table</strong>
-                                    <img src="../assets/img/work/tidal-dashboard/users-table-2.png" />
-                                </div>
+                                {/*<div className="single-screen">*/}
+                                    {/*<strong>Users table</strong>*/}
+                                    {/*<img src="../assets/img/work/tidal-dashboard/users-table-2.png" />*/}
+                                {/*</div>*/}
                                 <div className="single-screen">
                                     <strong>User detail view</strong>
                                     <img src="../assets/img/work/tidal-dashboard/user-detail-view.png" />

@@ -19,25 +19,36 @@
 		width: 100%;
 		position: relative;
 		overflow: hidden;
+		height: 150px;
+		@media only screen and (min-width: 769px) {
+			height: auto;
+		}
 		a {
 			width: 100%;
 			height: 100%;
 			display: inline-block;
-			padding: 25px 0 25px 40px;
+			//padding: 25px 17.5px 25px 17.5px;
 			cursor: pointer;
+			@media only screen and (min-width: 769px) {
+				padding: 25px 0 25px 40px;
+			}
 			.bg-image {
 				width: 100%;
 				height: 100%;
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: left 30%;
-				filter: brightness(1.0) grayscale(1.0);
+				filter: brightness(0.4) grayscale(0.0);
+				@include transform(scale(1.05) rotate(0deg));
 				position: absolute;
 				top: 0;
 				left: 0;
-				@include transform(scale(1.0) rotate(0deg));
 				z-index: 1;
 				transition: all 0.7s;
+				@media only screen and (min-width: 769px) {
+					filter: brightness(1.0) grayscale(1.0);
+					@include transform(scale(1.0) rotate(0deg));
+				}
 			}
 			.logo {
 				display: inline-block;
@@ -49,55 +60,79 @@
 				margin-right: 20px;
 				border-radius: 50%;
 				box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.35);
-				opacity: 0;
-				left: 0;
+				opacity: 1.0;
 				transition: all 0.4s;
+				top: 50%;
+				left: 17.5px;
+				@include transform(translateY(-50%));
 				img {
 					max-width: 100%;
+				}
+				@media only screen and (min-width: 769px) {
+					opacity: 0;
+					top: auto;
+					left: 0;
+					@include transform(translateY(0%));
 				}
 			}
 			.text {
 				display: inline-block;
-				vertical-align: middle;
 				position: relative;
 				z-index: 2;
-				opacity: 0;
-				left: 0;
+				opacity: 1.0;
 				transition: all 0.4s;
+				left: 17.5px;
+				top: 50%;
+				@include transform(translateY(-50%));
+				@media only screen and (min-width: 769px) {
+					vertical-align: middle;
+					opacity: 0;
+					left: 0;
+					top: auto;
+					@include transform(translateY(0%));
+				}
 				span {
 					position: relative;
 					z-index: 2;
 					&.name {
 						display: block;
-						font-size: 2rem;
+						font-size: 1.5rem;
 						color: $color-light;
+						@media only screen and (min-width: 769px) {
+							font-size: 2rem;
+						}
 					}
 					&.client {
-						font-size: 1.2rem;
+						font-size: 1rem;
 						color: #eee;
+						@media only screen and (min-width: 769px) {
+							font-size: 1.2rem;
+						}
 					}
 				}
 			}
 			
 			
 			&:hover {
-				.bg-image {
-					filter: brightness(0.4) grayscale(0.0);
-					@include transform(scale(1.05) rotate(0deg));
-				}
-				.logo {
-					opacity: 1.0;
-					left: 30px;
-				}
-				.text {
-					opacity: 1.0;
-					left: 30px;
-					span {
-						&.name {
-							color: $color-light;
-						}
-						&.client {
-							color: #eee;
+				@media only screen and (min-width: 769px) {
+					.bg-image {
+						filter: brightness(0.4) grayscale(0.0);
+						@include transform(scale(1.05) rotate(0deg));
+					}
+					.logo {
+						opacity: 1.0;
+						left: 30px;
+					}
+					.text {
+						opacity: 1.0;
+						left: 30px;
+						span {
+							&.name {
+								color: $color-light;
+							}
+							&.client {
+								color: #eee;
+							}
 						}
 					}
 				}
@@ -112,7 +147,7 @@
 		overflow: auto;
 		@include transform(translate(-50%,-50%) translate3d(.001vw,-10%,0));
 		background: $color-light;
-		z-index: 101;
+		z-index: 300;
 		transition: opacity .3s .45s,width .5s cubic-bezier(.82,0,.61,.89),transform .5s cubic-bezier(.82,0,.61,.89),height .5s cubic-bezier(.82,0,.61,.89);
 		&.visible {
 			width: 100vw;
@@ -415,9 +450,14 @@
 							margin: 0 auto;
 						}
 						.cs-block {
+							padding-top: 100px;
 							.single-screen {
 								width: 100%;
 								margin-bottom: 150px;
+								padding: 0 10px;
+								@media only screen and (min-width: 769px) {
+									padding: 0 100px;
+								}
 								strong {
 									text-transform: uppercase;
 									font-size: 1rem;
@@ -461,7 +501,8 @@
 							text-align: left;
 							padding: 0 50px;
 							vertical-align: top;
-							width: 40%;
+							width: 100%;
+							
 							img {
 								max-width: 100%;
 								margin-bottom: 10px;
@@ -484,7 +525,7 @@
 							display: inline-block;
 							padding: 0 50px;
 							vertical-align: top;
-							width: 60%;
+							width: 100%;
 							-webkit-perspective: 2000px;
 							perspective: 2000px;
 							
@@ -555,6 +596,15 @@
 								
 							}
 							
+						}
+						
+						@media only screen and (min-width: 769px) {
+							.left {
+								width: 40%;
+							}
+							.right {
+								width: 60%;
+							}
 						}
 						
 						&.creator-exchange {
@@ -705,5 +755,16 @@
 
 #work {
 	font-family: 'Gilroy W05 Light', sans-serif;
-	padding: 0 0 100px 75px;
+	padding: 0;
+	margin-bottom: 40px;
+	@media only screen and (min-width: 769px) {
+		padding-left: 75px;
+		padding-bottom: 100px;
+	}
+	.section-header {
+		@media only screen and (max-width: 768px) {
+			padding-left: 17.5px;
+			padding-right: 17.5px;
+		}
+	}
 }
