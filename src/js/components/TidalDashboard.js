@@ -38,6 +38,7 @@ class TidalDashboard extends Component {
                     </div>
 
                     <div className="content">
+
                         <div className="job-desc cs-block">
                             <div className="left">
                                 <img className="content-metric" src="../assets/img/work/tidal-dashboard/content-metric.svg" />
@@ -59,7 +60,6 @@ class TidalDashboard extends Component {
                                 <strong>Used by:</strong>
                             </div>
                             <ul>
-                                {/*<li><img src="../assets/img/work/tidal-dashboard/c01.png" /></li>*/}
                                 <li><img src="../assets/img/work/tidal-dashboard/c02.png" /></li>
                                 <li><img src="../assets/img/work/tidal-dashboard/c03.png" /></li>
                                 <li><img src="../assets/img/work/tidal-dashboard/c04.png" /></li>
@@ -68,7 +68,6 @@ class TidalDashboard extends Component {
                                 <li><img src="../assets/img/work/tidal-dashboard/c07.png" /></li>
                                 <li><img src="../assets/img/work/tidal-dashboard/c08.png" /></li>
                                 <li><img src="../assets/img/work/tidal-dashboard/c09.png" /></li>
-                                {/*<li><img src="../assets/img/work/tidal-dashboard/c10.png" /></li>*/}
                                 <li><img src="../assets/img/work/tidal-dashboard/c11.png" /></li>
                             </ul>
                         </div>
@@ -92,29 +91,23 @@ class TidalDashboard extends Component {
                             </ul>
                         </div>
 
-                        <div className="mockup-full-pg cs-block" style={{backgroundImage: 'url(../assets/img/work/tidal-dashboard/mockup-imac-gold-trans.png)'}}></div>
+                        <div className="mockup-full-pg cs-block">
+                            <img src="../assets/img/work/tidal-dashboard/mockup-imac-gold-trans.png" />
+                        </div>
 
-                        <div className="screens">
-                            <img src="../assets/img/work/tidal-dashboard/mobile-devices-mockup-manage-2.jpg" />
-                            {/*<img src="../assets/img/work/tidal-dashboard/mockup-mobile-devices.jpg" />*/}
-                            <div className="cs-block">
-                                {/*<div className="single-screen">*/}
-                                    {/*<strong>Users table</strong>*/}
-                                    {/*<img src="../assets/img/work/tidal-dashboard/users-table-2.png" />*/}
-                                {/*</div>*/}
-                                <div className="single-screen">
-                                    <strong>User detail view</strong>
-                                    <img src="../assets/img/work/tidal-dashboard/user-detail-view.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Campaign stats and reporting</strong>
-                                    <img src="../assets/img/work/tidal-dashboard/campaign-stats-2.png" />
-                                </div>
-                                <div className="single-screen nav">
-                                    <strong>Navigation</strong>
-                                    <img className="dropdowns" src="../assets/img/work/tidal-dashboard/nav-v3-dropdowns-2.png" />
-                                    <img className="notifs" src="../assets/img/work/tidal-dashboard/nav-v3-notifications.png" />
-                                </div>
+                        <div className="screens cs-block">
+                            <div className="single-screen">
+                                <strong>User detail view</strong>
+                                <img src="../assets/img/work/tidal-dashboard/user-detail-view.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Campaign stats and reporting</strong>
+                                <img src="../assets/img/work/tidal-dashboard/campaign-stats-2.png" />
+                            </div>
+                            <div className="single-screen nav">
+                                <strong>Navigation</strong>
+                                <img className="dropdowns" src="../assets/img/work/tidal-dashboard/nav-v3-dropdowns-2.png" />
+                                <img className="notifs" src="../assets/img/work/tidal-dashboard/nav-v3-notifications.png" />
                             </div>
                         </div>
 
@@ -134,22 +127,18 @@ class TidalDashboard extends Component {
                             </div>
                         </div>
 
-                        <div className="mockup-full-pg cs-block" style={{backgroundImage: 'url(../assets/img/work/tidal-dashboard/creator-exchange-laptop.png)'}}></div>
+                        <div className="mockup-full-pg cs-block">
+                            <img src="../assets/img/work/tidal-dashboard/creator-exchange-laptop.png" />
+                        </div>
 
-                        <div className="screens">
-                            <div className="cs-block">
-                                <div className="single-screen">
-                                    <strong>Edit Profile UI</strong>
-                                    <img src="../assets/img/work/tidal-dashboard/contribute-edit-profile.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Dashboard Home - Social accounts</strong>
-                                    <img src="../assets/img/work/tidal-dashboard/contribute-home-desktop-socials.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Dashboard Home - Content</strong>
-                                    <img src="../assets/img/work/tidal-dashboard/contribute-home-desktop-content.png" />
-                                </div>
+                        <div className="screens cs-block">
+                            <div className="single-screen">
+                                <strong>Edit Profile UI</strong>
+                                <img src="../assets/img/work/tidal-dashboard/contribute-edit-profile.jpg" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Dashboard Home - Content</strong>
+                                <img src="../assets/img/work/tidal-dashboard/contribute-home-desktop-content.png" />
                             </div>
                         </div>
 

@@ -806,7 +806,7 @@ body.nav-open {
   -webkit-transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
   -ms-transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
   transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
-  background: whitesmoke;
+  background-color: #222;
   z-index: 300;
   transition: opacity 0.3s 0.45s, width 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), transform 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), height 0.5s cubic-bezier(0.82, 0, 0.61, 0.89); }
   .work-container .modal.visible {
@@ -929,29 +929,41 @@ body.nav-open {
           max-width: 150px; }
     .work-container .modal .case-study .main {
       width: 100%;
+      background-color: #222;
       padding: 0 0 100px; }
       .work-container .modal .case-study .main .cs-block {
         width: 100%;
         max-width: 1200px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px; }
       .work-container .modal .case-study .main .meta {
         width: 100%;
-        padding: 40px 20px 15px;
+        padding-top: 40px;
+        padding-bottom: 15px;
         display: flex;
         justify-content: space-between;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-bottom: 100px;
+        margin-bottom: 0;
         font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif; }
+        @media only screen and (min-width: 769px) {
+          .work-container .modal .case-study .main .meta {
+            margin-bottom: 100px; } }
         .work-container .modal .case-study .main .meta .meta-col {
           float: left;
-          padding: 0 15px; }
+          padding: 0; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study .main .meta .meta-col {
+              padding: 0 15px; } }
           .work-container .modal .case-study .main .meta .meta-col:nth-child(1) {
-            flex: 1 40%; }
+            flex: 1 40%;
+            padding-left: 0; }
           .work-container .modal .case-study .main .meta .meta-col:nth-child(2) {
             flex: 1 40%; }
           .work-container .modal .case-study .main .meta .meta-col:nth-child(3) {
-            flex: 1 20%; }
+            flex: 1 20%;
+            padding-right: 0; }
           .work-container .modal .case-study .main .meta .meta-col p {
             color: #f5f5f5;
             display: block;
@@ -990,31 +1002,31 @@ body.nav-open {
         .work-container .modal .case-study .main .site-link i {
           display: inline-block;
           vertical-align: middle; }
-      .work-container .modal .case-study .main .content .mockup-full-pg {
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 100vh;
-        margin-bottom: 200px; }
-      .work-container .modal .case-study .main .content .screens {
-        margin: 200px 0;
-        padding: 100px 0;
-        width: 100%;
-        color: whitesmoke; }
-        .work-container .modal .case-study .main .content .screens img {
-          max-width: 100%;
-          margin: 0 auto; }
-        .work-container .modal .case-study .main .content .screens .cs-block {
-          padding-top: 100px; }
-          .work-container .modal .case-study .main .content .screens .cs-block .single-screen {
+      .work-container .modal .case-study .main .content {
+        background-color: #222; }
+        .work-container .modal .case-study .main .content .mockup-full-pg {
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-color: #222; }
+          .work-container .modal .case-study .main .content .mockup-full-pg img {
+            max-width: 100%; }
+        .work-container .modal .case-study .main .content .screens {
+          width: 100%;
+          background-color: #222;
+          color: whitesmoke; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study .main .content .screens {
+              width: 75%; } }
+          .work-container .modal .case-study .main .content .screens img {
+            max-width: 100%;
+            margin: 0 auto; }
+          .work-container .modal .case-study .main .content .screens .single-screen {
             width: 100%;
             margin-bottom: 150px;
-            padding: 0 10px; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study .main .content .screens .cs-block .single-screen {
-                padding: 0 100px; } }
-            .work-container .modal .case-study .main .content .screens .cs-block .single-screen strong {
+            background-color: #222; }
+            .work-container .modal .case-study .main .content .screens .single-screen strong {
               text-transform: uppercase;
               font-size: 1rem;
               color: whitesmoke;
@@ -1023,27 +1035,30 @@ body.nav-open {
               letter-spacing: 1px;
               font-family: 'Lato', Helvetica, Arial, sans-serif;
               font-weight: 600; }
-            .work-container .modal .case-study .main .content .screens .cs-block .single-screen img {
+            .work-container .modal .case-study .main .content .screens .single-screen img {
               box-shadow: 2px 10px 16px 0 rgba(0, 0, 0, 0.18); }
-              .work-container .modal .case-study .main .content .screens .cs-block .single-screen img.no-shadow {
+              .work-container .modal .case-study .main .content .screens .single-screen img.no-shadow {
                 box-shadow: none; }
-            .work-container .modal .case-study .main .content .screens .cs-block .single-screen.nav {
+            .work-container .modal .case-study .main .content .screens .single-screen.nav {
               position: relative; }
-              .work-container .modal .case-study .main .content .screens .cs-block .single-screen.nav img.dropdowns {
+              .work-container .modal .case-study .main .content .screens .single-screen.nav img.dropdowns {
                 max-width: 55%; }
-              .work-container .modal .case-study .main .content .screens .cs-block .single-screen.nav img.notifs {
+              .work-container .modal .case-study .main .content .screens .single-screen.nav img.notifs {
                 position: absolute;
                 top: 20%;
                 left: 45%;
                 max-width: 55%; }
-      .work-container .modal .case-study .main .content .job-desc {
-        padding: 100px 0; }
         .work-container .modal .case-study .main .content .job-desc .left {
           display: inline-block;
           text-align: left;
-          padding: 0 50px;
+          padding: 0;
+          margin-bottom: 50px;
           vertical-align: top;
           width: 100%; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study .main .content .job-desc .left {
+              padding: 0 50px 0 0;
+              margin-bottom: 0; } }
           .work-container .modal .case-study .main .content .job-desc .left img {
             max-width: 100%;
             margin-bottom: 10px; }
@@ -1056,11 +1071,14 @@ body.nav-open {
             list-style: none; }
         .work-container .modal .case-study .main .content .job-desc .right {
           display: inline-block;
-          padding: 0 50px;
+          padding: 0;
           vertical-align: top;
           width: 100%;
           -webkit-perspective: 2000px;
           perspective: 2000px; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study .main .content .job-desc .right {
+              padding: 0 0 0 50px; } }
           .work-container .modal .case-study .main .content .job-desc .right .device-screens {
             width: 100%;
             height: 0;
@@ -1100,6 +1118,12 @@ body.nav-open {
                 left: 50%;
                 -webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
                 transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
+                  left: 45%;
+                  display: block; }
+                  @media only screen and (min-width: 1200px) {
+                    .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
+                      display: none; } }
               .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
                 width: 95%;
                 height: 300px;
@@ -1117,46 +1141,66 @@ body.nav-open {
                 -webkit-animation-direction: normal;
                 animation-direction: normal;
                 -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out; }
+                animation-timing-function: ease-in-out;
+                display: none; }
+                @media only screen and (min-width: 1200px) {
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
+                    display: block; } }
         @media only screen and (min-width: 769px) {
           .work-container .modal .case-study .main .content .job-desc .left {
             width: 40%; }
           .work-container .modal .case-study .main .content .job-desc .right {
             width: 60%; } }
         .work-container .modal .case-study .main .content .job-desc.creator-exchange {
-          padding: 200px 0; }
-      .work-container .modal .case-study .main .content .list {
-        width: 100%;
-        margin-bottom: 100px;
-        padding: 0 50px; }
-        .work-container .modal .case-study .main .content .list ul {
-          list-style: none;
-          margin: 0;
-          padding: 0; }
-          .work-container .modal .case-study .main .content .list ul li {
-            display: inline-block;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            width: 75px;
-            height: 75px; }
-            .work-container .modal .case-study .main .content .list ul li img {
+          padding-bottom: 100px; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study .main .content .job-desc.creator-exchange {
+              padding-top: 100px; } }
+        .work-container .modal .case-study .main .content .list {
+          width: 100%;
+          margin-bottom: 100px;
+          padding: 0 50px; }
+          .work-container .modal .case-study .main .content .list ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; }
+            .work-container .modal .case-study .main .content .list ul li {
+              display: inline-block;
+              margin-right: 20px;
+              margin-bottom: 20px;
+              width: 70px;
+              height: 70px; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study .main .content .list ul li {
+                  width: 75px;
+                  height: 75px; } }
+              .work-container .modal .case-study .main .content .list ul li img {
+                max-width: 100%;
+                max-height: 100%; }
+          .work-container .modal .case-study .main .content .list.tech-stack {
+            margin-bottom: 150px; }
+          .work-container .modal .case-study .main .content .list.clients ul li {
+            width: 70px;
+            height: 70px;
+            position: relative; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .content .list.clients ul li {
+                width: 100px;
+                height: 70px; } }
+            .work-container .modal .case-study .main .content .list.clients ul li img {
               max-width: 100%;
-              max-height: 100%; }
-        .work-container .modal .case-study .main .content .list.tech-stack {
-          margin-bottom: 200px; }
-        .work-container .modal .case-study .main .content .list.clients ul li {
-          width: 100px;
-          height: 70px;
-          position: relative; }
-          .work-container .modal .case-study .main .content .list.clients ul li img {
-            max-width: 100%;
-            max-height: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); }
+              max-height: 100%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
     .work-container .modal .case-study.tidal-dashboard .header {
       background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
+    .work-container .modal .case-study.tidal-dashboard .job-desc {
+      margin-bottom: 100px; }
+    .work-container .modal .case-study.tidal-dashboard .mockup-full-pg {
+      margin-bottom: 100px; }
     .work-container .modal .case-study.tidal-styleguide .header {
       background-image: url("../../assets/img/work/tidal-styleguide/styleguide-bg-test.png"); }
     .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.phone {
@@ -1166,6 +1210,8 @@ body.nav-open {
       left: 50%; }
     .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.desktop {
       left: 40%; }
+    .work-container .modal .case-study.tidal-styleguide .job-desc {
+      margin-bottom: 100px; }
     .work-container .modal .case-study.tidal-styleguide .main .content .screens {
       background: #222; }
       .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
@@ -1174,7 +1220,7 @@ body.nav-open {
       background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
   .work-container .modal .modal-content {
     position: relative;
-    background: whitesmoke;
+    background: #222;
     width: 100%;
     height: 100%;
     opacity: 0;

@@ -56,36 +56,34 @@ class TidalStyleguide extends Component {
                             </div>
                         </div>
 
-                        <div className="screens">
-                            <div className="cs-block">
-                                <div className="single-screen">
-                                    <strong>Navigation</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-nav.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Colors</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-colors.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Typography</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-type.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Atoms section: Buttons</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-atoms.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Molecules section: Messages</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-molecules.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Organisms section: Godzilla system</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-organisms.png" />
-                                </div>
-                                <div className="single-screen">
-                                    <strong>Interactive "pushout"</strong>
-                                    <img src="../assets/img/work/tidal-styleguide/tidal-v3-pushout.png" />
-                                </div>
+                        <div className="screens cs-block">
+                            <div className="single-screen">
+                                <strong>Navigation</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-nav.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Colors</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-colors.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Typography</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-type.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Atoms section: Buttons</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-atoms.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Molecules section: Messages</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-molecules.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Organisms section: Godzilla system</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-organisms.png" />
+                            </div>
+                            <div className="single-screen">
+                                <strong>Interactive "pushout"</strong>
+                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-pushout.png" />
                             </div>
                         </div>
 
