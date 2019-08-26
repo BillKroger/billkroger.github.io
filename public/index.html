@@ -39,7 +39,7 @@
 </head>
 <body>
 
-    <div id="header" class="bk-header">
+    <header id="header" class="bk-header">
         <a href="#top" id="bk-logo" class="logo-home"></a>
         <a class="burger-menu" id="menu-toggle" role="button">
             <div class="lines">
@@ -49,7 +49,7 @@
             </div>
         </a>
 
-    </div>
+    </header>
 
     <nav id="menu-wrapper">
         <ul>
@@ -69,7 +69,7 @@
 
         <div id="fullpage">
 
-            <div id="top" class="section intro dark-bg">
+            <div id="top" class="section intro">
                 <div class="container">
                     <!--<div id="particles-js"></div>-->
                     <!--<div class="gradient"></div>-->
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div id="about" class="section about light-bg">
+            <div id="about" class="section about">
                 <div class="container">
                     <!--<div class="section-header">-->
                         <!--<h1>About me.</h1>-->
@@ -179,14 +179,14 @@
 
                     <div class="about-block personal-info">
                         <h1>Besides that, you can find me at the <strong>beach</strong>, the <strong>dog park</strong>, or <img class="skateboard" src="../assets/img/skate-alt.svg" /><strong>the streets</strong> of SD.</h1>
-                        <span class="cliche-about-info">a little about yourself, but no personal interests (considered unprofessional)</span>
+                        <span class="cliche-about-info">avoid mentioning personal interests (considered highly unprofessional)</span>
                     </div>
                 </div>
             </div>
 
-            <div id="work" class="section work light-bg"></div>
+            <div id="work" class="section work"></div>
 
-            <div id="contact" class="section contact light-bg">
+            <div id="contact" class="section contact">
                 <div class="container">
                     <div class="section-header">
                         <h1>Let's talk.</h1>
@@ -214,42 +214,14 @@
         <p>Designed and coded by <a href="#">this guy</a></p>
     </footer>
 
+    <div id="active-menu-overlay"></div>
+
     <noscript>
         You need to enable JavaScript to run this app.
     </noscript>
 
     <script src="../dist/main.js"></script>
-
-    <!--<script type="text/javascript">-->
-        <!--const myFullpage = new fullpage('#fullpage', {-->
-            <!--sectionsColor: ['#c6a437', '#eee', '#eee', '#eee'],-->
-            <!--anchors: ['top', 'work', 'about', 'contact'],-->
-            <!--menu: '#menu-wrapper',-->
-            <!--scrollingSpeed: 600,-->
-            <!--fitToSection: true,-->
-            <!--navigation: true,-->
-            <!--lockAnchors: true,-->
-        <!--});-->
-    <!--</script>-->
-
     <script src="../assets/js/custom.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-//        particlesJS.load('particles-js', '../assets/js/particles.json', function() {
-//            console.log('callback - particles.js config loaded');
-//        });
-    </script>
-
-    <script type="text/javascript">
-//        const gradient = document.querySelector(".gradient");
-//
-//        function onMouseMove(event) {
-//            gradient.style.backgroundImage = 'radial-gradient(at ' + event.clientX + 'px ' + event.clientY + 'px, rgba(198,164,55,.6) 0, #222222 80%)';
-//        }
-//        document.addEventListener("mousemove", onMouseMove);
-    </script>
-
     <script src="../assets/js/noise.min.js"></script>
     <script src="../assets/js/swirl.js"></script>
 

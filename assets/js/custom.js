@@ -14,10 +14,10 @@
 
     // toggle classes for body, burger and menu
     const toggleOpenClass = () => {
-        document.getElementById('menu-wrapper').classList.toggle('open');
+        document.getElementById('active-menu-overlay').classList.toggle('active');
         document.body.classList.toggle('nav-open');
-        document.getElementById('menu-toggle').classList.toggle('open');
-        document.getElementById('bk-logo').classList.toggle('open');
+        //document.getElementById('menu-toggle').classList.toggle('open');
+        //document.getElementById('bk-logo').classList.toggle('open');
     };
 
     const menu = document.getElementById('menu-toggle');

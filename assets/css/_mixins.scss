@@ -4,3 +4,8 @@
 	-ms-transform: $property;
 	transform: $property;
 }
+
+@mixin filter($property) {
+	-webkit-filter: $property;
+	filter: $property;
+}
