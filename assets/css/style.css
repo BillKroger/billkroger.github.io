@@ -1052,114 +1052,116 @@ body.nav-open {
                 top: 20%;
                 left: 45%;
                 max-width: 55%; }
-        .work-container .modal .case-study .main .content .job-desc .left {
-          display: inline-block;
-          text-align: left;
-          padding: 0;
-          margin-bottom: 50px;
-          vertical-align: top;
-          width: 100%; }
+        .work-container .modal .case-study .main .content .job-desc {
+          margin-bottom: 100px; }
+          .work-container .modal .case-study .main .content .job-desc .left {
+            display: inline-block;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 50px;
+            vertical-align: top;
+            width: 100%; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .content .job-desc .left {
+                padding: 0 50px 0 0;
+                margin-bottom: 0; } }
+            .work-container .modal .case-study .main .content .job-desc .left img {
+              max-width: 100%;
+              margin-bottom: 10px; }
+            .work-container .modal .case-study .main .content .job-desc .left p {
+              font-size: 1.15rem;
+              letter-spacing: 1px; }
+            .work-container .modal .case-study .main .content .job-desc .left .creator-exchange-list {
+              margin: 0;
+              padding: 0;
+              list-style: none; }
+          .work-container .modal .case-study .main .content .job-desc .right {
+            display: inline-block;
+            padding: 0;
+            vertical-align: top;
+            width: 100%;
+            -webkit-perspective: 2000px;
+            perspective: 2000px; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .content .job-desc .right {
+                padding: 0 0 0 50px; } }
+            .work-container .modal .case-study .main .content .job-desc .right .device-screens {
+              width: 100%;
+              height: 0;
+              padding-bottom: 70%;
+              margin: 0;
+              position: relative;
+              text-align: center;
+              -webkit-perspective: 1000px;
+              perspective: 1000px; }
+              @media only screen and (min-width: 1024px) {
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens {
+                  -webkit-perspective: 2000px;
+                  perspective: 2000px; } }
+              .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen {
+                position: absolute;
+                -webkit-box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
+                box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
+                -webkit-transform: rotateY(-30deg) rotateX(5deg);
+                transform: rotateY(-30deg) rotateX(5deg);
+                -webkit-transform-origin: left bottom;
+                -ms-transform-origin: left bottom;
+                transform-origin: left bottom;
+                display: block;
+                border-radius: 1px; }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.phone {
+                  width: 20%;
+                  top: 40%;
+                  left: 30%;
+                  z-index: 2; }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tablet {
+                  width: 40%;
+                  top: 20%;
+                  z-index: 1; }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop {
+                  width: 95%;
+                  top: 0;
+                  left: 50%;
+                  -webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+                  transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
+                    left: 45%;
+                    display: block; }
+                    @media only screen and (min-width: 1200px) {
+                      .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
+                        display: none; } }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
+                  width: 95%;
+                  height: 300px;
+                  top: 25px;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  transition: all 0.05s linear;
+                  -webkit-animation-name: screens;
+                  animation-name: screens;
+                  -webkit-animation-duration: 14s;
+                  animation-duration: 14s;
+                  -webkit-animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+                  -webkit-animation-direction: normal;
+                  animation-direction: normal;
+                  -webkit-animation-timing-function: ease-in-out;
+                  animation-timing-function: ease-in-out;
+                  display: none; }
+                  @media only screen and (min-width: 1200px) {
+                    .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
+                      display: block; } }
           @media only screen and (min-width: 769px) {
             .work-container .modal .case-study .main .content .job-desc .left {
-              padding: 0 50px 0 0;
-              margin-bottom: 0; } }
-          .work-container .modal .case-study .main .content .job-desc .left img {
-            max-width: 100%;
-            margin-bottom: 10px; }
-          .work-container .modal .case-study .main .content .job-desc .left p {
-            font-size: 1.15rem;
-            letter-spacing: 1px; }
-          .work-container .modal .case-study .main .content .job-desc .left .creator-exchange-list {
-            margin: 0;
-            padding: 0;
-            list-style: none; }
-        .work-container .modal .case-study .main .content .job-desc .right {
-          display: inline-block;
-          padding: 0;
-          vertical-align: top;
-          width: 100%;
-          -webkit-perspective: 2000px;
-          perspective: 2000px; }
-          @media only screen and (min-width: 769px) {
+              width: 40%; }
             .work-container .modal .case-study .main .content .job-desc .right {
-              padding: 0 0 0 50px; } }
-          .work-container .modal .case-study .main .content .job-desc .right .device-screens {
-            width: 100%;
-            height: 0;
-            padding-bottom: 70%;
-            margin: 0;
-            position: relative;
-            text-align: center;
-            -webkit-perspective: 1000px;
-            perspective: 1000px; }
-            @media only screen and (min-width: 1024px) {
-              .work-container .modal .case-study .main .content .job-desc .right .device-screens {
-                -webkit-perspective: 2000px;
-                perspective: 2000px; } }
-            .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen {
-              position: absolute;
-              -webkit-box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
-              box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
-              -webkit-transform: rotateY(-30deg) rotateX(5deg);
-              transform: rotateY(-30deg) rotateX(5deg);
-              -webkit-transform-origin: left bottom;
-              -ms-transform-origin: left bottom;
-              transform-origin: left bottom;
-              display: block;
-              border-radius: 1px; }
-              .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.phone {
-                width: 20%;
-                top: 40%;
-                left: 30%;
-                z-index: 2; }
-              .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tablet {
-                width: 40%;
-                top: 20%;
-                z-index: 1; }
-              .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop {
-                width: 95%;
-                top: 0;
-                left: 50%;
-                -webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
-                transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
-                  left: 45%;
-                  display: block; }
-                  @media only screen and (min-width: 1200px) {
-                    .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
-                      display: none; } }
-              .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
-                width: 95%;
-                height: 300px;
-                top: 25px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                transition: all 0.05s linear;
-                -webkit-animation-name: screens;
-                animation-name: screens;
-                -webkit-animation-duration: 14s;
-                animation-duration: 14s;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-                -webkit-animation-direction: normal;
-                animation-direction: normal;
-                -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-                display: none; }
-                @media only screen and (min-width: 1200px) {
-                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
-                    display: block; } }
-        @media only screen and (min-width: 769px) {
-          .work-container .modal .case-study .main .content .job-desc .left {
-            width: 40%; }
-          .work-container .modal .case-study .main .content .job-desc .right {
-            width: 60%; } }
-        .work-container .modal .case-study .main .content .job-desc.creator-exchange {
-          padding-bottom: 100px; }
-          @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study .main .content .job-desc.creator-exchange {
-              padding-top: 100px; } }
+              width: 60%; } }
+          .work-container .modal .case-study .main .content .job-desc.creator-exchange {
+            padding-bottom: 100px; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .content .job-desc.creator-exchange {
+                padding-top: 100px; } }
         .work-container .modal .case-study .main .content .list {
           width: 100%;
           margin-bottom: 100px;
@@ -1201,8 +1203,6 @@ body.nav-open {
               transform: translate(-50%, -50%); }
     .work-container .modal .case-study.tidal-dashboard .header {
       background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
-    .work-container .modal .case-study.tidal-dashboard .job-desc {
-      margin-bottom: 100px; }
     .work-container .modal .case-study.tidal-dashboard .mockup-full-pg {
       margin-bottom: 100px; }
     .work-container .modal .case-study.tidal-styleguide .header {
@@ -1214,14 +1214,14 @@ body.nav-open {
       left: 50%; }
     .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.desktop {
       left: 40%; }
-    .work-container .modal .case-study.tidal-styleguide .job-desc {
-      margin-bottom: 100px; }
     .work-container .modal .case-study.tidal-styleguide .main .content .screens {
       background: #222; }
       .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
         color: whitesmoke; }
     .work-container .modal .case-study.tidal-marketing .header {
       background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
+    .work-container .modal .case-study.concern .header {
+      background-image: url("../../assets/img/work/concern/concern-header.jpg"); }
   .work-container .modal .modal-content {
     position: relative;
     background: #222;

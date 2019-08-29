@@ -50,7 +50,7 @@ export const portfolioWorks = [
         view_name: 'concern',
         job_name: 'Email development',
         client_name: 'Concern Worldwide',
-        image: '../../../billkroger.github.io/assets/img/work/stripe-concern.jpg',
+        image: '../../../billkroger.github.io/assets/img/work/stripe-concern-2.jpg',
         logo: '../../../billkroger.github.io/assets/img/work/logo-concern.svg',
     },
 ];

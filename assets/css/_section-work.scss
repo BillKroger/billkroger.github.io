@@ -453,11 +453,7 @@
 					}
 					
 					.job-desc {
-						
-						//@media only screen and (min-width: 769px) {
-						//	padding-top: 100px;
-						//	padding-bottom: 100px;
-						//}
+						margin-bottom: 100px;
 						
 						.left {
 							display: inline-block;
@@ -662,10 +658,6 @@
 					background-image: url('../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg');
 				}
 				
-				.job-desc {
-					margin-bottom: 100px;
-				}
-				
 				.mockup-full-pg {
 					margin-bottom: 100px;
 				}
@@ -689,10 +681,6 @@
 					}
 				}
 				
-				.job-desc {
-					margin-bottom: 100px;
-				}
-				
 				.main .content .screens {
 					background: #222;
 					.cs-block .single-screen strong {
@@ -705,6 +693,12 @@
 			&.tidal-marketing {
 				.header {
 					background-image: url('../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg');
+				}
+			}
+			
+			&.concern {
+				.header {
+					background-image: url('../../assets/img/work/concern/concern-header.jpg');
 				}
 			}
 		}
