@@ -16,8 +16,6 @@
     const toggleOpenClass = () => {
         document.getElementById('active-menu-overlay').classList.toggle('active');
         document.body.classList.toggle('nav-open');
-        //document.getElementById('menu-toggle').classList.toggle('open');
-        //document.getElementById('bk-logo').classList.toggle('open');
     };
 
     const menu = document.getElementById('menu-toggle');
@@ -44,6 +42,7 @@
         }
     }
 
+
     /**
      * Toggle .hover class ontouchstart for card flippers
      * */
@@ -51,7 +50,26 @@
         tile.ontouchstart = function() {
             this.classList.toggle('hover');
         }
-    })
+    });
+
+
+    /**
+     * show splash screen when clicking a portfolio item
+     */
+    const portfolioItems = document.getElementsByClassName('modal-link');
+    for (let item of portfolioItems) {
+        item.onclick = () => {
+            console.log('clicked!');
+            document.body.classList.toggle('loaded');
+            document.getElementById('loader').classList.toggle('spinning');
+            setTimeout(function(){
+                document.body.classList.toggle('loaded');
+                document.getElementById('loader').classList.toggle('spinning');
+            }, 1000);
+        }
+    }
+
+
 
 })();
 
@@ -66,6 +84,7 @@ $(document).ready(function() {
     });
 });
 
+
 $(document).ready(function() {
     $('.portfolio-item a').on("click", function() {
         $(document.body).css("overflow", "hidden");
@@ -75,4 +94,5 @@ $(document).ready(function() {
         $(document.body).css("overflow", "auto");
     });
 });
+
 

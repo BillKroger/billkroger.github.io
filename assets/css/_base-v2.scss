@@ -8,9 +8,6 @@ $color-light: whitesmoke;
 html {
 	font-size: 14px;
 	font-family: sans-serif;
-	//-ms-text-size-adjust: 100%;
-	//-webkit-text-size-adjust: 100%;
-	//text-size-adjust: 100%;
 }
 
 body {
@@ -76,4 +73,12 @@ body {
 
 p {
 	margin-bottom: 30px;
+}
+
+/* AOS styles */
+[data-aos] {
+	body[data-aos-easing="new-easing"] &,
+	&[data-aos][data-aos-easing="new-easing"] {
+		transition-timing-function: cubic-bezier(.41,.67,.62,1.34);
+	}
 }
