@@ -570,6 +570,13 @@
 											display: block;
 										}
 									}
+									
+									&.vssl {
+										&.phone {
+											top: 45%;
+											left: 25%;
+										}
+									}
 								}
 								
 							}
@@ -701,6 +708,114 @@
 					background-image: url('../../assets/img/work/concern/concern-header.jpg');
 				}
 			}
+			
+			&.vssl {
+				.header {
+					background-image: url('../../assets/img/work/vssl/vssl-header.jpg');
+				}
+				
+				//.main .content {
+				//	.job-desc {
+				//		.left, .right {
+				//			@media only screen and (min-width: 769px) {
+				//				width: 50%;
+				//			}
+				//		}
+				//	}
+				//}
+				
+				.widgets {
+					
+					.widget {
+						width: 100%;
+						background-color: #012f44;
+						position: relative;
+						
+						.widget-inner {
+							width: 100%;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							@include transform(translate(-50%, -50%));
+						}
+						
+						&.slider {
+							height: 50vh;
+							.widget-inner {
+								max-width: 768px;
+								margin: 0 auto;
+								.rangeslider {
+									.rangeslider__fill {
+										background-color: #00a093;
+									}
+									.rangeslider__handle {
+										&:focus {
+											outline: none;
+										}
+										.rangeslider__handle-label {
+											width: 140px;
+											height: 50px;
+											background: white;
+											color: #00a093;
+											display: block;
+											top: 45px;
+											left: -55px;
+											text-align: center;
+											line-height: 50px;
+											font-size: 1.35rem;
+											font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+											font-weight: bold;
+											border-radius: 3px;
+											position: absolute;
+											&:before {
+												content: '';
+												position: absolute;
+												top: -15px;
+												left: 55px;
+												width: 0;
+												height: 0;
+												border-left: 15px solid transparent;
+												border-right: 15px solid transparent;
+												border-bottom: 15px solid white;
+											}
+										}
+									}
+									.rangeslider__labels {
+										.rangeslider__label-item {
+											font-size: 18px;
+											min-width: 70px;
+											top: -65px;
+										}
+									}
+								}
+								
+								.percentage {
+									text-align: center;
+									color: #35AC46;
+									font-size: 84px;
+									line-height: 63px;
+									margin-top: 120px;
+									margin-bottom: 15px;
+									padding-bottom: 0;
+									display: block;
+									
+								}
+								
+							}
+						}
+						
+						&.calc {
+							.widget-inner {
+							
+							}
+						}
+						
+					}
+					
+				}
+				
+			}
+			
 		}
 		
 		.modal-content {

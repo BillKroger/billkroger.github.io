@@ -40,7 +40,7 @@ export const portfolioWorks = [
     //     logo: '../../../billkroger.github.io/assets/img/work/logo-ldc.svg',
     // },
     {
-        view_name: 'vssl-calc',
+        view_name: 'vssl',
         job_name: 'Custom Interactivity',
         client_name: 'VSSL Agency',
         image: '../../../billkroger.github.io/assets/img/work/stripe-vssl.jpg',

@@ -1152,6 +1152,9 @@ body.nav-open {
                   @media only screen and (min-width: 1200px) {
                     .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
                       display: block; } }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.vssl.phone {
+                  top: 45%;
+                  left: 25%; }
           @media only screen and (min-width: 769px) {
             .work-container .modal .case-study .main .content .job-desc .left {
               width: 40%; }
@@ -1222,6 +1225,67 @@ body.nav-open {
       background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
     .work-container .modal .case-study.concern .header {
       background-image: url("../../assets/img/work/concern/concern-header.jpg"); }
+    .work-container .modal .case-study.vssl .header {
+      background-image: url("../../assets/img/work/vssl/vssl-header.jpg"); }
+    .work-container .modal .case-study.vssl .widgets .widget {
+      width: 100%;
+      background-color: #012f44;
+      position: relative; }
+      .work-container .modal .case-study.vssl .widgets .widget .widget-inner {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      .work-container .modal .case-study.vssl .widgets .widget.slider {
+        height: 50vh; }
+        .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
+          max-width: 768px;
+          margin: 0 auto; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__fill {
+            background-color: #00a093; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:focus {
+            outline: none; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
+            width: 140px;
+            height: 50px;
+            background: white;
+            color: #00a093;
+            display: block;
+            top: 45px;
+            left: -55px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.35rem;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            border-radius: 3px;
+            position: absolute; }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label:before {
+              content: '';
+              position: absolute;
+              top: -15px;
+              left: 55px;
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-bottom: 15px solid white; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__labels .rangeslider__label-item {
+            font-size: 18px;
+            min-width: 70px;
+            top: -65px; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .percentage {
+            text-align: center;
+            color: #35AC46;
+            font-size: 84px;
+            line-height: 63px;
+            margin-top: 120px;
+            margin-bottom: 15px;
+            padding-bottom: 0;
+            display: block; }
   .work-container .modal .modal-content {
     position: relative;
     background: #222;

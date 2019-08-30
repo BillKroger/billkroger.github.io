@@ -6,6 +6,7 @@ import TidalDashboard from './TidalDashboard';
 import TidalStyleguide from './TidalStyleguide';
 import TidalMarketing from "./TidalMarketing";
 import Concern from "./Concern";
+import Vssl from "./Vssl";
 
 class Modal extends Component {
 
@@ -23,6 +24,11 @@ class Modal extends Component {
             case 'concern':
                 return <Concern />;
                 break;
+            case 'vssl':
+                return <Vssl />;
+                break;
+            default:
+                return <TidalDashboard />;
         }
     }
 
