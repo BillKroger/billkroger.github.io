@@ -714,55 +714,82 @@
 					background-image: url('../../assets/img/work/vssl/vssl-header.jpg');
 				}
 				
-				//.main .content {
-				//	.job-desc {
-				//		.left, .right {
-				//			@media only screen and (min-width: 769px) {
-				//				width: 50%;
-				//			}
-				//		}
-				//	}
-				//}
+				.main {
+					.content {
+						.job-desc {
+							margin-bottom: 200px;
+						}
+					}
+				}
 				
 				.widgets {
-					
 					.widget {
 						width: 100%;
-						background-color: #012f44;
+						//background-color: #012f44;
 						position: relative;
+						margin-bottom: 100px;
+						
+						strong {
+							text-transform: uppercase;
+							font-size: 1rem;
+							color: whitesmoke;
+							margin-bottom: 50px;
+							display: block;
+							letter-spacing: 1px;
+							font-family: 'Lato', Helvetica, Arial, sans-serif;
+							font-weight: 600;
+							border-bottom: 3px solid rgba(55, 55, 55, 0.75);
+							padding-bottom: 10px;
+						}
 						
 						.widget-inner {
 							width: 100%;
-							position: absolute;
-							top: 50%;
-							left: 50%;
-							@include transform(translate(-50%, -50%));
 						}
 						
 						&.slider {
-							height: 50vh;
+							height: 80vh;
+							@media only screen and (min-width: 769px) {
+								height: 75vh;
+							}
+							strong {
+								margin-bottom: 90px;
+							}
 							.widget-inner {
 								max-width: 768px;
 								margin: 0 auto;
+								padding-left: 35px;
+								padding-right: 35px;
+								@media only screen and (min-width: 769px) {
+									padding-left: 60px;
+									padding-right: 60px;
+								}
+								@media only screen and (min-width: 992px) {
+									padding: 0;
+								}
 								.rangeslider {
 									.rangeslider__fill {
-										background-color: #00a093;
+										background: rgb(198,164,55);
+										background: linear-gradient(52deg, rgba(198,164,55,1) 0%, rgba(92,78,33,1) 100%);
 									}
 									.rangeslider__handle {
 										&:focus {
 											outline: none;
 										}
+										&:after {
+											background-color: #5c4e21;
+										}
 										.rangeslider__handle-label {
-											width: 140px;
-											height: 50px;
+											width: 90px;
+											height: 62px;
 											background: white;
-											color: #00a093;
+											color: #222;
 											display: block;
 											top: 45px;
-											left: -55px;
+											left: -35px;
 											text-align: center;
-											line-height: 50px;
-											font-size: 1.35rem;
+											line-height: 22px;
+											font-size: 1.25rem;
+											padding-top: 10px;
 											font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 											font-weight: bold;
 											border-radius: 3px;
@@ -771,12 +798,23 @@
 												content: '';
 												position: absolute;
 												top: -15px;
-												left: 55px;
+												left: 35px;
 												width: 0;
 												height: 0;
 												border-left: 15px solid transparent;
 												border-right: 15px solid transparent;
 												border-bottom: 15px solid white;
+											}
+											@media only screen and (min-width: 769px) {
+												width: 140px;
+												height: 50px;
+												left: -55px;
+												line-height: 50px;
+												font-size: 1.35rem;
+												padding-top: 0;
+												&:before {
+													left: 55px;
+												}
 											}
 										}
 									}
@@ -791,7 +829,7 @@
 								
 								.percentage {
 									text-align: center;
-									color: #35AC46;
+									color: #c6a437;
 									font-size: 84px;
 									line-height: 63px;
 									margin-top: 120px;
@@ -805,9 +843,173 @@
 						}
 						
 						&.calc {
-							.widget-inner {
+							height: 100vh;
 							
+							.widget-inner {
+								
+								.calculator {
+									text-align: center;
+									font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+									font-size: 1.75rem;
+									line-height: 2.5rem;
+									@media only screen and (min-width: 769px) {
+										font-size: 2rem;
+										line-height: 3rem;
+									}
+									
+									.calc-text {
+										color: #EEE;
+										margin-right: 10px;
+										display: inline;
+										vertical-align: middle;
+										
+										&.dollar-sign {
+											color: $color-gold;
+											margin-right: 3px;
+											font-weight: 500;
+										}
+										
+										&.no-margin {
+											margin-right: 0;
+										}
+										
+										&.calc-output {
+											color: $color-gold;
+										}
+									}
+									
+									.calc-text-block {
+										display: inline-block;
+									}
+									
+									.number-input {
+										border: none;
+										outline: none;
+										background: transparent;
+										padding: 0;
+										font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+										font-weight: 500;
+										color: #c6a437;
+										border-bottom: 4px dotted #c6a437;
+										width: 150px;
+										display: inline-block;
+										vertical-align: middle;
+										text-align: center;
+										margin-right: 5px;
+										font-size: 1.75rem;
+										@media only screen and (min-width: 769px) {
+											font-size: 2rem;
+										}
+									}
+									
+									.calc-dropdown {
+										margin-right: 10px;
+										display: inline-block;
+										font-weight: 500;
+										color: $color-gold;
+										border-bottom: 4px dotted #c6a437;
+										vertical-align: middle;
+										
+										.dropdown-icon {
+											float: right;
+											margin-left: 5px;
+										}
+										
+										.current-selection {
+											&.default {
+												font-size: 1.5rem;
+												font-weight: 500;
+												opacity: 0.5;
+												font-style: italic;
+												padding-top: 5px;
+											}
+										}
+										
+										.options {
+											position: relative;
+											
+											ul.options-list {
+												margin: 5px;
+												padding: 0;
+												list-style: none;
+												position: absolute;
+												top: -30px;
+												left: -5px;
+												background: #f5f5f5;
+												border: 1px solid #aaaaaa;
+												width: 145px;
+												z-index: 1;
+												
+												li.option {
+													padding: 4px 0;
+													font-weight: 500;
+													cursor: pointer;
+													
+													&:hover {
+														background-color: #444;
+													}
+													
+													&.active {
+													
+													}
+													
+												}
+												
+											}
+											
+										}
+										
+										&.dd-duration {
+											width: 170px;
+											.options ul.options-list {
+												text-align: right;
+												.option {
+													padding-right: 10px;
+												}
+											}
+										}
+										
+										&.dd-debitfreq {
+											width: 160px;
+											.options ul.options-list {
+												text-align: center;
+												.option {
+													padding-right: 5px;
+												}
+											}
+										}
+										
+									}
+									
+									#calc-top {
+										margin-left: auto;
+										margin-right: auto;
+										position: relative;
+									}
+									
+									#calc-bottom {
+										margin: 55px auto 0;
+										.calc-output-wrapper {
+											display: inline-block;
+										}
+										.calc-annotation {
+											font-size: 1rem;
+											line-height: 1.5rem;
+											margin-top: 50px;
+										}
+									}
+									
+									@media only screen and (min-width: 769px) {
+										#calc-top, #calc-bottom {
+											max-width: 85%;
+											
+										}
+									}
+									
+								}
+								
 							}
+							
 						}
 						
 					}

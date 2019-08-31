@@ -1227,38 +1227,63 @@ body.nav-open {
       background-image: url("../../assets/img/work/concern/concern-header.jpg"); }
     .work-container .modal .case-study.vssl .header {
       background-image: url("../../assets/img/work/vssl/vssl-header.jpg"); }
+    .work-container .modal .case-study.vssl .main .content .job-desc {
+      margin-bottom: 200px; }
     .work-container .modal .case-study.vssl .widgets .widget {
       width: 100%;
-      background-color: #012f44;
-      position: relative; }
+      position: relative;
+      margin-bottom: 100px; }
+      .work-container .modal .case-study.vssl .widgets .widget strong {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: whitesmoke;
+        margin-bottom: 50px;
+        display: block;
+        letter-spacing: 1px;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        border-bottom: 3px solid rgba(55, 55, 55, 0.75);
+        padding-bottom: 10px; }
       .work-container .modal .case-study.vssl .widgets .widget .widget-inner {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        width: 100%; }
       .work-container .modal .case-study.vssl .widgets .widget.slider {
-        height: 50vh; }
+        height: 80vh; }
+        @media only screen and (min-width: 769px) {
+          .work-container .modal .case-study.vssl .widgets .widget.slider {
+            height: 75vh; } }
+        .work-container .modal .case-study.vssl .widgets .widget.slider strong {
+          margin-bottom: 90px; }
         .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
           max-width: 768px;
-          margin: 0 auto; }
+          margin: 0 auto;
+          padding-left: 35px;
+          padding-right: 35px; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
+              padding-left: 60px;
+              padding-right: 60px; } }
+          @media only screen and (min-width: 992px) {
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
+              padding: 0; } }
           .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__fill {
-            background-color: #00a093; }
+            background: #c6a437;
+            background: linear-gradient(52deg, #c6a437 0%, #5c4e21 100%); }
           .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:focus {
             outline: none; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:after {
+            background-color: #5c4e21; }
           .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
-            width: 140px;
-            height: 50px;
+            width: 90px;
+            height: 62px;
             background: white;
-            color: #00a093;
+            color: #222;
             display: block;
             top: 45px;
-            left: -55px;
+            left: -35px;
             text-align: center;
-            line-height: 50px;
-            font-size: 1.35rem;
+            line-height: 22px;
+            font-size: 1.25rem;
+            padding-top: 10px;
             font-family: 'Montserrat', Helvetica, Arial, sans-serif;
             font-weight: bold;
             border-radius: 3px;
@@ -1267,25 +1292,141 @@ body.nav-open {
               content: '';
               position: absolute;
               top: -15px;
-              left: 55px;
+              left: 35px;
               width: 0;
               height: 0;
               border-left: 15px solid transparent;
               border-right: 15px solid transparent;
               border-bottom: 15px solid white; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
+                width: 140px;
+                height: 50px;
+                left: -55px;
+                line-height: 50px;
+                font-size: 1.35rem;
+                padding-top: 0; }
+                .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label:before {
+                  left: 55px; } }
           .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__labels .rangeslider__label-item {
             font-size: 18px;
             min-width: 70px;
             top: -65px; }
           .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .percentage {
             text-align: center;
-            color: #35AC46;
+            color: #c6a437;
             font-size: 84px;
             line-height: 63px;
             margin-top: 120px;
             margin-bottom: 15px;
             padding-bottom: 0;
             display: block; }
+      .work-container .modal .case-study.vssl .widgets .widget.calc {
+        height: 100vh; }
+        .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator {
+          text-align: center;
+          font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+          font-size: 1.75rem;
+          line-height: 2.5rem; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator {
+              font-size: 2rem;
+              line-height: 3rem; } }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text {
+            color: #EEE;
+            margin-right: 10px;
+            display: inline;
+            vertical-align: middle; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.dollar-sign {
+              color: #c6a437;
+              margin-right: 3px;
+              font-weight: 500; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.no-margin {
+              margin-right: 0; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.calc-output {
+              color: #c6a437; }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text-block {
+            display: inline-block; }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .number-input {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 0;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            color: #c6a437;
+            border-bottom: 4px dotted #c6a437;
+            width: 150px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin-right: 5px;
+            font-size: 1.75rem; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .number-input {
+                font-size: 2rem; } }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown {
+            margin-right: 10px;
+            display: inline-block;
+            font-weight: 500;
+            color: #c6a437;
+            border-bottom: 4px dotted #c6a437;
+            vertical-align: middle; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .dropdown-icon {
+              float: right;
+              margin-left: 5px; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .current-selection.default {
+              font-size: 1.5rem;
+              font-weight: 500;
+              opacity: 0.5;
+              font-style: italic;
+              padding-top: 5px; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options {
+              position: relative; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list {
+                margin: 5px;
+                padding: 0;
+                list-style: none;
+                position: absolute;
+                top: -30px;
+                left: -5px;
+                background: #f5f5f5;
+                border: 1px solid #aaaaaa;
+                width: 145px;
+                z-index: 1; }
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list li.option {
+                  padding: 4px 0;
+                  font-weight: 500;
+                  cursor: pointer; }
+                  .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list li.option:hover {
+                    background-color: #444; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration {
+              width: 170px; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration .options ul.options-list {
+                text-align: right; }
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration .options ul.options-list .option {
+                  padding-right: 10px; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq {
+              width: 160px; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq .options ul.options-list {
+                text-align: center; }
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq .options ul.options-list .option {
+                  padding-right: 5px; }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-top {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative; }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom {
+            margin: 55px auto 0; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom .calc-output-wrapper {
+              display: inline-block; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom .calc-annotation {
+              font-size: 1rem;
+              line-height: 1.5rem;
+              margin-top: 50px; }
+          @media only screen and (min-width: 769px) {
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-top, .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom {
+              max-width: 85%; } }
   .work-container .modal .modal-content {
     position: relative;
     background: #222;
