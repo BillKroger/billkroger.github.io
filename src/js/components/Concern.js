@@ -48,7 +48,7 @@ class Concern extends Component {
                                 <div className="device-screens">
                                     <img className="device-screen phone" src="../assets/img/work/concern/apple-mail-mobile-1.jpg" />
                                     <img className="device-screen tablet" src="../assets/img/work/concern/gmail-tablet-1.jpg" />
-                                    <img className="device-screen desktop" src="../assets/img/work/concern/apple-mail-desktop-1.png" />
+                                    <img className="device-screen desktop" src="../assets/img/work/concern/apple-mail-desktop-1.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,9 @@ class Concern extends Component {
                             </div>
                             <div className="single-screen">
                                 <strong>Full template</strong>
-                                <img src="../assets/img/work/concern/concern-full.png" />
+                                <img src="../assets/img/work/concern/concern-full-1.jpg" />
+                                <img src="../assets/img/work/concern/concern-full-2.jpg" />
+                                <img src="../assets/img/work/concern/concern-full-3.jpg" />
                             </div>
                         </div>
 

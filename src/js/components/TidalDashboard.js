@@ -98,7 +98,7 @@ class TidalDashboard extends Component {
                         <div className="screens cs-block">
                             <div className="single-screen">
                                 <strong>User detail view</strong>
-                                <img src="../assets/img/work/tidal-dashboard/user-detail-view.png" />
+                                <img src="../assets/img/work/tidal-dashboard/user-detail-view.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Campaign stats and reporting</strong>
