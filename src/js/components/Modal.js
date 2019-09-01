@@ -39,7 +39,9 @@ class Modal extends Component {
         return (
             <div id="modal-window" className={showHideClassName}>
                 <div className="modal-content">
-                    <a role="button" className="close-btn" onClick={onClose}><i className="close-icon"></i></a>
+                    <div className="modal-header">
+                        <a role="button" className="close-btn" onClick={onClose}><i className="close-icon"></i></a>
+                    </div>
                     {this.renderView()}
                 </div>
             </div>
