@@ -365,21 +365,13 @@ body.nav-open {
         position: absolute;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -70%);
         z-index: 100;
         color: whitesmoke;
         font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
-        .section.intro .container .top-canvas .top-text.desktop {
-          display: none; }
-          @media only screen and (min-width: 1024px) {
-            .section.intro .container .top-canvas .top-text.desktop {
-              display: block;
-              transform: translate(-50%, -80%); } }
-        .section.intro .container .top-canvas .top-text.mobile {
-          display: block;
-          transform: translate(-50%, -70%); }
-          @media only screen and (min-width: 1024px) {
-            .section.intro .container .top-canvas .top-text.mobile {
-              display: none; } }
+        @media only screen and (min-width: 769px) {
+          .section.intro .container .top-canvas .top-text {
+            transform: translate(-50%, -80%); } }
       .section.intro .container .top-canvas .top-heading {
         text-transform: uppercase;
         font-weight: 200;

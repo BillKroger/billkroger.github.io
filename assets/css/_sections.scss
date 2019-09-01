@@ -109,22 +109,12 @@
 					position: absolute;
 					top: 50%;
 					left: 50%;
+					transform: translate(-50%, -70%);
 					z-index: 100;
 					color: whitesmoke;
 					font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-					&.desktop {
-						display: none;
-						@media only screen and (min-width: 1024px) {
-							display: block;
-							transform: translate(-50%, -80%);
-						}
-					}
-					&.mobile {
-						display: block;
-						transform: translate(-50%, -70%);
-						@media only screen and (min-width: 1024px) {
-							display: none;
-						}
+					@media only screen and (min-width: 769px) {
+						transform: translate(-50%, -80%);
 					}
 				}
 				
