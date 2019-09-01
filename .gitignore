@@ -2,4 +2,5 @@
 assets/css/.sass-cache
 assets/css/style.css.map
 node_modules
+dist
 .DS_Store
