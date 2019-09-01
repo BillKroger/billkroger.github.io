@@ -145,6 +145,7 @@
 		top: 50%;
 		left: 50%;
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 		@include transform(translate(-50%,-50%) translate3d(.001vw,-10%,0));
 		background-color: #222;
 		z-index: 300;
@@ -175,8 +176,10 @@
 		}
 		
 		.close-btn {
-			position: sticky;
-			right: 20px;
+			//position: sticky;
+			//right: 20px;
+			position: fixed;
+			right: 40px;
 			top: 20px;
 			float: right;
 			width: 7vh;
@@ -416,7 +419,7 @@
 						}
 						.single-screen {
 							width: 100%;
-							margin-bottom: 150px;
+							margin-bottom: 50px;
 							background-color: #222;
 							strong {
 								text-transform: uppercase;

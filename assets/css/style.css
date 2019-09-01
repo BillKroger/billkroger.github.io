@@ -4,54 +4,6 @@
   src: url("../../assets/fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
   src: url("../../assets/fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"), url("../../assets/fonts/1444649/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"), url("../../assets/fonts/1444649/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"), url("../../assets/fonts/1444649/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype"); }
 @font-face {
-  font-family: "Loew W05 Heavy";
-  src: url("../../assets/fonts/5158487/924f17d7-3b15-4ed9-a99d-a9e7e170306d.eot?#iefix");
-  src: url("../../assets/fonts/5158487/924f17d7-3b15-4ed9-a99d-a9e7e170306d.eot?#iefix") format("eot"), url("../../assets/fonts/5158487/acbda8bc-3b4a-4715-87d0-3b288dff9c81.woff2") format("woff2"), url("../../assets/fonts/5158487/49aa492f-1c63-4022-a504-8648b84c1956.woff") format("woff"), url("../../assets/fonts/5158487/41e0749a-d56c-40c5-9352-51c619066333.ttf") format("truetype"); }
-@font-face {
-  font-family: "Bebas W05 Regular";
-  src: url("../../assets/fonts/5190181/98369def-383a-47a1-af6c-6a6afd028f38.eot?#iefix");
-  src: url("../../assets/fonts/5190181/98369def-383a-47a1-af6c-6a6afd028f38.eot?#iefix") format("eot"), url("../../assets/fonts/5190181/956b9d39-5ee0-4dd6-8ca6-32e172727606.woff2") format("woff2"), url("../../assets/fonts/5190181/51efd2e1-1dee-40ea-a745-e11fddc95bef.woff") format("woff"), url("../../assets/fonts/5190181/50c2aa9a-043f-4097-bd8a-47d6bb834bc4.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova AltD W05 Regular";
-  src: url("../../assets/fonts/5201072/d7b7565a-d782-4565-80ef-a5cec8f2116c.eot?#iefix");
-  src: url("../../assets/fonts/5201072/d7b7565a-d782-4565-80ef-a5cec8f2116c.eot?#iefix") format("eot"), url("../../assets/fonts/5201072/3a8d8853-4c8c-42e8-aa75-0037095930ad.woff2") format("woff2"), url("../../assets/fonts/5201072/6493dc22-e4bb-4f91-8bb8-b2929365b262.woff") format("woff"), url("../../assets/fonts/5201072/dfa0be76-8df8-46c5-b8dc-c462fb279c47.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova W05 Heavy";
-  src: url("../../assets/fonts/5203848/22e88175-f1d9-46e1-a95d-41725bcb62d6.eot?#iefix");
-  src: url("../../assets/fonts/5203848/22e88175-f1d9-46e1-a95d-41725bcb62d6.eot?#iefix") format("eot"), url("../../assets/fonts/5203848/5fc6d56b-c5de-4ba2-8053-94234969a16a.woff2") format("woff2"), url("../../assets/fonts/5203848/6304d5af-5884-4de2-9c8b-cb2c9d21828a.woff") format("woff"), url("../../assets/fonts/5203848/3d907618-12e5-4473-81c8-e94ea2bb7221.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova W05 Light";
-  src: url("../../assets/fonts/5222607/43e9d9e7-bec0-4b8f-94c2-500aedbbdc48.eot?#iefix");
-  src: url("../../assets/fonts/5222607/43e9d9e7-bec0-4b8f-94c2-500aedbbdc48.eot?#iefix") format("eot"), url("../../assets/fonts/5222607/fa6fd1e7-0b2c-4cdb-95f0-7173668aaf00.woff2") format("woff2"), url("../../assets/fonts/5222607/974c9975-10fb-47d7-adae-59421aa5f897.woff") format("woff"), url("../../assets/fonts/5222607/605529e2-eefb-4d2d-82b1-81f0f6fb09ea.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova W05 Thin";
-  src: url("../../assets/fonts/5226685/8aa86b1a-a237-4429-b729-f929b3c45cf9.eot?#iefix");
-  src: url("../../assets/fonts/5226685/8aa86b1a-a237-4429-b729-f929b3c45cf9.eot?#iefix") format("eot"), url("../../assets/fonts/5226685/d551baaa-5cd1-4a72-98aa-515639498925.woff2") format("woff2"), url("../../assets/fonts/5226685/20a1f8e0-d20f-40a0-87a0-757d3c276a0f.woff") format("woff"), url("../../assets/fonts/5226685/96ea2d9d-5e29-4dee-8580-630e8a5aca10.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova AltD W05 Heavy";
-  src: url("../../assets/fonts/5309656/7a343ad7-7175-4c3d-ac91-455dcc78254a.eot?#iefix");
-  src: url("../../assets/fonts/5309656/7a343ad7-7175-4c3d-ac91-455dcc78254a.eot?#iefix") format("eot"), url("../../assets/fonts/5309656/7135b553-0d63-4494-b5f6-722e540e83ea.woff2") format("woff2"), url("../../assets/fonts/5309656/3d3a3492-34c5-4d8b-bb95-bf9331e00b80.woff") format("woff"), url("../../assets/fonts/5309656/b4d87af0-5f60-4bd5-bcd8-d682587a5979.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova AltD W05 Bold";
-  src: url("../../assets/fonts/5316253/f3188505-f9e3-4688-bbcc-fc174491f163.eot?#iefix");
-  src: url("../../assets/fonts/5316253/f3188505-f9e3-4688-bbcc-fc174491f163.eot?#iefix") format("eot"), url("../../assets/fonts/5316253/5115fad6-96d8-4c9c-ad52-7d78dcd0e3d1.woff2") format("woff2"), url("../../assets/fonts/5316253/bfede91a-f3ae-46cb-8bcf-8d916556f01f.woff") format("woff"), url("../../assets/fonts/5316253/f4f63f16-0fd6-48ae-8ec8-7921d5b258d3.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova AltD W05 Light";
-  src: url("../../assets/fonts/5340775/3de857cc-5c13-4fec-961d-1c76480b97c8.eot?#iefix");
-  src: url("../../assets/fonts/5340775/3de857cc-5c13-4fec-961d-1c76480b97c8.eot?#iefix") format("eot"), url("../../assets/fonts/5340775/c7968f49-e2c0-43e0-b7c4-925bbf0e9a90.woff2") format("woff2"), url("../../assets/fonts/5340775/c083dbfa-af54-4da6-a9e3-9dca9a6650b7.woff") format("woff"), url("../../assets/fonts/5340775/86c2cdb9-215a-46c8-844a-fc521c9a71cf.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova W05 Bold";
-  src: url("../../assets/fonts/5349275/c95e1dea-9ae3-4c98-a1ac-e347223b3555.eot?#iefix");
-  src: url("../../assets/fonts/5349275/c95e1dea-9ae3-4c98-a1ac-e347223b3555.eot?#iefix") format("eot"), url("../../assets/fonts/5349275/8a628a6e-ee84-4337-a409-85484fb4786f.woff2") format("woff2"), url("../../assets/fonts/5349275/51eb8261-5b61-4837-bc8e-ec1b47827621.woff") format("woff"), url("../../assets/fonts/5349275/0258d09f-a769-46c3-80a9-7eb6659119cd.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova W05 Regular";
-  src: url("../../assets/fonts/5357795/a8adceec-3131-40a2-835d-9a78c87605e5.eot?#iefix");
-  src: url("../../assets/fonts/5357795/a8adceec-3131-40a2-835d-9a78c87605e5.eot?#iefix") format("eot"), url("../../assets/fonts/5357795/516c05eb-d25b-4a79-aab6-0c261fae96dd.woff2") format("woff2"), url("../../assets/fonts/5357795/81e23c74-1c79-4344-926c-b396dd6808e4.woff") format("woff"), url("../../assets/fonts/5357795/da26e750-32da-4e96-8c8c-b5adacfed035.ttf") format("truetype"); }
-@font-face {
-  font-family: "Mostra Nuova AltD W05 Thin";
-  src: url("../../assets/fonts/5360109/322f93b0-f4f8-49db-b656-ad9f7221d756.eot?#iefix");
-  src: url("../../assets/fonts/5360109/322f93b0-f4f8-49db-b656-ad9f7221d756.eot?#iefix") format("eot"), url("../../assets/fonts/5360109/4963c97d-7a76-4752-8e24-a01b31615530.woff2") format("woff2"), url("../../assets/fonts/5360109/8963770b-d53d-4452-a42e-768c5b6fa543.woff") format("woff"), url("../../assets/fonts/5360109/db8d260a-68b4-49df-97bf-8eca610a26c9.ttf") format("truetype"); }
-@font-face {
   font-family: "Gilroy W05 Light";
   src: url("../../assets/fonts/5538949/6b236a39-df16-4ab5-a768-40f2864dab3b.eot?#iefix");
   src: url("../../assets/fonts/5538949/6b236a39-df16-4ab5-a768-40f2864dab3b.eot?#iefix") format("eot"), url("../../assets/fonts/5538949/a6096205-61ed-4c16-b76c-a56dd651ad33.woff2") format("woff2"), url("../../assets/fonts/5538949/18f98fc7-4ddd-4d5e-94c0-c9b74a2325bd.woff") format("woff"), url("../../assets/fonts/5538949/4dd50808-4386-406c-8c7c-1f4de240e451.ttf") format("truetype"); }
@@ -60,17 +12,17 @@
   src: url("../../assets/fonts/5538999/ab8fcd38-de60-4a08-a311-c614f97265d5.eot?#iefix");
   src: url("../../assets/fonts/5538999/ab8fcd38-de60-4a08-a311-c614f97265d5.eot?#iefix") format("eot"), url("../../assets/fonts/5538999/9aa3a833-f885-4df4-975c-c504bb6a7b67.woff2") format("woff2"), url("../../assets/fonts/5538999/824bd825-cb90-45d8-ac5e-3997fd8632ac.woff") format("woff"), url("../../assets/fonts/5538999/c5ae8834-4b3f-4d9c-9410-d3eb220605e3.ttf") format("truetype"); }
 @font-face {
-  font-family: "Baron Neue";
-  src: url("../../assets/fonts/baron_neue/baron_neue-webfont.eot?#iefix");
-  src: url("../../assets/fonts/baron_neue/baron_neue-webfont.eot?#iefix") format("eot"), url("../../assets/fonts/baron_neue/baron_neue-webfont.woff2") format("woff2"), url("../../assets/fonts/baron_neue/baron_neue-webfont.woff") format("woff"), url("../../assets/fonts/baron_neue/baron_neue-webfont.ttf") format("truetype"); }
+  font-family: 'gobold_thin_lightregular';
+  src: url("../fonts/gobold_light-webfont.eot");
+  src: url("../fonts/gobold_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gobold_light-webfont.woff2") format("woff2"), url("../fonts/gobold_light-webfont.woff") format("woff"), url("../fonts/gobold_light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: "Baron Neue Bold";
-  src: url("../../assets/fonts/baron_neue/baron_neue_bold-webfont.eot?#iefix");
-  src: url("../../assets/fonts/baron_neue/baron_neue_bold-webfont.eot?#iefix") format("eot"), url("../../assets/fonts/baron_neue/baron_neue_bold-webfont.woff2") format("woff2"), url("../../assets/fonts/baron_neue/baron_neue_bold-webfont.woff") format("woff"), url("../../assets/fonts/baron_neue/baron_neue_bold-webfont.ttf") format("truetype"); }
-@font-face {
-  font-family: "Baron Neue Black";
-  src: url("../../assets/fonts/baron_neue/baron_neue_black-webfont.eot?#iefix");
-  src: url("../../assets/fonts/baron_neue/baron_neue_black-webfont.eot?#iefix") format("eot"), url("../../assets/fonts/baron_neue/baron_neue_black-webfont.woff2") format("woff2"), url("../../assets/fonts/baron_neue/baron_neue_black-webfont.woff") format("woff"), url("../../assets/fonts/baron_neue/baron_neue_black-webfont.ttf") format("truetype"); }
+  font-family: 'gobold_thinregular';
+  src: url("../fonts/gobold_thin-webfont.eot");
+  src: url("../fonts/gobold_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gobold_thin-webfont.woff2") format("woff2"), url("../fonts/gobold_thin-webfont.woff") format("woff"), url("../fonts/gobold_thin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 * {
   box-sizing: border-box; }
 
@@ -81,7 +33,8 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  -webkit-overflow-scrolling: touch; }
 
 .container {
   width: 100%; }
@@ -410,24 +363,40 @@ body.nav-open {
         position: absolute;
         top: 50%;
         left: 50%;
-        /* width: 100%; */
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -70%);
         z-index: 100;
         color: whitesmoke;
         font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
+        @media only screen and (min-width: 769px) {
+          .section.intro .container .top-canvas .top-text {
+            transform: translate(-50%, -80%); } }
       .section.intro .container .top-canvas .top-heading {
         text-transform: uppercase;
         font-weight: 200;
         letter-spacing: 1px;
-        font-size: 6vw;
-        line-height: 1; }
+        font-size: 5rem;
+        line-height: 0.9;
+        margin: 0 0 20px; }
+        @media only screen and (min-width: 600px) {
+          .section.intro .container .top-canvas .top-heading {
+            font-size: 6rem; } }
+        @media only screen and (min-width: 1600px) {
+          .section.intro .container .top-canvas .top-heading {
+            font-size: 6vw; } }
       .section.intro .container .top-canvas .top-subheading {
-        font-size: 1.5vw;
+        font-size: 1.35rem;
         font-weight: 100;
-        /* font-style: italic; */
         text-align: left;
-        margin: 10px 0;
-        padding-left: 8px; }
+        padding-left: 5px;
+        margin: 0 0 3px; }
+        .section.intro .container .top-canvas .top-subheading:last-child {
+          margin-bottom: 0; }
+        @media only screen and (min-width: 600px) {
+          .section.intro .container .top-canvas .top-subheading {
+            font-size: 1.5rem; } }
+        @media only screen and (min-width: 1600px) {
+          .section.intro .container .top-canvas .top-subheading {
+            font-size: 2vw; } }
       .section.intro .container .top-canvas canvas {
         display: inline-block; }
     .section.intro h1 {
@@ -541,7 +510,7 @@ body.nav-open {
       display: inline-block;
       position: relative;
       vertical-align: bottom;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
       max-width: 90%; }
       @media only screen and (min-width: 769px) {
         .section.about .about-block {
@@ -557,16 +526,16 @@ body.nav-open {
       .section.about .about-block .help-text {
         display: block;
         position: relative;
-        margin-top: 25px;
+        margin-top: 15px;
         font-size: 1rem;
         font-style: italic;
         color: #222; }
         .section.about .about-block .help-text:before {
           content: '';
           position: absolute;
-          top: -15px;
+          top: -10px;
           left: 0;
-          height: 5px;
+          height: 4px;
           width: 100%;
           background: #c6a437; }
       .section.about .about-block.hello {
@@ -807,6 +776,7 @@ body.nav-open {
   top: 50%;
   left: 50%;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   -webkit-transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
   -ms-transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
   transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
@@ -833,8 +803,8 @@ body.nav-open {
   .work-container .modal .modal-content {
     overflow: auto; }
   .work-container .modal .close-btn {
-    position: sticky;
-    right: 20px;
+    position: fixed;
+    right: 40px;
     top: 20px;
     float: right;
     width: 7vh;
@@ -1028,7 +998,7 @@ body.nav-open {
             margin: 0 auto; }
           .work-container .modal .case-study .main .content .screens .single-screen {
             width: 100%;
-            margin-bottom: 150px;
+            margin-bottom: 50px;
             background-color: #222; }
             .work-container .modal .case-study .main .content .screens .single-screen strong {
               text-transform: uppercase;
