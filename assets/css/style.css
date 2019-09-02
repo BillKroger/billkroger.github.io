@@ -775,13 +775,13 @@ body.nav-open {
           color: #eee; } }
 .work-container .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
-  -ms-transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
-  transform: translate(-50%, -50%) translate3d(0.001vw, -10%, 0);
+  -webkit-transform: translate3d(0.001vw, -10%, 0);
+  -ms-transform: translate3d(0.001vw, -10%, 0);
+  transform: translate3d(0.001vw, -10%, 0);
   background-color: #222;
   z-index: 300;
   transition: opacity 0.3s 0.45s, width 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), transform 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), height 0.5s cubic-bezier(0.82, 0, 0.61, 0.89); }
@@ -789,9 +789,9 @@ body.nav-open {
     width: 100vw;
     height: 100vh;
     opacity: 1;
-    -webkit-transform: translate(-50%, -50%) translate3d(0.001vw, 0vh, 0);
-    -ms-transform: translate(-50%, -50%) translate3d(0.001vw, 0vh, 0);
-    transform: translate(-50%, -50%) translate3d(0.001vw, 0vh, 0);
+    -webkit-transform: translate3d(0.001vw, 0vh, 0);
+    -ms-transform: translate3d(0.001vw, 0vh, 0);
+    transform: translate3d(0.001vw, 0vh, 0);
     transition: opacity 0.25s 0s, width 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, transform 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, height 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, border 0.2s linear 0.3s; }
     .work-container .modal.visible .modal-content, .work-container .modal.visible .close-btn, .work-container .modal.visible .case-study {
       opacity: 1.0;

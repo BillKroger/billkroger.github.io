@@ -268,7 +268,7 @@ class Vssl extends Component {
                 <div className="header">
                     <div className="center">
                         <h1>Custom Interactivity</h1>
-                        <img src="../assets/img/work/vssl/logo-vssl-header.svg" />
+                        <img src="./assets/img/work/vssl/logo-vssl-header.svg" />
                     </div>
                 </div>
 
@@ -305,9 +305,9 @@ class Vssl extends Component {
                             </div>
                             <div className="right">
                                 <div className="device-screens">
-                                    <img className="device-screen phone vssl" src="../assets/img/work/vssl/vssl-mobile-1.jpg" />
-                                    <img className="device-screen tablet" src="../assets/img/work/vssl/vssl-tablet-1.jpg" />
-                                    <img className="device-screen desktop" src="../assets/img/work/vssl/vssl-mobile-2b.jpg" />
+                                    <img className="device-screen phone vssl" src="./assets/img/work/vssl/vssl-mobile-1.jpg" />
+                                    <img className="device-screen tablet" src="./assets/img/work/vssl/vssl-tablet-1.jpg" />
+                                    <img className="device-screen desktop" src="./assets/img/work/vssl/vssl-mobile-2b.jpg" />
                                 </div>
                             </div>
                         </div>

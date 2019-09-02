@@ -10,7 +10,7 @@ class Concern extends Component {
                 <div className="header">
                     <div className="center">
                         <h1>Email Development</h1>
-                        <img src="../assets/img/work/concern/logo-concern-header.svg" />
+                        <img src="./assets/img/work/concern/logo-concern-header.svg" />
                     </div>
                 </div>
 
@@ -46,9 +46,9 @@ class Concern extends Component {
                             </div>
                             <div className="right">
                                 <div className="device-screens">
-                                    <img className="device-screen phone" src="../assets/img/work/concern/apple-mail-mobile-1.jpg" />
-                                    <img className="device-screen tablet" src="../assets/img/work/concern/gmail-tablet-1.jpg" />
-                                    <img className="device-screen desktop" src="../assets/img/work/concern/apple-mail-desktop-1.jpg" />
+                                    <img className="device-screen phone" src="./assets/img/work/concern/apple-mail-mobile-1.jpg" />
+                                    <img className="device-screen tablet" src="./assets/img/work/concern/gmail-tablet-1.jpg" />
+                                    <img className="device-screen desktop" src="./assets/img/work/concern/apple-mail-desktop-1.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -56,21 +56,21 @@ class Concern extends Component {
                         <div className="screens cs-block">
                             <div className="single-screen">
                                 <strong>Mobile views</strong>
-                                <img src="../assets/img/work/concern/mobile-screens.jpg" />
+                                <img src="./assets/img/work/concern/mobile-screens.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Gmail desktop view</strong>
-                                <img src="../assets/img/work/concern/gmail-desktop.jpg" />
+                                <img src="./assets/img/work/concern/gmail-desktop.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Apple Mail desktop view</strong>
-                                <img src="../assets/img/work/concern/apple-mail-desktop-2.jpg" />
+                                <img src="./assets/img/work/concern/apple-mail-desktop-2.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Full template</strong>
-                                <img src="../assets/img/work/concern/concern-full-1.jpg" />
-                                <img src="../assets/img/work/concern/concern-full-2.jpg" />
-                                <img src="../assets/img/work/concern/concern-full-3.jpg" />
+                                <img src="./assets/img/work/concern/concern-full-1.jpg" />
+                                <img src="./assets/img/work/concern/concern-full-2.jpg" />
+                                <img src="./assets/img/work/concern/concern-full-3.jpg" />
                             </div>
                         </div>
 

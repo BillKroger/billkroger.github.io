@@ -10,7 +10,7 @@ class TidalStyleguide extends Component {
                 <div className="header">
                     <div className="center">
                         <h1>Tid.al Marketing Sites</h1>
-                        <img src="../assets/img/work/tidal-dashboard/tidal-labs-wh.png" />
+                        <img src="./assets/img/work/tidal-dashboard/tidal-labs-wh.png" />
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@ class TidalStyleguide extends Component {
                             <div className="right">
                                 <div className="device-screens">
                                     <div className="device-screen tidal-marketing"></div>
-                                    <img className="device-screen desktop tidal-marketing-mobile" src="../assets/img/work/tidal-marketing/frame1.jpg" />
+                                    <img className="device-screen desktop tidal-marketing-mobile" src="./assets/img/work/tidal-marketing/frame1.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -59,28 +59,28 @@ class TidalStyleguide extends Component {
                         <div className="screens cs-block">
                             <div className="single-screen">
                                 <strong>Tid.al Home page</strong>
-                                <img src="../assets/img/work/tidal-marketing/tidal-home-top.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/tidal-home-top.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Platform page</strong>
-                                <img src="../assets/img/work/tidal-marketing/tidal-platform-full-crop.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/tidal-platform-full-crop.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Network.tid.al</strong>
-                                <img src="../assets/img/work/tidal-marketing/tidal-network-1.jpg" />
-                                <img src="../assets/img/work/tidal-marketing/tidal-network-2.jpg" style={{marginTop: '-3px'}}/>
+                                <img src="./assets/img/work/tidal-marketing/tidal-network-1.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/tidal-network-2.jpg" style={{marginTop: '-3px'}}/>
                             </div>
                             <div className="single-screen">
                                 <strong>Blog.tid.al</strong>
-                                <img src="../assets/img/work/tidal-marketing/tidal-blog-full-crop.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/tidal-blog-full-crop.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>About page</strong>
-                                <img src="../assets/img/work/tidal-marketing/about-page.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/about-page.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Contact page</strong>
-                                <img src="../assets/img/work/tidal-marketing/contact-page.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/contact-page.jpg" />
                             </div>
                         </div>
 

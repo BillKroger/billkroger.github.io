@@ -10,7 +10,7 @@ class TidalStyleguide extends Component {
                 <div className="header">
                     <div className="center">
                         <h1>v3 Styleguide</h1>
-                        <img src="../assets/img/work/tidal-dashboard/tidal-labs-wh.png" />
+                        <img src="./assets/img/work/tidal-dashboard/tidal-labs-wh.png" />
                     </div>
                 </div>
 
@@ -49,9 +49,9 @@ class TidalStyleguide extends Component {
                             </div>
                             <div className="right">
                                 <div className="device-screens">
-                                    <img className="device-screen phone" src="../assets/img/work/tidal-styleguide/tidal-v3-phone.png" />
-                                    <img className="device-screen tablet" src="../assets/img/work/tidal-styleguide/tidal-v3-tablet.png" />
-                                    <img className="device-screen desktop" src="../assets/img/work/tidal-styleguide/tidal-v3-desktop-2.png" />
+                                    <img className="device-screen phone" src="./assets/img/work/tidal-styleguide/tidal-v3-phone.png" />
+                                    <img className="device-screen tablet" src="./assets/img/work/tidal-styleguide/tidal-v3-tablet.png" />
+                                    <img className="device-screen desktop" src="./assets/img/work/tidal-styleguide/tidal-v3-desktop-2.png" />
                                 </div>
                             </div>
                         </div>
@@ -59,31 +59,31 @@ class TidalStyleguide extends Component {
                         <div className="screens cs-block">
                             <div className="single-screen">
                                 <strong>Navigation</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-nav.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-nav.png" />
                             </div>
                             <div className="single-screen">
                                 <strong>Colors</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-colors.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-colors.png" />
                             </div>
                             <div className="single-screen">
                                 <strong>Typography</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-type.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-type.png" />
                             </div>
                             <div className="single-screen">
                                 <strong>Atoms section: Buttons</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-atoms.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-atoms.png" />
                             </div>
                             <div className="single-screen">
                                 <strong>Molecules section: Messages</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-molecules.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-molecules.png" />
                             </div>
                             <div className="single-screen">
                                 <strong>Organisms section: Godzilla system</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-organisms.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-organisms.png" />
                             </div>
                             <div className="single-screen">
                                 <strong>Interactive "pushout"</strong>
-                                <img src="../assets/img/work/tidal-styleguide/tidal-v3-pushout.png" />
+                                <img src="./assets/img/work/tidal-styleguide/tidal-v3-pushout.png" />
                             </div>
                         </div>
 
