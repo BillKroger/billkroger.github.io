@@ -6,6 +6,8 @@ $color-light: whitesmoke;
 }
 
 body, html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch !important;
 }
 
