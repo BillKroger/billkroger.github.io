@@ -547,17 +547,16 @@ body.nav-open {
         @media only screen and (min-width: 769px) {
           .section.about .about-block.hello {
             margin-right: 20px; } }
-        .section.about .about-block.hello:after {
-          content: '!';
-          position: absolute;
-          bottom: 35px;
-          right: -5px;
+        .section.about .about-block.hello h1 {
+          display: inline-block;
+          margin: 0;
           font-size: 5rem;
-          font-style: normal; }
+          line-height: 5rem; }
         .section.about .about-block.hello img.smile {
-          display: block;
+          display: inline-block;
           max-width: 135px;
-          margin-right: 15px; }
+          top: 5px;
+          position: relative; }
       .section.about .about-block.name {
         margin-right: 0; }
         @media only screen and (min-width: 769px) {
@@ -659,762 +658,764 @@ body.nav-open {
     background-image: url("../img/work/tidal-marketing/frame4.jpg"); }
   100% {
     background-image: url("../img/work/tidal-marketing/frame1.jpg"); } }
-.work-container .portfolio-item {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  height: 150px; }
-  @media only screen and (min-width: 769px) {
-    .work-container .portfolio-item {
-      height: auto; } }
-  .work-container .portfolio-item a {
+.work-container {
+  -webkit-font-smoothing: subpixel-antialiased; }
+  .work-container .portfolio-item {
     width: 100%;
-    height: 100%;
-    display: inline-block;
-    cursor: pointer; }
+    position: relative;
+    overflow: hidden;
+    height: 150px; }
     @media only screen and (min-width: 769px) {
-      .work-container .portfolio-item a {
-        padding: 25px 0 25px 40px; } }
-    .work-container .portfolio-item a .bg-image {
+      .work-container .portfolio-item {
+        height: auto; } }
+    .work-container .portfolio-item a {
       width: 100%;
       height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left 30%;
-      filter: brightness(0.4) grayscale(0);
-      -webkit-transform: scale(1.05) rotate(0deg);
-      -ms-transform: scale(1.05) rotate(0deg);
-      transform: scale(1.05) rotate(0deg);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      transition: all 0.7s; }
-      @media only screen and (min-width: 769px) {
-        .work-container .portfolio-item a .bg-image {
-          filter: brightness(1) grayscale(1);
-          -webkit-transform: scale(1) rotate(0deg);
-          -ms-transform: scale(1) rotate(0deg);
-          transform: scale(1) rotate(0deg); } }
-    .work-container .portfolio-item a .logo {
       display: inline-block;
-      width: 70px;
-      height: 70px;
-      position: relative;
-      z-index: 2;
-      vertical-align: middle;
-      margin-right: 20px;
-      border-radius: 50%;
-      box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.35);
-      opacity: 1.0;
-      transition: all 0.4s;
-      top: 50%;
-      left: 17.5px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-      .work-container .portfolio-item a .logo img {
-        max-width: 100%; }
+      cursor: pointer; }
       @media only screen and (min-width: 769px) {
-        .work-container .portfolio-item a .logo {
-          opacity: 0;
-          top: auto;
-          left: 0;
-          -webkit-transform: translateY(0%);
-          -ms-transform: translateY(0%);
-          transform: translateY(0%); } }
-    .work-container .portfolio-item a .text {
-      display: inline-block;
-      position: relative;
-      z-index: 2;
-      opacity: 1.0;
-      transition: all 0.4s;
-      left: 17.5px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-      @media only screen and (min-width: 769px) {
-        .work-container .portfolio-item a .text {
-          vertical-align: middle;
-          opacity: 0;
-          left: 0;
-          top: auto;
-          -webkit-transform: translateY(0%);
-          -ms-transform: translateY(0%);
-          transform: translateY(0%); } }
-      .work-container .portfolio-item a .text span {
-        position: relative;
-        z-index: 2; }
-        .work-container .portfolio-item a .text span.name {
-          display: block;
-          font-size: 1.5rem;
-          color: whitesmoke; }
-          @media only screen and (min-width: 769px) {
-            .work-container .portfolio-item a .text span.name {
-              font-size: 2rem; } }
-        .work-container .portfolio-item a .text span.client {
-          font-size: 1rem;
-          color: #eee; }
-          @media only screen and (min-width: 769px) {
-            .work-container .portfolio-item a .text span.client {
-              font-size: 1.2rem; } }
-    @media only screen and (min-width: 769px) {
-      .work-container .portfolio-item a:hover .bg-image {
+        .work-container .portfolio-item a {
+          padding: 25px 0 25px 40px; } }
+      .work-container .portfolio-item a .bg-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left 30%;
         filter: brightness(0.4) grayscale(0);
         -webkit-transform: scale(1.05) rotate(0deg);
         -ms-transform: scale(1.05) rotate(0deg);
-        transform: scale(1.05) rotate(0deg); }
-      .work-container .portfolio-item a:hover .logo {
-        opacity: 1.0;
-        left: 30px; }
-      .work-container .portfolio-item a:hover .text {
-        opacity: 1.0;
-        left: 30px; }
-        .work-container .portfolio-item a:hover .text span.name {
-          color: whitesmoke; }
-        .work-container .portfolio-item a:hover .text span.client {
-          color: #eee; } }
-.work-container .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0.001vw, -10%, 0);
-  -ms-transform: translate3d(0.001vw, -10%, 0);
-  transform: translate3d(0.001vw, -10%, 0);
-  background-color: #222;
-  z-index: 300;
-  transition: opacity 0.3s 0.45s, width 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), transform 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), height 0.5s cubic-bezier(0.82, 0, 0.61, 0.89); }
-  .work-container .modal.visible {
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
-    -webkit-transform: translate3d(0.001vw, 0vh, 0);
-    -ms-transform: translate3d(0.001vw, 0vh, 0);
-    transform: translate3d(0.001vw, 0vh, 0);
-    transition: opacity 0.25s 0s, width 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, transform 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, height 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, border 0.2s linear 0.3s; }
-    .work-container .modal.visible .modal-content, .work-container .modal.visible .close-btn, .work-container .modal.visible .case-study {
-      opacity: 1.0;
-      display: block; }
-  .work-container .modal.hidden {
-    width: 0;
-    height: 0;
-    opacity: 0; }
-    .work-container .modal.hidden .modal-content {
-      opacity: 0; }
-  .work-container .modal .modal-content {
-    overflow: auto; }
-  .work-container .modal .close-btn {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    right: 20px;
-    top: 20px;
-    float: right;
-    width: 7vh;
-    height: 7vh;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in 0.3s;
-    z-index: 3; }
-    .work-container .modal .close-btn .close-icon {
-      display: inline-block;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      cursor: pointer;
-      transition: opacity .5s ease; }
-      .work-container .modal .close-btn .close-icon:before, .work-container .modal .close-btn .close-icon:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 0.3vh;
-        min-height: 1px;
-        background-color: #c6a437;
-        top: 50%;
-        -webkit-transform-origin: center center;
-        -ms-transform-origin: center center;
-        transform-origin: center center;
-        right: 0;
-        margin-left: -6.5vh;
-        transition: -webkit-transform .35s ease;
-        transition: transform .35s ease; }
-      .work-container .modal .close-btn .close-icon:before {
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg); }
-      .work-container .modal .close-btn .close-icon:after {
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      .work-container .modal .close-btn .close-icon:hover:before {
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-      .work-container .modal .close-btn .close-icon:hover:after {
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg); }
-  .work-container .modal .case-study {
-    opacity: 0;
-    transition: opacity 0.5s ease-in 0.3s;
-    display: none;
-    background-color: #222;
-    color: #f5f5f5; }
-    .work-container .modal .case-study .header {
-      width: 100%;
-      height: 80vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center 25%;
-      position: relative; }
-      .work-container .modal .case-study .header:after {
-        content: '';
+        transform: scale(1.05) rotate(0deg);
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 1;
+        transition: all 0.7s; }
+        @media only screen and (min-width: 769px) {
+          .work-container .portfolio-item a .bg-image {
+            filter: brightness(1) grayscale(1);
+            -webkit-transform: scale(1) rotate(0deg);
+            -ms-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); } }
+      .work-container .portfolio-item a .logo {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        position: relative;
+        z-index: 2;
+        vertical-align: middle;
+        margin-right: 20px;
+        border-radius: 50%;
+        box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.35);
+        opacity: 1.0;
+        transition: all 0.4s;
+        top: 50%;
+        left: 17.5px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .work-container .portfolio-item a .logo img {
+          max-width: 100%; }
+        @media only screen and (min-width: 769px) {
+          .work-container .portfolio-item a .logo {
+            opacity: 0;
+            top: auto;
+            left: 0;
+            -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+            transform: translateY(0%); } }
+      .work-container .portfolio-item a .text {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        opacity: 1.0;
+        transition: all 0.4s;
+        left: 17.5px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        @media only screen and (min-width: 769px) {
+          .work-container .portfolio-item a .text {
+            vertical-align: middle;
+            opacity: 0;
+            left: 0;
+            top: auto;
+            -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+            transform: translateY(0%); } }
+        .work-container .portfolio-item a .text span {
+          position: relative;
+          z-index: 2; }
+          .work-container .portfolio-item a .text span.name {
+            display: block;
+            font-size: 1.5rem;
+            color: whitesmoke; }
+            @media only screen and (min-width: 769px) {
+              .work-container .portfolio-item a .text span.name {
+                font-size: 2rem; } }
+          .work-container .portfolio-item a .text span.client {
+            font-size: 1rem;
+            color: #eee; }
+            @media only screen and (min-width: 769px) {
+              .work-container .portfolio-item a .text span.client {
+                font-size: 1.2rem; } }
+      @media only screen and (min-width: 769px) {
+        .work-container .portfolio-item a:hover .bg-image {
+          filter: brightness(0.4) grayscale(0);
+          -webkit-transform: scale(1.05) rotate(0deg);
+          -ms-transform: scale(1.05) rotate(0deg);
+          transform: scale(1.05) rotate(0deg); }
+        .work-container .portfolio-item a:hover .logo {
+          opacity: 1.0;
+          left: 30px; }
+        .work-container .portfolio-item a:hover .text {
+          opacity: 1.0;
+          left: 30px; }
+          .work-container .portfolio-item a:hover .text span.name {
+            color: whitesmoke; }
+          .work-container .portfolio-item a:hover .text span.client {
+            color: #eee; } }
+  .work-container .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0.001vw, -10%, 0);
+    -ms-transform: translate3d(0.001vw, -10%, 0);
+    transform: translate3d(0.001vw, -10%, 0);
+    background-color: #222;
+    z-index: 300;
+    transition: opacity 0.3s 0.45s, width 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), transform 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), height 0.5s cubic-bezier(0.82, 0, 0.61, 0.89); }
+    .work-container .modal.visible {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      -webkit-transform: translate3d(0.001vw, 0vh, 0);
+      -ms-transform: translate3d(0.001vw, 0vh, 0);
+      transform: translate3d(0.001vw, 0vh, 0);
+      transition: opacity 0.25s 0s, width 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, transform 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, height 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, border 0.2s linear 0.3s; }
+      .work-container .modal.visible .modal-content, .work-container .modal.visible .close-btn, .work-container .modal.visible .case-study {
+        opacity: 1.0;
+        display: block; }
+    .work-container .modal.hidden {
+      width: 0;
+      height: 0;
+      opacity: 0; }
+      .work-container .modal.hidden .modal-content {
+        opacity: 0; }
+    .work-container .modal .modal-content {
+      overflow: auto; }
+    .work-container .modal .close-btn {
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
+      position: sticky;
+      right: 20px;
+      top: 20px;
+      float: right;
+      width: 7vh;
+      height: 7vh;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in 0.3s;
+      z-index: 3; }
+      .work-container .modal .close-btn .close-icon {
+        display: inline-block;
+        margin: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6); }
-      .work-container .modal .case-study .header .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        max-width: 90%;
-        text-align: center;
-        z-index: 2;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-        .work-container .modal .case-study .header .center h1 {
-          text-transform: uppercase;
-          font-size: 3rem;
-          font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif;
-          position: relative;
-          margin: 0 auto 25px;
-          padding-bottom: 15px; }
-          .work-container .modal .case-study .header .center h1:after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 15px;
-            height: 6px;
-            background-color: #c6a437; }
-        .work-container .modal .case-study .header .center img {
-          max-width: 150px; }
-    .work-container .modal .case-study .main {
-      width: 100%;
+        cursor: pointer;
+        transition: opacity .5s ease; }
+        .work-container .modal .close-btn .close-icon:before, .work-container .modal .close-btn .close-icon:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 0.3vh;
+          min-height: 1px;
+          background-color: #c6a437;
+          top: 50%;
+          -webkit-transform-origin: center center;
+          -ms-transform-origin: center center;
+          transform-origin: center center;
+          right: 0;
+          margin-left: -6.5vh;
+          transition: -webkit-transform .35s ease;
+          transition: transform .35s ease; }
+        .work-container .modal .close-btn .close-icon:before {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        .work-container .modal .close-btn .close-icon:after {
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+        .work-container .modal .close-btn .close-icon:hover:before {
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+        .work-container .modal .close-btn .close-icon:hover:after {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+    .work-container .modal .case-study {
+      opacity: 0;
+      transition: opacity 0.5s ease-in 0.3s;
+      display: none;
       background-color: #222;
-      padding: 0 0 100px; }
-      .work-container .modal .case-study .main .cs-block {
+      color: #f5f5f5; }
+      .work-container .modal .case-study .header {
         width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px; }
-      .work-container .modal .case-study .main .meta {
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 15px;
-        display: flex;
-        justify-content: space-between;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 0;
-        font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif; }
-        @media only screen and (min-width: 769px) {
-          .work-container .modal .case-study .main .meta {
-            margin-bottom: 100px; } }
-        .work-container .modal .case-study .main .meta .meta-col {
-          float: left;
-          padding: 0; }
-          @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study .main .meta .meta-col {
-              padding: 0 15px; } }
-          .work-container .modal .case-study .main .meta .meta-col:nth-child(1) {
-            flex: 1 40%;
-            padding-left: 0; }
-          .work-container .modal .case-study .main .meta .meta-col:nth-child(2) {
-            flex: 1 40%; }
-          .work-container .modal .case-study .main .meta .meta-col:nth-child(3) {
-            flex: 1 20%;
-            padding-right: 0; }
-          .work-container .modal .case-study .main .meta .meta-col p {
-            color: #f5f5f5;
-            display: block;
-            margin-bottom: 10px; }
-          @media only screen and (max-width: 767px) {
-            .work-container .modal .case-study .main .meta .meta-col {
-              width: 100%;
-              flex: 1 100% !important;
-              padding-bottom: 30px; } }
-        @media only screen and (max-width: 767px) {
-          .work-container .modal .case-study .main .meta {
-            flex-wrap: wrap; } }
-      .work-container .modal .case-study .main .meta-col-header {
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 3px solid rgba(55, 55, 55, 0.75);
-        max-width: none; }
-        .work-container .modal .case-study .main .meta-col-header strong {
-          font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif;
-          margin-right: 5px;
-          color: #c6a437;
-          display: block;
-          text-transform: uppercase;
-          letter-spacing: 2px; }
-      .work-container .modal .case-study .main .site-link {
-        text-decoration: none;
-        display: block;
-        transition: all 0.3s;
-        color: whitesmoke; }
-        .work-container .modal .case-study .main .site-link:hover {
-          color: #c6a437; }
-        .work-container .modal .case-study .main .site-link span {
-          margin-right: 10px;
-          display: inline-block;
-          vertical-align: middle; }
-        .work-container .modal .case-study .main .site-link i {
-          display: inline-block;
-          vertical-align: middle; }
-      .work-container .modal .case-study .main .content {
-        background-color: #222; }
-        .work-container .modal .case-study .main .content .mockup-full-pg {
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 25%;
+        position: relative; }
+        .work-container .modal .case-study .header:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
           width: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-color: #222; }
-          .work-container .modal .case-study .main .content .mockup-full-pg img {
-            max-width: 100%; }
-        .work-container .modal .case-study .main .content .screens {
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6); }
+        .work-container .modal .case-study .header .center {
+          position: absolute;
+          top: 50%;
+          left: 50%;
           width: 100%;
-          background-color: #222;
-          color: whitesmoke; }
-          @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study .main .content .screens {
-              width: 75%; } }
-          .work-container .modal .case-study .main .content .screens img {
-            max-width: 100%;
-            margin: 0 auto; }
-          .work-container .modal .case-study .main .content .screens .single-screen {
-            width: 100%;
-            margin-bottom: 50px;
-            background-color: #222; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study .main .content .screens .single-screen {
-                margin-bottom: 150px; } }
-            .work-container .modal .case-study .main .content .screens .single-screen strong {
-              text-transform: uppercase;
-              font-size: 1rem;
-              color: whitesmoke;
-              margin-bottom: 20px;
-              display: block;
-              letter-spacing: 1px;
-              font-family: 'Lato', Helvetica, Arial, sans-serif;
-              font-weight: 600; }
-            .work-container .modal .case-study .main .content .screens .single-screen img {
-              box-shadow: 2px 10px 16px 0 rgba(0, 0, 0, 0.18); }
-              .work-container .modal .case-study .main .content .screens .single-screen img.no-shadow {
-                box-shadow: none; }
-            .work-container .modal .case-study .main .content .screens .single-screen.nav {
-              position: relative; }
-              .work-container .modal .case-study .main .content .screens .single-screen.nav img.dropdowns {
-                max-width: 55%; }
-              .work-container .modal .case-study .main .content .screens .single-screen.nav img.notifs {
-                position: absolute;
-                top: 20%;
-                left: 45%;
-                max-width: 55%; }
-        .work-container .modal .case-study .main .content .job-desc {
-          margin-bottom: 100px; }
-          .work-container .modal .case-study .main .content .job-desc .left {
-            display: inline-block;
-            text-align: left;
-            padding: 0;
-            margin-bottom: 50px;
-            vertical-align: top;
-            width: 100%; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study .main .content .job-desc .left {
-                padding: 0 50px 0 0;
-                margin-bottom: 0; } }
-            .work-container .modal .case-study .main .content .job-desc .left img {
-              max-width: 100%;
-              margin-bottom: 10px; }
-            .work-container .modal .case-study .main .content .job-desc .left p {
-              font-size: 1.15rem;
-              letter-spacing: 1px; }
-            .work-container .modal .case-study .main .content .job-desc .left .creator-exchange-list {
-              margin: 0;
-              padding: 0;
-              list-style: none; }
-          .work-container .modal .case-study .main .content .job-desc .right {
-            display: inline-block;
-            padding: 0;
-            vertical-align: top;
-            width: 100%;
-            -webkit-perspective: 2000px;
-            perspective: 2000px; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study .main .content .job-desc .right {
-                padding: 0 0 0 50px; } }
-            .work-container .modal .case-study .main .content .job-desc .right .device-screens {
-              width: 100%;
-              height: 0;
-              padding-bottom: 70%;
-              margin: 0;
-              position: relative;
-              text-align: center;
-              -webkit-perspective: 1000px;
-              perspective: 1000px; }
-              @media only screen and (min-width: 1024px) {
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens {
-                  -webkit-perspective: 2000px;
-                  perspective: 2000px; } }
-              .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen {
-                position: absolute;
-                -webkit-box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
-                box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
-                -webkit-transform: rotateY(-30deg) rotateX(5deg);
-                transform: rotateY(-30deg) rotateX(5deg);
-                -webkit-transform-origin: left bottom;
-                -ms-transform-origin: left bottom;
-                transform-origin: left bottom;
-                display: block;
-                border-radius: 1px; }
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.phone {
-                  width: 20%;
-                  top: 40%;
-                  left: 30%;
-                  z-index: 2; }
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tablet {
-                  width: 40%;
-                  top: 20%;
-                  z-index: 1; }
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop {
-                  width: 95%;
-                  top: 0;
-                  left: 50%;
-                  -webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
-                  transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
-                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
-                    left: 45%;
-                    display: block; }
-                    @media only screen and (min-width: 1200px) {
-                      .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
-                        display: none; } }
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
-                  width: 95%;
-                  height: 300px;
-                  top: 25px;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center center;
-                  transition: all 0.05s linear;
-                  -webkit-animation-name: screens;
-                  animation-name: screens;
-                  -webkit-animation-duration: 14s;
-                  animation-duration: 14s;
-                  -webkit-animation-iteration-count: infinite;
-                  animation-iteration-count: infinite;
-                  -webkit-animation-direction: normal;
-                  animation-direction: normal;
-                  -webkit-animation-timing-function: ease-in-out;
-                  animation-timing-function: ease-in-out;
-                  display: none; }
-                  @media only screen and (min-width: 1200px) {
-                    .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
-                      display: block; } }
-                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.vssl.phone {
-                  top: 45%;
-                  left: 25%; }
-          @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study .main .content .job-desc .left {
-              width: 40%; }
-            .work-container .modal .case-study .main .content .job-desc .right {
-              width: 60%; } }
-          .work-container .modal .case-study .main .content .job-desc.creator-exchange {
-            padding-bottom: 100px; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study .main .content .job-desc.creator-exchange {
-                padding-top: 100px; } }
-        .work-container .modal .case-study .main .content .list {
-          width: 100%;
-          margin-bottom: 100px;
-          padding: 0 50px; }
-          .work-container .modal .case-study .main .content .list ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            text-align: center; }
-            .work-container .modal .case-study .main .content .list ul li {
-              display: inline-block;
-              margin-right: 20px;
-              margin-bottom: 20px;
-              width: 70px;
-              height: 70px; }
-              @media only screen and (min-width: 769px) {
-                .work-container .modal .case-study .main .content .list ul li {
-                  width: 75px;
-                  height: 75px; } }
-              .work-container .modal .case-study .main .content .list ul li img {
-                max-width: 100%;
-                max-height: 100%; }
-          .work-container .modal .case-study .main .content .list.tech-stack {
-            margin-bottom: 150px; }
-          .work-container .modal .case-study .main .content .list.clients ul li {
-            width: 70px;
-            height: 70px;
-            position: relative; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study .main .content .list.clients ul li {
-                width: 100px;
-                height: 70px; } }
-            .work-container .modal .case-study .main .content .list.clients ul li img {
-              max-width: 100%;
-              max-height: 100%;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%); }
-    .work-container .modal .case-study.tidal-dashboard .header {
-      background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
-    .work-container .modal .case-study.tidal-dashboard .mockup-full-pg {
-      margin-bottom: 100px; }
-    .work-container .modal .case-study.tidal-styleguide .header {
-      background-image: url("../../assets/img/work/tidal-styleguide/styleguide-bg-test.png"); }
-    .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.phone {
-      left: 35%; }
-    .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.tablet {
-      top: 10%;
-      left: 50%; }
-    .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.desktop {
-      left: 40%; }
-    .work-container .modal .case-study.tidal-styleguide .main .content .screens {
-      background: #222; }
-      .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
-        color: whitesmoke; }
-    .work-container .modal .case-study.tidal-marketing .header {
-      background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
-    .work-container .modal .case-study.concern .header {
-      background-image: url("../../assets/img/work/concern/concern-header.jpg"); }
-    .work-container .modal .case-study.vssl .header {
-      background-image: url("../../assets/img/work/vssl/vssl-header.jpg"); }
-    .work-container .modal .case-study.vssl .main .content .job-desc {
-      margin-bottom: 200px; }
-    .work-container .modal .case-study.vssl .widgets .widget {
-      width: 100%;
-      position: relative;
-      margin-bottom: 100px; }
-      .work-container .modal .case-study.vssl .widgets .widget strong {
-        text-transform: uppercase;
-        font-size: 1rem;
-        color: whitesmoke;
-        margin-bottom: 50px;
-        display: block;
-        letter-spacing: 1px;
-        font-family: 'Lato', Helvetica, Arial, sans-serif;
-        font-weight: 600;
-        border-bottom: 3px solid rgba(55, 55, 55, 0.75);
-        padding-bottom: 10px; }
-      .work-container .modal .case-study.vssl .widgets .widget .widget-inner {
-        width: 100%; }
-      .work-container .modal .case-study.vssl .widgets .widget.slider {
-        height: 80vh; }
-        @media only screen and (min-width: 769px) {
-          .work-container .modal .case-study.vssl .widgets .widget.slider {
-            height: 75vh; } }
-        .work-container .modal .case-study.vssl .widgets .widget.slider strong {
-          margin-bottom: 90px; }
-        .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
-          max-width: 768px;
-          margin: 0 auto;
-          padding-left: 35px;
-          padding-right: 35px; }
-          @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
-              padding-left: 60px;
-              padding-right: 60px; } }
-          @media only screen and (min-width: 992px) {
-            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
-              padding: 0; } }
-          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__fill {
-            background: #c6a437;
-            background: linear-gradient(52deg, #c6a437 0%, #5c4e21 100%); }
-          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:focus {
-            outline: none; }
-          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:after {
-            background-color: #5c4e21; }
-          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
-            width: 90px;
-            height: 62px;
-            background: white;
-            color: #222;
-            display: block;
-            top: 45px;
-            left: -35px;
-            text-align: center;
-            line-height: 22px;
-            font-size: 1.25rem;
-            padding-top: 10px;
-            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-            font-weight: bold;
-            border-radius: 3px;
-            position: absolute; }
-            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label:before {
+          max-width: 90%;
+          text-align: center;
+          z-index: 2;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+          .work-container .modal .case-study .header .center h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif;
+            position: relative;
+            margin: 0 auto 25px;
+            padding-bottom: 15px; }
+            .work-container .modal .case-study .header .center h1:after {
               content: '';
               position: absolute;
-              top: -15px;
-              left: 35px;
-              width: 0;
-              height: 0;
-              border-left: 15px solid transparent;
-              border-right: 15px solid transparent;
-              border-bottom: 15px solid white; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
-                width: 140px;
-                height: 50px;
-                left: -55px;
-                line-height: 50px;
-                font-size: 1.35rem;
-                padding-top: 0; }
-                .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label:before {
-                  left: 55px; } }
-          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__labels .rangeslider__label-item {
-            font-size: 18px;
-            min-width: 70px;
-            top: -65px; }
-          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .percentage {
-            text-align: center;
-            color: #c6a437;
-            font-size: 84px;
-            line-height: 63px;
-            margin-top: 120px;
-            margin-bottom: 15px;
-            padding-bottom: 0;
-            display: block; }
-      .work-container .modal .case-study.vssl .widgets .widget.calc {
-        height: 100vh; }
-        .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator {
-          text-align: center;
-          font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-          font-size: 1.75rem;
-          line-height: 2.5rem; }
+              top: 100%;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 15px;
+              height: 6px;
+              background-color: #c6a437; }
+          .work-container .modal .case-study .header .center img {
+            max-width: 150px; }
+      .work-container .modal .case-study .main {
+        width: 100%;
+        background-color: #222;
+        padding: 0 0 100px; }
+        .work-container .modal .case-study .main .cs-block {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding-left: 20px;
+          padding-right: 20px; }
+        .work-container .modal .case-study .main .meta {
+          width: 100%;
+          padding-top: 40px;
+          padding-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 0;
+          font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif; }
           @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator {
-              font-size: 2rem;
-              line-height: 3rem; } }
-          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text {
-            color: #EEE;
-            margin-right: 10px;
-            display: inline;
-            vertical-align: middle; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.dollar-sign {
-              color: #c6a437;
-              margin-right: 3px;
-              font-weight: 500; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.no-margin {
-              margin-right: 0; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.calc-output {
-              color: #c6a437; }
-          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text-block {
-            display: inline-block; }
-          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .number-input {
-            border: none;
-            outline: none;
-            background: transparent;
-            padding: 0;
-            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-            font-weight: 500;
-            color: #c6a437;
-            border-bottom: 4px dotted #c6a437;
-            width: 150px;
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
+            .work-container .modal .case-study .main .meta {
+              margin-bottom: 100px; } }
+          .work-container .modal .case-study .main .meta .meta-col {
+            float: left;
+            padding: 0; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .meta .meta-col {
+                padding: 0 15px; } }
+            .work-container .modal .case-study .main .meta .meta-col:nth-child(1) {
+              flex: 1 40%;
+              padding-left: 0; }
+            .work-container .modal .case-study .main .meta .meta-col:nth-child(2) {
+              flex: 1 40%; }
+            .work-container .modal .case-study .main .meta .meta-col:nth-child(3) {
+              flex: 1 20%;
+              padding-right: 0; }
+            .work-container .modal .case-study .main .meta .meta-col p {
+              color: #f5f5f5;
+              display: block;
+              margin-bottom: 10px; }
+            @media only screen and (max-width: 767px) {
+              .work-container .modal .case-study .main .meta .meta-col {
+                width: 100%;
+                flex: 1 100% !important;
+                padding-bottom: 30px; } }
+          @media only screen and (max-width: 767px) {
+            .work-container .modal .case-study .main .meta {
+              flex-wrap: wrap; } }
+        .work-container .modal .case-study .main .meta-col-header {
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          border-bottom: 3px solid rgba(55, 55, 55, 0.75);
+          max-width: none; }
+          .work-container .modal .case-study .main .meta-col-header strong {
+            font-family: 'Gilroy W05 ExtraBold', Helvetica, Arial, sans-serif;
             margin-right: 5px;
-            font-size: 1.75rem; }
-            @media only screen and (min-width: 769px) {
-              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .number-input {
-                font-size: 2rem; } }
-          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown {
+            color: #c6a437;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px; }
+        .work-container .modal .case-study .main .site-link {
+          text-decoration: none;
+          display: block;
+          transition: all 0.3s;
+          color: whitesmoke; }
+          .work-container .modal .case-study .main .site-link:hover {
+            color: #c6a437; }
+          .work-container .modal .case-study .main .site-link span {
             margin-right: 10px;
             display: inline-block;
-            font-weight: 500;
-            color: #c6a437;
-            border-bottom: 4px dotted #c6a437;
             vertical-align: middle; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .dropdown-icon {
-              float: right;
-              margin-left: 5px; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .current-selection.default {
-              font-size: 1.5rem;
-              font-weight: 500;
-              opacity: 0.5;
-              font-style: italic;
-              padding-top: 5px; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options {
-              position: relative; }
-              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list {
-                margin: 5px;
+          .work-container .modal .case-study .main .site-link i {
+            display: inline-block;
+            vertical-align: middle; }
+        .work-container .modal .case-study .main .content {
+          background-color: #222; }
+          .work-container .modal .case-study .main .content .mockup-full-pg {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #222; }
+            .work-container .modal .case-study .main .content .mockup-full-pg img {
+              max-width: 100%; }
+          .work-container .modal .case-study .main .content .screens {
+            width: 100%;
+            background-color: #222;
+            color: whitesmoke; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .content .screens {
+                width: 75%; } }
+            .work-container .modal .case-study .main .content .screens img {
+              max-width: 100%;
+              margin: 0 auto; }
+            .work-container .modal .case-study .main .content .screens .single-screen {
+              width: 100%;
+              margin-bottom: 50px;
+              background-color: #222; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study .main .content .screens .single-screen {
+                  margin-bottom: 150px; } }
+              .work-container .modal .case-study .main .content .screens .single-screen strong {
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: whitesmoke;
+                margin-bottom: 20px;
+                display: block;
+                letter-spacing: 1px;
+                font-family: 'Lato', Helvetica, Arial, sans-serif;
+                font-weight: 600; }
+              .work-container .modal .case-study .main .content .screens .single-screen img {
+                box-shadow: 2px 10px 16px 0 rgba(0, 0, 0, 0.18); }
+                .work-container .modal .case-study .main .content .screens .single-screen img.no-shadow {
+                  box-shadow: none; }
+              .work-container .modal .case-study .main .content .screens .single-screen.nav {
+                position: relative; }
+                .work-container .modal .case-study .main .content .screens .single-screen.nav img.dropdowns {
+                  max-width: 55%; }
+                .work-container .modal .case-study .main .content .screens .single-screen.nav img.notifs {
+                  position: absolute;
+                  top: 20%;
+                  left: 45%;
+                  max-width: 55%; }
+          .work-container .modal .case-study .main .content .job-desc {
+            margin-bottom: 100px; }
+            .work-container .modal .case-study .main .content .job-desc .left {
+              display: inline-block;
+              text-align: left;
+              padding: 0;
+              margin-bottom: 50px;
+              vertical-align: top;
+              width: 100%; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study .main .content .job-desc .left {
+                  padding: 0 50px 0 0;
+                  margin-bottom: 0; } }
+              .work-container .modal .case-study .main .content .job-desc .left img {
+                max-width: 100%;
+                margin-bottom: 10px; }
+              .work-container .modal .case-study .main .content .job-desc .left p {
+                font-size: 1.15rem;
+                letter-spacing: 1px; }
+              .work-container .modal .case-study .main .content .job-desc .left .creator-exchange-list {
+                margin: 0;
                 padding: 0;
-                list-style: none;
+                list-style: none; }
+            .work-container .modal .case-study .main .content .job-desc .right {
+              display: inline-block;
+              padding: 0;
+              vertical-align: top;
+              width: 100%;
+              -webkit-perspective: 2000px;
+              perspective: 2000px; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study .main .content .job-desc .right {
+                  padding: 0 0 0 50px; } }
+              .work-container .modal .case-study .main .content .job-desc .right .device-screens {
+                width: 100%;
+                height: 0;
+                padding-bottom: 70%;
+                margin: 0;
+                position: relative;
+                text-align: center;
+                -webkit-perspective: 1000px;
+                perspective: 1000px; }
+                @media only screen and (min-width: 1024px) {
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens {
+                    -webkit-perspective: 2000px;
+                    perspective: 2000px; } }
+                .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen {
+                  position: absolute;
+                  -webkit-box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
+                  box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
+                  -webkit-transform: rotateY(-30deg) rotateX(5deg);
+                  transform: rotateY(-30deg) rotateX(5deg);
+                  -webkit-transform-origin: left bottom;
+                  -ms-transform-origin: left bottom;
+                  transform-origin: left bottom;
+                  display: block;
+                  border-radius: 1px; }
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.phone {
+                    width: 20%;
+                    top: 40%;
+                    left: 30%;
+                    z-index: 2; }
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tablet {
+                    width: 40%;
+                    top: 20%;
+                    z-index: 1; }
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop {
+                    width: 95%;
+                    top: 0;
+                    left: 50%;
+                    -webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+                    transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
+                    .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
+                      left: 45%;
+                      display: block; }
+                      @media only screen and (min-width: 1200px) {
+                        .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
+                          display: none; } }
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
+                    width: 95%;
+                    height: 300px;
+                    top: 25px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    transition: all 0.05s linear;
+                    -webkit-animation-name: screens;
+                    animation-name: screens;
+                    -webkit-animation-duration: 14s;
+                    animation-duration: 14s;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-direction: normal;
+                    animation-direction: normal;
+                    -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+                    display: none; }
+                    @media only screen and (min-width: 1200px) {
+                      .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
+                        display: block; } }
+                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.vssl.phone {
+                    top: 45%;
+                    left: 25%; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study .main .content .job-desc .left {
+                width: 40%; }
+              .work-container .modal .case-study .main .content .job-desc .right {
+                width: 60%; } }
+            .work-container .modal .case-study .main .content .job-desc.creator-exchange {
+              padding-bottom: 100px; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study .main .content .job-desc.creator-exchange {
+                  padding-top: 100px; } }
+          .work-container .modal .case-study .main .content .list {
+            width: 100%;
+            margin-bottom: 100px;
+            padding: 0 50px; }
+            .work-container .modal .case-study .main .content .list ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              text-align: center; }
+              .work-container .modal .case-study .main .content .list ul li {
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                width: 70px;
+                height: 70px; }
+                @media only screen and (min-width: 769px) {
+                  .work-container .modal .case-study .main .content .list ul li {
+                    width: 75px;
+                    height: 75px; } }
+                .work-container .modal .case-study .main .content .list ul li img {
+                  max-width: 100%;
+                  max-height: 100%; }
+            .work-container .modal .case-study .main .content .list.tech-stack {
+              margin-bottom: 150px; }
+            .work-container .modal .case-study .main .content .list.clients ul li {
+              width: 70px;
+              height: 70px;
+              position: relative; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study .main .content .list.clients ul li {
+                  width: 100px;
+                  height: 70px; } }
+              .work-container .modal .case-study .main .content .list.clients ul li img {
+                max-width: 100%;
+                max-height: 100%;
                 position: absolute;
-                top: -30px;
-                left: -5px;
-                background: #f5f5f5;
-                border: 1px solid #aaaaaa;
-                width: 145px;
-                z-index: 1; }
-                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list li.option {
-                  padding: 4px 0;
-                  font-weight: 500;
-                  cursor: pointer; }
-                  .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list li.option:hover {
-                    background-color: #444; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration {
-              width: 170px; }
-              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration .options ul.options-list {
-                text-align: right; }
-                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration .options ul.options-list .option {
-                  padding-right: 10px; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq {
-              width: 160px; }
-              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq .options ul.options-list {
-                text-align: center; }
-                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq .options ul.options-list .option {
-                  padding-right: 5px; }
-          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-top {
-            margin-left: auto;
-            margin-right: auto;
-            position: relative; }
-          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom {
-            margin: 55px auto 0; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom .calc-output-wrapper {
-              display: inline-block; }
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom .calc-annotation {
-              font-size: 1rem;
-              line-height: 1.5rem;
-              margin-top: 50px; }
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); }
+      .work-container .modal .case-study.tidal-dashboard .header {
+        background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
+      .work-container .modal .case-study.tidal-dashboard .mockup-full-pg {
+        margin-bottom: 100px; }
+      .work-container .modal .case-study.tidal-styleguide .header {
+        background-image: url("../../assets/img/work/tidal-styleguide/styleguide-bg-test.png"); }
+      .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.phone {
+        left: 35%; }
+      .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.tablet {
+        top: 10%;
+        left: 50%; }
+      .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.desktop {
+        left: 40%; }
+      .work-container .modal .case-study.tidal-styleguide .main .content .screens {
+        background: #222; }
+        .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
+          color: whitesmoke; }
+      .work-container .modal .case-study.tidal-marketing .header {
+        background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
+      .work-container .modal .case-study.concern .header {
+        background-image: url("../../assets/img/work/concern/concern-header.jpg"); }
+      .work-container .modal .case-study.vssl .header {
+        background-image: url("../../assets/img/work/vssl/vssl-header.jpg"); }
+      .work-container .modal .case-study.vssl .main .content .job-desc {
+        margin-bottom: 200px; }
+      .work-container .modal .case-study.vssl .widgets .widget {
+        width: 100%;
+        position: relative;
+        margin-bottom: 100px; }
+        .work-container .modal .case-study.vssl .widgets .widget strong {
+          text-transform: uppercase;
+          font-size: 1rem;
+          color: whitesmoke;
+          margin-bottom: 50px;
+          display: block;
+          letter-spacing: 1px;
+          font-family: 'Lato', Helvetica, Arial, sans-serif;
+          font-weight: 600;
+          border-bottom: 3px solid rgba(55, 55, 55, 0.75);
+          padding-bottom: 10px; }
+        .work-container .modal .case-study.vssl .widgets .widget .widget-inner {
+          width: 100%; }
+        .work-container .modal .case-study.vssl .widgets .widget.slider {
+          height: 80vh; }
           @media only screen and (min-width: 769px) {
-            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-top, .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom {
-              max-width: 85%; } }
-  .work-container .modal .modal-content {
-    position: relative;
-    background: #222;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in 0.3s; }
+            .work-container .modal .case-study.vssl .widgets .widget.slider {
+              height: 75vh; } }
+          .work-container .modal .case-study.vssl .widgets .widget.slider strong {
+            margin-bottom: 90px; }
+          .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
+            max-width: 768px;
+            margin: 0 auto;
+            padding-left: 35px;
+            padding-right: 35px; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
+                padding-left: 60px;
+                padding-right: 60px; } }
+            @media only screen and (min-width: 992px) {
+              .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner {
+                padding: 0; } }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__fill {
+              background: #c6a437;
+              background: linear-gradient(52deg, #c6a437 0%, #5c4e21 100%); }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:focus {
+              outline: none; }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle:after {
+              background-color: #5c4e21; }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
+              width: 90px;
+              height: 62px;
+              background: white;
+              color: #222;
+              display: block;
+              top: 45px;
+              left: -35px;
+              text-align: center;
+              line-height: 22px;
+              font-size: 1.25rem;
+              padding-top: 10px;
+              font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+              font-weight: bold;
+              border-radius: 3px;
+              position: absolute; }
+              .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label:before {
+                content: '';
+                position: absolute;
+                top: -15px;
+                left: 35px;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid white; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label {
+                  width: 140px;
+                  height: 50px;
+                  left: -55px;
+                  line-height: 50px;
+                  font-size: 1.35rem;
+                  padding-top: 0; }
+                  .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__handle .rangeslider__handle-label:before {
+                    left: 55px; } }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .rangeslider .rangeslider__labels .rangeslider__label-item {
+              font-size: 18px;
+              min-width: 70px;
+              top: -65px; }
+            .work-container .modal .case-study.vssl .widgets .widget.slider .widget-inner .percentage {
+              text-align: center;
+              color: #c6a437;
+              font-size: 84px;
+              line-height: 63px;
+              margin-top: 120px;
+              margin-bottom: 15px;
+              padding-bottom: 0;
+              display: block; }
+        .work-container .modal .case-study.vssl .widgets .widget.calc {
+          height: 100vh; }
+          .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator {
+            text-align: center;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            font-size: 1.75rem;
+            line-height: 2.5rem; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator {
+                font-size: 2rem;
+                line-height: 3rem; } }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text {
+              color: #EEE;
+              margin-right: 10px;
+              display: inline;
+              vertical-align: middle; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.dollar-sign {
+                color: #c6a437;
+                margin-right: 3px;
+                font-weight: 500; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.no-margin {
+                margin-right: 0; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text.calc-output {
+                color: #c6a437; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-text-block {
+              display: inline-block; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .number-input {
+              border: none;
+              outline: none;
+              background: transparent;
+              padding: 0;
+              font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+              font-weight: 500;
+              color: #c6a437;
+              border-bottom: 4px dotted #c6a437;
+              width: 150px;
+              display: inline-block;
+              vertical-align: middle;
+              text-align: center;
+              margin-right: 5px;
+              font-size: 1.75rem; }
+              @media only screen and (min-width: 769px) {
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .number-input {
+                  font-size: 2rem; } }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown {
+              margin-right: 10px;
+              display: inline-block;
+              font-weight: 500;
+              color: #c6a437;
+              border-bottom: 4px dotted #c6a437;
+              vertical-align: middle; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .dropdown-icon {
+                float: right;
+                margin-left: 5px; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .current-selection.default {
+                font-size: 1.5rem;
+                font-weight: 500;
+                opacity: 0.5;
+                font-style: italic;
+                padding-top: 5px; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options {
+                position: relative; }
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list {
+                  margin: 5px;
+                  padding: 0;
+                  list-style: none;
+                  position: absolute;
+                  top: -30px;
+                  left: -5px;
+                  background: #f5f5f5;
+                  border: 1px solid #aaaaaa;
+                  width: 145px;
+                  z-index: 1; }
+                  .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list li.option {
+                    padding: 4px 0;
+                    font-weight: 500;
+                    cursor: pointer; }
+                    .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown .options ul.options-list li.option:hover {
+                      background-color: #444; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration {
+                width: 170px; }
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration .options ul.options-list {
+                  text-align: right; }
+                  .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-duration .options ul.options-list .option {
+                    padding-right: 10px; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq {
+                width: 160px; }
+                .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq .options ul.options-list {
+                  text-align: center; }
+                  .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator .calc-dropdown.dd-debitfreq .options ul.options-list .option {
+                    padding-right: 5px; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-top {
+              margin-left: auto;
+              margin-right: auto;
+              position: relative; }
+            .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom {
+              margin: 55px auto 0; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom .calc-output-wrapper {
+                display: inline-block; }
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom .calc-annotation {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-top: 50px; }
+            @media only screen and (min-width: 769px) {
+              .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-top, .work-container .modal .case-study.vssl .widgets .widget.calc .widget-inner .calculator #calc-bottom {
+                max-width: 85%; } }
+    .work-container .modal .modal-content {
+      position: relative;
+      background: #222;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in 0.3s; }
 
 #work {
   font-family: 'Gilroy W05 Light', sans-serif;

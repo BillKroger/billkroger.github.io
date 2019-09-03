@@ -20,6 +20,7 @@
 
     const menu = document.getElementById('menu-toggle');
     const content = document.getElementById('content');
+    const logo = document.getElementById('bk-logo');
 
     menu.onclick = function() {
         animateMenu();
@@ -33,7 +34,6 @@
         }
     };
 
-    // close menu when a nav link is clicked
     const links = document.getElementsByClassName('menu-link');
     for (let link of links) {
         link.onclick = () => {
@@ -41,6 +41,15 @@
             toggleOpenClass();
         }
     }
+
+    logo.onclick = function() {
+        console.log('clicking logo');
+        if (document.getElementById('active-menu-overlay').classList.contains('active')) {
+            animateMenu();
+            toggleOpenClass();
+        }
+    };
+
 
 
     /**
@@ -91,6 +100,13 @@ $(document).ready(function() {
     $('.modal-content .close-btn').on("click", function() {
         $(document.body).css("overflow", "auto");
     });
+
+    if ($('#active-menu-overlay').hasClass('active')) {
+        $('#bk-logo').on('click', function() {
+            $('#active-menu-overlay').removeClass('active');
+            console.log('clicked but jquery');
+        })
+    }
 });
 
 
