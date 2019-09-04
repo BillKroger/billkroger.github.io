@@ -39,28 +39,21 @@
         link.onclick = () => {
             animateMenu();
             toggleOpenClass();
+            const anchor = link.getAttribute('href').replace(/[#]/, '');
+            document.getElementById(anchor).scrollIntoView();
+            return false;
         }
     }
 
     logo.onclick = function() {
-        console.log('clicking logo');
         if (document.getElementById('active-menu-overlay').classList.contains('active')) {
             animateMenu();
             toggleOpenClass();
         }
+        const anchor = this.getAttribute('href').replace(/[#]/, '');
+        document.getElementById(anchor).scrollIntoView();
+        return false;
     };
-
-
-
-    /**
-     * Toggle .hover class ontouchstart for card flippers
-     * */
-    document.querySelectorAll('.tile').forEach(tile => {
-        tile.ontouchstart = function() {
-            this.classList.toggle('hover');
-        }
-    });
-
 
     /**
      * show splash screen when clicking a portfolio item
@@ -68,7 +61,6 @@
     const portfolioItems = document.getElementsByClassName('modal-link');
     for (let item of portfolioItems) {
         item.onclick = () => {
-            console.log('clicked!');
             document.body.classList.toggle('loaded');
             document.getElementById('loader').classList.toggle('spinning');
             setTimeout(function(){
@@ -82,17 +74,10 @@
 
 
 $(document).ready(function() {
-    $(window).on("load scroll resize orientationchange", function() {
-        if($(window).scrollTop() > 75) {
-            $("#header").addClass("active");
-        } else {
-            $("#header").removeClass("active");
-        }
-    });
-});
 
-
-$(document).ready(function() {
+    /**
+     * Toggle overflow on body when viewing/closing modal window
+     */
     $('.portfolio-item a').on("click", function() {
         $(document.body).css("overflow", "hidden");
     });
@@ -101,12 +86,17 @@ $(document).ready(function() {
         $(document.body).css("overflow", "auto");
     });
 
-    if ($('#active-menu-overlay').hasClass('active')) {
-        $('#bk-logo').on('click', function() {
-            $('#active-menu-overlay').removeClass('active');
-            console.log('clicked but jquery');
-        })
-    }
-});
 
+    /**
+     * Active class for header on scroll
+     */
+    // $(window).on("load scroll resize orientationchange", function() {
+    //     if($(window).scrollTop() > 75) {
+    //         $("#header").addClass("active");
+    //     } else {
+    //         $("#header").removeClass("active");
+    //     }
+    // });
+
+});
 
