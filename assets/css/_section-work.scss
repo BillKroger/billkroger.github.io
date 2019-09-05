@@ -500,8 +500,8 @@
 							padding: 0;
 							vertical-align: top;
 							width: 100%;
-							-webkit-perspective: 2000px;
-							perspective: 2000px;
+							//-webkit-perspective: 2000px;
+							//perspective: 2000px;
 							@media only screen and (min-width: 769px) {
 								padding: 0 0 0 50px;
 							}
@@ -522,8 +522,11 @@
 								
 								.device-screen {
 									position: absolute;
-									-webkit-box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34,34,34,0.5);
-									box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34,34,34,0.5);
+									//-webkit-box-shadow: 2px 0 0 #BBB, 0 0 30px rgba(34,34,34,0.5);
+									//box-shadow: 1px 0 1px #BBB, 0 0 30px rgba(34,34,34,0.5);
+									//box-shadow: 2px 2px 5px #999;
+									-webkit-filter: drop-shadow(2px 0px 1px #999);
+									filter: drop-shadow(2px 0px 1px #999);
 									-webkit-transform: rotateY(-30deg) rotateX(5deg);
 									transform: rotateY(-30deg) rotateX(5deg);
 									-webkit-transform-origin: left bottom;

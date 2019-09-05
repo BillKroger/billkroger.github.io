@@ -81,7 +81,7 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
     left: 17.5px;
     width: 40px;
     height: 40px;
-    background-image: url("../img/bk-logo-new-white-on-gold.png");
+    background-image: url("../img/bk-gold.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1061,9 +1061,7 @@ body.nav-open {
               display: inline-block;
               padding: 0;
               vertical-align: top;
-              width: 100%;
-              -webkit-perspective: 2000px;
-              perspective: 2000px; }
+              width: 100%; }
               @media only screen and (min-width: 769px) {
                 .work-container .modal .case-study .main .content .job-desc .right {
                   padding: 0 0 0 50px; } }
@@ -1082,8 +1080,8 @@ body.nav-open {
                     perspective: 2000px; } }
                 .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen {
                   position: absolute;
-                  -webkit-box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
-                  box-shadow: 3px 0 0 #BBB, 0 0 30px rgba(34, 34, 34, 0.5);
+                  -webkit-filter: drop-shadow(2px 0px 1px #999);
+                  filter: drop-shadow(2px 0px 1px #999);
                   -webkit-transform: rotateY(-30deg) rotateX(5deg);
                   transform: rotateY(-30deg) rotateX(5deg);
                   -webkit-transform-origin: left bottom;
