@@ -216,26 +216,18 @@
 					transition: transform .35s ease;
 				}
 				&:before {
-					-webkit-transform: rotate(45deg);
-					-ms-transform: rotate(45deg);
-					transform: rotate(45deg);
+					@include transform(rotate(45deg));
 				}
 				&:after {
-					-webkit-transform: rotate(-45deg);
-					-ms-transform: rotate(-45deg);
-					transform: rotate(-45deg);
+					@include transform(rotate(-45deg));
 				}
 				
 				&:hover {
 					&:before {
-						-webkit-transform: rotate(-45deg);
-						-ms-transform: rotate(-45deg);
-						transform: rotate(-45deg);
+						@include transform(rotate(-45deg));
 					}
 					&:after {
-						-webkit-transform: rotate(45deg);
-						-ms-transform: rotate(45deg);
-						transform: rotate(45deg);
+						@include transform(rotate(45deg));
 					}
 				}
 				
@@ -287,7 +279,7 @@
 							position: absolute;
 							top: 100%;
 							left: 50%;
-							transform: translateX(-50%);
+							@include transform(translateX(-50%));
 							width: 15px;
 							height: 6px;
 							background-color: #c6a437;
@@ -524,11 +516,11 @@
 									position: absolute;
 									//-webkit-box-shadow: 2px 0 0 #BBB, 0 0 30px rgba(34,34,34,0.5);
 									//box-shadow: 1px 0 1px #BBB, 0 0 30px rgba(34,34,34,0.5);
-									//box-shadow: 2px 2px 5px #999;
 									-webkit-filter: drop-shadow(2px 0px 1px #999);
 									filter: drop-shadow(2px 0px 1px #999);
-									-webkit-transform: rotateY(-30deg) rotateX(5deg);
-									transform: rotateY(-30deg) rotateX(5deg);
+									//-webkit-transform: rotateY(-30deg) rotateX(5deg);
+									//transform: rotateY(-30deg) rotateX(5deg);
+									@include transform(rotateY(-30deg) rotateX(5deg));
 									-webkit-transform-origin: left bottom;
 									-ms-transform-origin: left bottom;
 									transform-origin: left bottom;
@@ -549,8 +541,9 @@
 										width: 95%;
 										top: 0;
 										left: 50%;
-										-webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
-										transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+										//-webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+										//transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+										@include transform(rotateY(-30deg) rotateX(5deg) translateX(-50%));
 										&.tidal-marketing-mobile {
 											left: 45%;
 											display: block;
@@ -661,7 +654,8 @@
 										position: absolute;
 										top: 50%;
 										left: 50%;
-										transform: translate(-50%, -50%);
+										//transform: translate(-50%, -50%);
+										@include transform(translate(-50%, -50%));
 									}
 								}
 							}

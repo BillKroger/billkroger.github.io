@@ -17,9 +17,7 @@
 	height: 150px;
 	margin: -75px 0 0 -75px;
 	border-radius: 50%;
-	
-	background-image: url('../../assets/img/bk-gold.svg');
-	//background-image: url('../../assets/img/bk-logo-alt.svg');
+	background-image: url('../../assets/img/bk2k20v1.svg');
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -34,27 +32,19 @@
 
 @-webkit-keyframes spin {
 	0% {
-		-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(0deg);  /* IE 9 */
-		transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+		@include transform(rotate(0deg) scale(0.25));
 	}
 	100% {
-		-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(360deg);  /* IE 9 */
-		transform: rotate(1080deg);  /* Firefox 16+, IE 10+, Opera */
+		@include transform(rotate(1080deg) scale(1.0));
 	}
 }
 
 @keyframes spin {
 	0% {
-		-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(0deg);  /* IE 9 */
-		transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+		@include transform(rotate(0deg) scale(0.25));
 	}
 	100% {
-		-webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-		-ms-transform: rotate(360deg);  /* IE 9 */
-		transform: rotate(1080deg);  /* Firefox 16+, IE 10+, Opera */
+		@include transform(rotate(1080deg) scale(1.0));
 	}
 }
 
@@ -78,18 +68,12 @@
 
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
-	-webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-	-ms-transform: translateX(-100%);  /* IE 9 */
-	transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
-	
+	@include transform(translateX(-100%));
 	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
-	-webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-	-ms-transform: translateX(100%);  /* IE 9 */
-	transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
-	
+	@include transform(translateX(100%));
 	transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
@@ -100,9 +84,6 @@
 
 .loaded #loader-wrapper {
 	visibility: hidden;
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-	
+	@include transform(translateY(-100%));
 	transition: all 0.3s 1s ease-out;
 }

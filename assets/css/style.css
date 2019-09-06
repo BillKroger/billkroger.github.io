@@ -81,16 +81,20 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
     left: 17.5px;
     width: 40px;
     height: 40px;
-    background-image: url("../img/bk-gold.svg");
+    background-image: url("../img/bk2k20v2a.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: background-image 0.3s ease;
+    transition: all 0.7s cubic-bezier(0.27, 1.11, 0.85, 1.16);
     position: absolute;
     z-index: 203; }
     @media only screen and (min-width: 769px) {
       .bk-header .logo-home {
-        top: 20px; } }
+        top: 20px; }
+        .bk-header .logo-home:hover {
+          -webkit-transform: rotate(720deg) scale(1.25);
+          -ms-transform: rotate(720deg) scale(1.25);
+          transform: rotate(720deg) scale(1.25); } }
   .bk-header .burger-menu {
     position: fixed;
     z-index: 203;
@@ -367,27 +371,41 @@ body.nav-open {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
         transform: translate(-50%, -70%);
         z-index: 100;
         color: whitesmoke;
         font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
         @media only screen and (min-width: 769px) {
           .section.intro .container .top-canvas .top-text {
+            -webkit-transform: translate(-50%, -80%);
+            -ms-transform: translate(-50%, -80%);
             transform: translate(-50%, -80%); } }
       .section.intro .container .top-canvas .top-heading {
+        font-family: 'gobold_thinregular', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         font-weight: 200;
         letter-spacing: 1px;
         font-size: 4.5rem;
-        line-height: 0.9;
-        margin: 0 0 20px; }
+        line-height: 1.2;
+        margin: 0 0 10px; }
         @media only screen and (min-width: 600px) {
           .section.intro .container .top-canvas .top-heading {
             font-size: 6rem; } }
         @media only screen and (min-width: 1600px) {
           .section.intro .container .top-canvas .top-heading {
             font-size: 6vw; } }
+      .section.intro .container .top-canvas .divider {
+        width: 34px;
+        height: 5px;
+        background-color: #c6a437;
+        display: block;
+        margin-bottom: 13px;
+        left: 5px;
+        position: relative; }
       .section.intro .container .top-canvas .top-subheading {
+        font-family: 'gobold_thin_lightregular', Helvetica, Arial, sans-serif;
         font-size: 1.35rem;
         font-weight: 200;
         text-align: left;
@@ -904,6 +922,8 @@ body.nav-open {
               position: absolute;
               top: 100%;
               left: 50%;
+              -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
               transform: translateX(-50%);
               width: 15px;
               height: 6px;
@@ -1083,6 +1103,7 @@ body.nav-open {
                   -webkit-filter: drop-shadow(2px 0px 1px #999);
                   filter: drop-shadow(2px 0px 1px #999);
                   -webkit-transform: rotateY(-30deg) rotateX(5deg);
+                  -ms-transform: rotateY(-30deg) rotateX(5deg);
                   transform: rotateY(-30deg) rotateX(5deg);
                   -webkit-transform-origin: left bottom;
                   -ms-transform-origin: left bottom;
@@ -1103,6 +1124,7 @@ body.nav-open {
                     top: 0;
                     left: 50%;
                     -webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+                    -ms-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
                     transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
                     .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
                       left: 45%;
@@ -1183,6 +1205,8 @@ body.nav-open {
                 position: absolute;
                 top: 50%;
                 left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
       .work-container .modal .case-study.tidal-dashboard .header {
         background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
@@ -1464,7 +1488,7 @@ footer {
   height: 150px;
   margin: -75px 0 0 -75px;
   border-radius: 50%;
-  background-image: url("../../assets/img/bk-gold.svg");
+  background-image: url("../../assets/img/bk2k20v1.svg");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1478,34 +1502,22 @@ footer {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg);
-    /* IE 9 */
-    transform: rotate(0deg);
-    /* Firefox 16+, IE 10+, Opera */ }
+    -webkit-transform: rotate(0deg) scale(0.25);
+    -ms-transform: rotate(0deg) scale(0.25);
+    transform: rotate(0deg) scale(0.25); }
   100% {
-    -webkit-transform: rotate(360deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg);
-    /* IE 9 */
-    transform: rotate(1080deg);
-    /* Firefox 16+, IE 10+, Opera */ } }
+    -webkit-transform: rotate(1080deg) scale(1);
+    -ms-transform: rotate(1080deg) scale(1);
+    transform: rotate(1080deg) scale(1); } }
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(0deg);
-    /* IE 9 */
-    transform: rotate(0deg);
-    /* Firefox 16+, IE 10+, Opera */ }
+    -webkit-transform: rotate(0deg) scale(0.25);
+    -ms-transform: rotate(0deg) scale(0.25);
+    transform: rotate(0deg) scale(0.25); }
   100% {
-    -webkit-transform: rotate(360deg);
-    /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: rotate(360deg);
-    /* IE 9 */
-    transform: rotate(1080deg);
-    /* Firefox 16+, IE 10+, Opera */ } }
+    -webkit-transform: rotate(1080deg) scale(1);
+    -ms-transform: rotate(1080deg) scale(1);
+    transform: rotate(1080deg) scale(1); } }
 #loader-wrapper .loader-section {
   position: fixed;
   top: 0;
@@ -1523,20 +1535,14 @@ footer {
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
   -webkit-transform: translateX(-100%);
-  /* Chrome, Opera 15+, Safari 3.1+ */
   -ms-transform: translateX(-100%);
-  /* IE 9 */
   transform: translateX(-100%);
-  /* Firefox 16+, IE 10+, Opera */
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .loaded #loader-wrapper .loader-section.section-right {
   -webkit-transform: translateX(100%);
-  /* Chrome, Opera 15+, Safari 3.1+ */
   -ms-transform: translateX(100%);
-  /* IE 9 */
   transform: translateX(100%);
-  /* Firefox 16+, IE 10+, Opera */
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .loaded #loader {

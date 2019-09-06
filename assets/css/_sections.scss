@@ -109,22 +109,23 @@
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					transform: translate(-50%, -70%);
+					@include transform(translate(-50%, -70%));
 					z-index: 100;
 					color: whitesmoke;
 					font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 					@media only screen and (min-width: 769px) {
-						transform: translate(-50%, -80%);
+						@include transform(translate(-50%, -80%));
 					}
 				}
 				
 				.top-heading {
+					font-family: 'gobold_thinregular', Helvetica, Arial, sans-serif;
 					text-transform: uppercase;
 					font-weight: 200;
 					letter-spacing: 1px;
 					font-size: 4.5rem;
-					line-height: 0.9;
-					margin: 0 0 20px;
+					line-height: 1.2;
+					margin: 0 0 10px;
 					@media only screen and (min-width: 600px) {
 						font-size: 6rem;
 					}
@@ -133,7 +134,18 @@
 					}
 				}
 				
+				.divider {
+					width: 34px;
+					height: 5px;
+					background-color: #c6a437;
+					display: block;
+					margin-bottom: 13px;
+					left: 5px;
+					position: relative;
+				}
+				
 				.top-subheading {
+					font-family: 'gobold_thin_lightregular', Helvetica, Arial, sans-serif;
 					font-size: 1.35rem;
 					font-weight: 200;
 					text-align: left;

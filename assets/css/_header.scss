@@ -16,17 +16,18 @@
 		left: 17.5px;
 		width: 40px;
 		height: 40px;
-		//background-image: url('../img/bk-logo-new-white-on-gold.png');
-		//background-image: url('../img/bk-logo-alt.svg');
-		background-image: url('../img/bk-gold.svg');
+		background-image: url('../img/bk2k20v2a.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		transition: background-image 0.3s ease;
+		transition: all 0.7s cubic-bezier(.27,1.11,.85,1.16);
 		position: absolute;
 		z-index: 203;
 		@media only screen and (min-width: 769px) {
 			top: 20px;
+			&:hover {
+				@include transform(rotate(720deg) scale(1.25));
+			}
 		}
 	}
 	
