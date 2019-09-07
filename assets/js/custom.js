@@ -21,6 +21,7 @@
     const menu = document.getElementById('menu-toggle');
     const content = document.getElementById('content');
     const logo = document.getElementById('bk-logo');
+    const scrollBtn = document.getElementById('scroll-btn');
 
     menu.onclick = function() {
         animateMenu();
@@ -52,6 +53,14 @@
         }
         const anchor = this.getAttribute('href').replace(/[#]/, '');
         document.getElementById(anchor).scrollIntoView();
+        return false;
+    };
+
+    scrollBtn.onclick = function() {
+        const anchor = this.getAttribute('href').replace(/[#]/, '');
+        document.getElementById(anchor).scrollIntoView({
+            behavior: 'smooth'
+        });
         return false;
     };
 
@@ -97,6 +106,16 @@ $(document).ready(function() {
             $("#header").removeClass("active");
         }
     });
+
+    // $(window).on("load scroll resize orientationchange", function() {
+    //     let contactHeight = $('#contact')[0].clientHeight;
+    //     let docHeight = document.body.clientHeight;
+    //     if($(window).scrollTop() > (docHeight - (contactHeight * 2) + 100)) {
+    //         $("#header").addClass("footer-active");
+    //     } else {
+    //         $("#header").removeClass("footer-active");
+    //     }
+    // });
 
 });
 

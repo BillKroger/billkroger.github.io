@@ -295,6 +295,32 @@ body.nav-open {
 #fullpage {
   position: relative; }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
 .section {
   color: #c6a437;
   height: 100vh;
@@ -394,7 +420,7 @@ body.nav-open {
           @media only screen and (min-width: 769px) {
             .section.intro .container .top-canvas .sketch {
               z-index: 99;
-              height: 90% !important; } }
+              height: 85% !important; } }
         .section.intro .container .top-canvas .top-text {
           position: absolute;
           top: 50%;
@@ -455,6 +481,51 @@ body.nav-open {
           @media only screen and (min-width: 1600px) {
             .section.intro .container .top-canvas .top-subheading {
               font-size: 2vw; } }
+        .section.intro .container .top-canvas .scroll-down-wrap {
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          bottom: 25px;
+          z-index: 100; }
+          .section.intro .container .top-canvas .scroll-down-wrap .scroll-down-link {
+            width: 60px;
+            height: 60px;
+            display: block;
+            position: relative;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            transition: all 0.4s ease;
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -webkit-animation: pulse 2s infinite ease;
+            animation: pulse 2s infinite ease; }
+            .section.intro .container .top-canvas .scroll-down-wrap .scroll-down-link img {
+              max-width: 100%;
+              max-height: 100%;
+              -webkit-transform-style: preserve-3d;
+              -webkit-backface-visibility: hidden; }
+            .section.intro .container .top-canvas .scroll-down-wrap .scroll-down-link .fa {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              font-size: 18px;
+              color: #f5f5f5;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              -webkit-transform-style: preserve-3d;
+              -webkit-backface-visibility: hidden; }
+            @media only screen and (min-width: 769px) {
+              .section.intro .container .top-canvas .scroll-down-wrap .scroll-down-link {
+                -webkit-animation: none;
+                animation: none; }
+                .section.intro .container .top-canvas .scroll-down-wrap .scroll-down-link:hover {
+                  -webkit-transform: scale(1.15);
+                  -ms-transform: scale(1.15);
+                  transform: scale(1.15); } }
         .section.intro .container .top-canvas canvas {
           display: inline-block; }
     .section.intro h1 {
@@ -750,20 +821,22 @@ body.nav-open {
         background-repeat: no-repeat;
         background-position: left 30%;
         filter: brightness(0.4) grayscale(0);
-        -webkit-transform: scale(1.05) rotate(0deg);
-        -ms-transform: scale(1.05) rotate(0deg);
-        transform: scale(1.05) rotate(0deg);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
         position: absolute;
         top: 0;
         left: 0;
         z-index: 1;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        -webkit-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden; }
         @media only screen and (min-width: 769px) {
           .work-container .portfolio-item a .bg-image {
             filter: brightness(1) grayscale(1);
-            -webkit-transform: scale(1) rotate(0deg);
-            -ms-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg); } }
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); } }
       .work-container .portfolio-item a .logo {
         display: inline-block;
         width: 70px;
@@ -778,6 +851,8 @@ body.nav-open {
         transition: all 0.4s;
         top: 50%;
         left: 17.5px;
+        -webkit-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
@@ -813,7 +888,9 @@ body.nav-open {
             transform: translateY(0%); } }
         .work-container .portfolio-item a .text span {
           position: relative;
-          z-index: 2; }
+          z-index: 2;
+          -webkit-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden; }
           .work-container .portfolio-item a .text span.name {
             display: block;
             font-size: 1.5rem;
@@ -830,9 +907,9 @@ body.nav-open {
       @media only screen and (min-width: 769px) {
         .work-container .portfolio-item a:hover .bg-image {
           filter: brightness(0.4) grayscale(0);
-          -webkit-transform: scale(1.05) rotate(0deg);
-          -ms-transform: scale(1.05) rotate(0deg);
-          transform: scale(1.05) rotate(0deg); }
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
         .work-container .portfolio-item a:hover .logo {
           opacity: 1.0;
           left: 30px; }

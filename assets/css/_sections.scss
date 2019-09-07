@@ -1,3 +1,27 @@
+@-webkit-keyframes pulse {
+	0% {
+		@include transform(scale(1.0));
+	}
+	50% {
+		@include transform(scale(1.15));
+	}
+	100% {
+		@include transform(scale(1.0));
+	}
+}
+
+@keyframes pulse {
+	0% {
+		@include transform(scale(1.0));
+	}
+	50% {
+		@include transform(scale(1.15));
+	}
+	100% {
+		@include transform(scale(1.0));
+	}
+}
+
 .section {
 	color: $color-gold;
 	height: 100vh;
@@ -118,7 +142,7 @@
 					z-index: 101;
 					@media only screen and (min-width: 769px) {
 						z-index: 99;
-						height: 90% !important;
+						height: 85% !important;
 					}
 				}
 				
@@ -178,6 +202,52 @@
 					}
 					@media only screen and (min-width: 1600px) {
 						font-size: 2vw;
+					}
+				}
+				
+				.scroll-down-wrap {
+					position: absolute;
+					left: 50%;
+					@include transform(translateX(-50%));
+					bottom: 25px;
+					z-index: 100;
+					.scroll-down-link {
+						width: 60px;
+						height: 60px;
+						display: block;
+						position: relative;
+						@include transform(scale(1.0));
+						transition: all 0.4s ease;
+						-webkit-transform-style: preserve-3d;
+						-webkit-backface-visibility: hidden;
+						-webkit-animation: pulse 2s infinite ease;
+						animation: pulse 2s infinite ease;
+						img {
+							max-width: 100%;
+							max-height: 100%;
+							-webkit-transform-style: preserve-3d;
+							-webkit-backface-visibility: hidden;
+						}
+						.fa {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							font-size: 18px;
+							color: #f5f5f5;
+							@include transform(translate(-50%, -50%));
+							-webkit-transform-style: preserve-3d;
+							-webkit-backface-visibility: hidden;
+						}
+						//&:hover {
+						//	@include transform(scale(1.15));
+						//}
+						@media only screen and (min-width: 769px) {
+							-webkit-animation: none;
+							animation: none;
+							&:hover {
+								@include transform(scale(1.15));
+							}
+						}
 					}
 				}
 				

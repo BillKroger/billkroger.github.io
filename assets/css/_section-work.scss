@@ -29,7 +29,6 @@
 			width: 100%;
 			height: 100%;
 			display: inline-block;
-			//padding: 25px 17.5px 25px 17.5px;
 			cursor: pointer;
 			@media only screen and (min-width: 769px) {
 				padding: 25px 0 25px 40px;
@@ -41,15 +40,17 @@
 				background-repeat: no-repeat;
 				background-position: left 30%;
 				filter: brightness(0.4) grayscale(0.0);
-				@include transform(scale(1.05) rotate(0deg));
+				@include transform(scale(1.05));
 				position: absolute;
 				top: 0;
 				left: 0;
 				z-index: 1;
 				transition: all 0.5s ease;
+				-webkit-transform-style: preserve-3d;
+				-webkit-backface-visibility: hidden;
 				@media only screen and (min-width: 769px) {
 					filter: brightness(1.0) grayscale(1.0);
-					@include transform(scale(1.0) rotate(0deg));
+					@include transform(scale(1.0));
 				}
 			}
 			.logo {
@@ -66,6 +67,8 @@
 				transition: all 0.4s;
 				top: 50%;
 				left: 17.5px;
+				-webkit-transform-style: preserve-3d;
+				-webkit-backface-visibility: hidden;
 				@include transform(translateY(-50%));
 				img {
 					max-width: 100%;
@@ -96,6 +99,8 @@
 				span {
 					position: relative;
 					z-index: 2;
+					-webkit-transform-style: preserve-3d;
+					-webkit-backface-visibility: hidden;
 					&.name {
 						display: block;
 						font-size: 1.5rem;
@@ -119,7 +124,7 @@
 				@media only screen and (min-width: 769px) {
 					.bg-image {
 						filter: brightness(0.4) grayscale(0.0);
-						@include transform(scale(1.05) rotate(0deg));
+						@include transform(scale(1.05));
 					}
 					.logo {
 						opacity: 1.0;

@@ -100,3 +100,47 @@ body.nav-open {
 		//background-color: $color-light;
 	}
 }
+
+
+
+//.social-footer {
+//	width: 65px;
+//	height: 125px;
+//	position: absolute;
+//	bottom: -200px;
+//	left: 5px;
+//	transition: bottom 0.2s ease;
+//	ul {
+//		padding: 0;
+//		margin: 0;
+//		list-style: none;
+//		text-align: center;
+//		li {
+//			display: block;
+//			margin-bottom: 10px;
+//			&:last-child {
+//				margin-bottom: 0;
+//			}
+//			a {
+//				font-size: 1.5rem;
+//				color: #c6a437;
+//				transition: all 0.2s ease;
+//				&:hover {
+//					opacity: 0.6;
+//				}
+//				i {
+//
+//				}
+//			}
+//		}
+//	}
+//}
+//
+//.bk-header.footer-active {
+//	.burger-menu {
+//		top: 45%;
+//	}
+//	.social-footer {
+//		bottom: 0;
+//	}
+//}
