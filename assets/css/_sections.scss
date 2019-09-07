@@ -1,7 +1,3 @@
-//html, body {
-//	background: hsla(260,40%,5%,1);
-//}
-
 .section {
 	color: $color-gold;
 	height: 100vh;
@@ -73,7 +69,6 @@
 	}
 	
 	&.intro {
-		//background-image: url('../../assets/img/bg-test.jpg');
 		background-color: #222222;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -81,6 +76,8 @@
 		position: relative;
 		padding-left: 17.5px;
 		padding-right: 17.5px;
+		@include user-select(none);
+		
 		@media only screen and (min-width: 769px) {
 			padding: 0 0 0 75px;
 		}
@@ -465,45 +462,60 @@
 	}
 	
 	&.contact {
-		
+		padding: 0 0 50px 75px;
 		.container {
 			max-width: none;
-		}
-	
-		h4 {
-			font-size: 2rem;
-			margin: 0 0 125px;
-			color: #222;
-			font-weight: 400;
-			max-width: 90vw;
-			@media only screen and (min-width: 769px) {
-				font-size: 1.5rem;
-				margin: 25px 0 75px;
-				font-weight: 500;
-				max-width: none;
-			}
+			height: 100%;
+			position: relative;
 		}
 		
-		ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			li {
-				display: inline-block;
-				margin-right: 50px;
-				&:last-child {
-					margin-right: 0;
+		.inner {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			width: 100%;
+			@include transform(translate(-50%,-50%));
+			//@media only screen and (min-width: 769px) {
+			//	top: 50%;
+			//}
+			
+			h4 {
+				font-size: 2rem;
+				margin: 0 0 25px;
+				color: #222;
+				font-weight: 400;
+				max-width: 90vw;
+				@media only screen and (min-width: 769px) {
+					font-size: 2.25rem;
+					font-weight: 500;
+					max-width: none;
 				}
-				a {
-					font-size: 4rem;
-					text-decoration: none;
-					color: #222;
-					transition: all 0.2s;
-					&:hover {
-						color: #c6a437;
+			}
+			
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				li {
+					display: inline-block;
+					margin-right: 50px;
+					&:last-child {
+						margin-right: 0;
+					}
+					a {
+						font-size: 4rem;
+						text-decoration: none;
+						color: #222;
+						transition: all 0.2s;
+						&:hover {
+							@media only screen and (min-width: 769px) {
+								color: #c6a437;
+							}
+						}
 					}
 				}
 			}
+			
 		}
 	
 	}

@@ -362,7 +362,11 @@ body.nav-open {
     background-position: center;
     position: relative;
     padding-left: 17.5px;
-    padding-right: 17.5px; }
+    padding-right: 17.5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     @media only screen and (min-width: 769px) {
       .section.intro {
         padding: 0 0 0 75px; } }
@@ -656,36 +660,48 @@ body.nav-open {
             .section.about .about-block.personal-info img.skateboard {
               max-width: 110px;
               top: 8px; } }
-  .section.contact .container {
-    max-width: none; }
-  .section.contact h4 {
-    font-size: 2rem;
-    margin: 0 0 125px;
-    color: #222;
-    font-weight: 400;
-    max-width: 90vw; }
-    @media only screen and (min-width: 769px) {
-      .section.contact h4 {
-        font-size: 1.5rem;
-        margin: 25px 0 75px;
-        font-weight: 500;
-        max-width: none; } }
-  .section.contact ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .section.contact ul li {
-      display: inline-block;
-      margin-right: 50px; }
-      .section.contact ul li:last-child {
-        margin-right: 0; }
-      .section.contact ul li a {
-        font-size: 4rem;
-        text-decoration: none;
+  .section.contact {
+    padding: 0 0 50px 75px; }
+    .section.contact .container {
+      max-width: none;
+      height: 100%;
+      position: relative; }
+    .section.contact .inner {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      .section.contact .inner h4 {
+        font-size: 2rem;
+        margin: 0 0 25px;
         color: #222;
-        transition: all 0.2s; }
-        .section.contact ul li a:hover {
-          color: #c6a437; }
+        font-weight: 400;
+        max-width: 90vw; }
+        @media only screen and (min-width: 769px) {
+          .section.contact .inner h4 {
+            font-size: 2.25rem;
+            font-weight: 500;
+            max-width: none; } }
+      .section.contact .inner ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+        .section.contact .inner ul li {
+          display: inline-block;
+          margin-right: 50px; }
+          .section.contact .inner ul li:last-child {
+            margin-right: 0; }
+          .section.contact .inner ul li a {
+            font-size: 4rem;
+            text-decoration: none;
+            color: #222;
+            transition: all 0.2s; }
+            @media only screen and (min-width: 769px) {
+              .section.contact .inner ul li a:hover {
+                color: #c6a437; } }
 
 @-webkit-keyframes screens {
   0% {
