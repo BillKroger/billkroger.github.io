@@ -90,13 +90,13 @@ $(document).ready(function() {
     /**
      * Active class for header on scroll
      */
-    // $(window).on("load scroll resize orientationchange", function() {
-    //     if($(window).scrollTop() > 75) {
-    //         $("#header").addClass("active");
-    //     } else {
-    //         $("#header").removeClass("active");
-    //     }
-    // });
+    $(window).on("load scroll resize orientationchange", function() {
+        if($(window).scrollTop() > 75) {
+            $("#header").addClass("active");
+        } else {
+            $("#header").removeClass("active");
+        }
+    });
 
 });
 

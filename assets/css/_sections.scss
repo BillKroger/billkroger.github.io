@@ -8,7 +8,7 @@
 	width: 100%;
 	display: table;
 	padding: 0;
-	&:not(.work) {
+	&:not(.work):not(.intro) {
 		padding-left: 17.5px;
 		padding-right: 17.5px;
 		@media only screen and (min-width: 769px) {
@@ -27,7 +27,7 @@
 		padding: 100px 0 50px;
 		text-align: left;
 		@media only screen and (min-width: 769px) {
-			padding: 100px 30px 150px;
+			padding: 80px 30px;
 		}
 		.header-text {
 			.num {
@@ -79,6 +79,11 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		position: relative;
+		padding-left: 17.5px;
+		padding-right: 17.5px;
+		@media only screen and (min-width: 769px) {
+			padding: 0 0 0 75px;
+		}
 		
 		.container {
 			height: 100%;
@@ -95,6 +100,8 @@
 			//}
 			
 			.top-canvas {
+				width: 100%;
+				height: 100%;
 				&:after {
 					content: '';
 					position: absolute;
@@ -103,6 +110,19 @@
 					width: 100%;
 					height: 100vh;
 					background-color: rgba(34,34,34,0.75);
+				}
+				
+				.sketch {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100% !important;
+					height: 80% !important;
+					z-index: 101;
+					@media only screen and (min-width: 769px) {
+						z-index: 99;
+						height: 90% !important;
+					}
 				}
 				
 				.top-text {
@@ -126,6 +146,7 @@
 					font-size: 4.5rem;
 					line-height: 1.2;
 					margin: 0 0 10px;
+					@include user-select(none);
 					@media only screen and (min-width: 600px) {
 						font-size: 6rem;
 					}
@@ -151,6 +172,7 @@
 					text-align: left;
 					padding-left: 5px;
 					margin: 0 0 3px;
+					@include user-select(none);
 					&:last-child {
 						margin-bottom: 0;
 					}
@@ -429,12 +451,13 @@
 					}
 				}
 				img.skateboard {
-					max-width: 80px;
+					max-width: 65px;
 					margin-right: 15px;
 					position: relative;
-					top: 10px;
+					top: 6px;
 					@media only screen and (min-width: 769px) {
-						max-width: 120px;
+						max-width: 110px;
+						top: 8px;
 					}
 				}
 			}

@@ -64,18 +64,23 @@ p {
 body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-easing="new-easing"] {
   transition-timing-function: cubic-bezier(0.41, 0.67, 0.62, 1.34); }
 
+.nav-open .bk-header {
+  background-color: #222; }
+
 .bk-header {
   position: fixed;
   height: 60px;
   z-index: 203;
   transition: all .3s ease;
   width: 100%;
-  background-color: #222;
+  background-color: transparent;
   border-right: none; }
   @media only screen and (min-width: 769px) {
     .bk-header {
       height: 100vh;
       width: 75px; } }
+  .bk-header.active {
+    background-color: #222; }
   .bk-header .logo-home {
     top: 10px;
     left: 17.5px;
@@ -296,11 +301,11 @@ body.nav-open {
   width: 100%;
   display: table;
   padding: 0; }
-  .section:not(.work) {
+  .section:not(.work):not(.intro) {
     padding-left: 17.5px;
     padding-right: 17.5px; }
     @media only screen and (min-width: 769px) {
-      .section:not(.work) {
+      .section:not(.work):not(.intro) {
         padding: 0 0 100px 75px; } }
   @media only screen and (min-width: 769px) {
     .section {
@@ -314,7 +319,7 @@ body.nav-open {
     text-align: left; }
     @media only screen and (min-width: 769px) {
       .section .section-header {
-        padding: 100px 30px 150px; } }
+        padding: 80px 30px; } }
     .section .section-header .header-text .num {
       position: relative;
       bottom: 25px;
@@ -355,72 +360,99 @@ body.nav-open {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative; }
+    position: relative;
+    padding-left: 17.5px;
+    padding-right: 17.5px; }
+    @media only screen and (min-width: 769px) {
+      .section.intro {
+        padding: 0 0 0 75px; } }
     .section.intro .container {
       height: 100%;
       max-width: none; }
-      .section.intro .container .top-canvas:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
+      .section.intro .container .top-canvas {
         width: 100%;
-        height: 100vh;
-        background-color: rgba(34, 34, 34, 0.75); }
-      .section.intro .container .top-canvas .top-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -70%);
-        -ms-transform: translate(-50%, -70%);
-        transform: translate(-50%, -70%);
-        z-index: 100;
-        color: whitesmoke;
-        font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
-        @media only screen and (min-width: 769px) {
-          .section.intro .container .top-canvas .top-text {
-            -webkit-transform: translate(-50%, -80%);
-            -ms-transform: translate(-50%, -80%);
-            transform: translate(-50%, -80%); } }
-      .section.intro .container .top-canvas .top-heading {
-        font-family: 'gobold_thinregular', Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 200;
-        letter-spacing: 1px;
-        font-size: 4.5rem;
-        line-height: 1.2;
-        margin: 0 0 10px; }
-        @media only screen and (min-width: 600px) {
-          .section.intro .container .top-canvas .top-heading {
-            font-size: 6rem; } }
-        @media only screen and (min-width: 1600px) {
-          .section.intro .container .top-canvas .top-heading {
-            font-size: 6vw; } }
-      .section.intro .container .top-canvas .divider {
-        width: 34px;
-        height: 5px;
-        background-color: #c6a437;
-        display: block;
-        margin-bottom: 13px;
-        left: 5px;
-        position: relative; }
-      .section.intro .container .top-canvas .top-subheading {
-        font-family: 'gobold_thin_lightregular', Helvetica, Arial, sans-serif;
-        font-size: 1.35rem;
-        font-weight: 200;
-        text-align: left;
-        padding-left: 5px;
-        margin: 0 0 3px; }
-        .section.intro .container .top-canvas .top-subheading:last-child {
-          margin-bottom: 0; }
-        @media only screen and (min-width: 600px) {
-          .section.intro .container .top-canvas .top-subheading {
-            font-size: 1.5rem; } }
-        @media only screen and (min-width: 1600px) {
-          .section.intro .container .top-canvas .top-subheading {
-            font-size: 2vw; } }
-      .section.intro .container .top-canvas canvas {
-        display: inline-block; }
+        height: 100%; }
+        .section.intro .container .top-canvas:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(34, 34, 34, 0.75); }
+        .section.intro .container .top-canvas .sketch {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100% !important;
+          height: 80% !important;
+          z-index: 101; }
+          @media only screen and (min-width: 769px) {
+            .section.intro .container .top-canvas .sketch {
+              z-index: 99;
+              height: 90% !important; } }
+        .section.intro .container .top-canvas .top-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -70%);
+          -ms-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+          z-index: 100;
+          color: whitesmoke;
+          font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
+          @media only screen and (min-width: 769px) {
+            .section.intro .container .top-canvas .top-text {
+              -webkit-transform: translate(-50%, -80%);
+              -ms-transform: translate(-50%, -80%);
+              transform: translate(-50%, -80%); } }
+        .section.intro .container .top-canvas .top-heading {
+          font-family: 'gobold_thinregular', Helvetica, Arial, sans-serif;
+          text-transform: uppercase;
+          font-weight: 200;
+          letter-spacing: 1px;
+          font-size: 4.5rem;
+          line-height: 1.2;
+          margin: 0 0 10px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+          @media only screen and (min-width: 600px) {
+            .section.intro .container .top-canvas .top-heading {
+              font-size: 6rem; } }
+          @media only screen and (min-width: 1600px) {
+            .section.intro .container .top-canvas .top-heading {
+              font-size: 6vw; } }
+        .section.intro .container .top-canvas .divider {
+          width: 34px;
+          height: 5px;
+          background-color: #c6a437;
+          display: block;
+          margin-bottom: 13px;
+          left: 5px;
+          position: relative; }
+        .section.intro .container .top-canvas .top-subheading {
+          font-family: 'gobold_thin_lightregular', Helvetica, Arial, sans-serif;
+          font-size: 1.35rem;
+          font-weight: 200;
+          text-align: left;
+          padding-left: 5px;
+          margin: 0 0 3px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+          .section.intro .container .top-canvas .top-subheading:last-child {
+            margin-bottom: 0; }
+          @media only screen and (min-width: 600px) {
+            .section.intro .container .top-canvas .top-subheading {
+              font-size: 1.5rem; } }
+          @media only screen and (min-width: 1600px) {
+            .section.intro .container .top-canvas .top-subheading {
+              font-size: 2vw; } }
+        .section.intro .container .top-canvas canvas {
+          display: inline-block; }
     .section.intro h1 {
       font-family: 'Bebas Neue W01 Regular', sans-serif;
       font-size: 10rem;
@@ -616,13 +648,14 @@ body.nav-open {
             .section.about .about-block.personal-info h1 {
               line-height: 4rem; } }
         .section.about .about-block.personal-info img.skateboard {
-          max-width: 80px;
+          max-width: 65px;
           margin-right: 15px;
           position: relative;
-          top: 10px; }
+          top: 6px; }
           @media only screen and (min-width: 769px) {
             .section.about .about-block.personal-info img.skateboard {
-              max-width: 120px; } }
+              max-width: 110px;
+              top: 8px; } }
   .section.contact .container {
     max-width: none; }
   .section.contact h4 {
@@ -708,7 +741,7 @@ body.nav-open {
         top: 0;
         left: 0;
         z-index: 1;
-        transition: all 0.7s; }
+        transition: all 0.5s ease; }
         @media only screen and (min-width: 769px) {
           .work-container .portfolio-item a .bg-image {
             filter: brightness(1) grayscale(1);
