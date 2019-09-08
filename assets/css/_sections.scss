@@ -148,7 +148,7 @@
 					left: 0;
 					top: 0;
 					width: 100% !important;
-					height: 80% !important;
+					height: 70% !important;
 					z-index: 101;
 					@media only screen and (min-width: 769px) {
 						z-index: 99;
@@ -160,12 +160,12 @@
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					@include transform(translate(-50%, -70%));
+					@include transform(translate(-50%, -80%));
 					z-index: 100;
 					color: whitesmoke;
 					font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 					@media only screen and (min-width: 769px) {
-						@include transform(translate(-50%, -80%));
+						//@include transform(translate(-50%, -80%));
 					}
 				}
 				
@@ -209,8 +209,11 @@
 					position: absolute;
 					left: 50%;
 					@include transform(translateX(-50%));
-					bottom: 25px;
+					bottom: 90px;
 					z-index: 100;
+					@media only screen and (min-width: 769px) {
+						bottom: 25px;
+					}
 					.scroll-down-link {
 						width: 60px;
 						height: 60px;
