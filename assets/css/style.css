@@ -980,16 +980,14 @@ body.nav-open {
     -ms-transform: translate3d(0.001vw, -10%, 0);
     transform: translate3d(0.001vw, -10%, 0);
     background-color: #222;
-    z-index: 300;
-    transition: opacity 0.3s 0.45s, width 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), transform 0.5s cubic-bezier(0.82, 0, 0.61, 0.89), height 0.5s cubic-bezier(0.82, 0, 0.61, 0.89); }
+    z-index: 300; }
     .work-container .modal.visible {
       width: 100vw;
       height: 100vh;
       opacity: 1;
       -webkit-transform: translate3d(0.001vw, 0vh, 0);
       -ms-transform: translate3d(0.001vw, 0vh, 0);
-      transform: translate3d(0.001vw, 0vh, 0);
-      transition: opacity 0.25s 0s, width 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, transform 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, height 0.35s cubic-bezier(0.55, 0, 0.9, 0.7) 0.1s, border 0.2s linear 0.3s; }
+      transform: translate3d(0.001vw, 0vh, 0); }
       .work-container .modal.visible .modal-content, .work-container .modal.visible .close-btn, .work-container .modal.visible .case-study {
         opacity: 1.0;
         display: block; }
@@ -1304,7 +1302,8 @@ body.nav-open {
                     transform: rotateY(-30deg) rotateX(5deg) translateX(-50%); }
                     .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
                       left: 45%;
-                      display: block; }
+                      display: block;
+                      width: 100%; }
                       @media only screen and (min-width: 1200px) {
                         .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.desktop.tidal-marketing-mobile {
                           display: none; } }
@@ -1330,9 +1329,6 @@ body.nav-open {
                     @media only screen and (min-width: 1200px) {
                       .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.tidal-marketing {
                         display: block; } }
-                  .work-container .modal .case-study .main .content .job-desc .right .device-screens .device-screen.vssl.phone {
-                    top: 45%;
-                    left: 25%; }
             @media only screen and (min-width: 769px) {
               .work-container .modal .case-study .main .content .job-desc .left {
                 width: 40%; }
@@ -1386,17 +1382,20 @@ body.nav-open {
                 transform: translate(-50%, -50%); }
       .work-container .modal .case-study.tidal-dashboard .header {
         background-image: url("../../assets/img/work/tidal-dashboard/tidal-dashboard-header-br.jpg"); }
+      @media only screen and (max-width: 768px) {
+        .work-container .modal .case-study.tidal-dashboard .main .content .job-desc .right .device-screens .device-screen.phone {
+          left: 33%; } }
       .work-container .modal .case-study.tidal-dashboard .mockup-full-pg {
         margin-bottom: 100px; }
       .work-container .modal .case-study.tidal-styleguide .header {
         background-image: url("../../assets/img/work/tidal-styleguide/styleguide-bg-test.png"); }
       .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.phone {
-        left: 35%; }
+        left: 27%; }
       .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.tablet {
         top: 10%;
-        left: 50%; }
+        left: 37%; }
       .work-container .modal .case-study.tidal-styleguide .main .content .job-desc .right .device-screens .device-screen.desktop {
-        left: 40%; }
+        left: 43%; }
       .work-container .modal .case-study.tidal-styleguide .main .content .screens {
         background: #222; }
         .work-container .modal .case-study.tidal-styleguide .main .content .screens .cs-block .single-screen strong {
@@ -1405,8 +1404,18 @@ body.nav-open {
         background-image: url("../../assets/img/work/tidal-marketing/tidal-marketing-header-2.jpg"); }
       .work-container .modal .case-study.concern .header {
         background-image: url("../../assets/img/work/concern/concern-header.jpg"); }
+      .work-container .modal .case-study.concern .main .content .job-desc .right .device-screens .device-screen.phone {
+        top: 47%; }
+        @media only screen and (max-width: 768px) {
+          .work-container .modal .case-study.concern .main .content .job-desc .right .device-screens .device-screen.phone {
+            left: 33%; } }
       .work-container .modal .case-study.vssl .header {
         background-image: url("../../assets/img/work/vssl/vssl-header.jpg"); }
+      .work-container .modal .case-study.vssl .main .content .job-desc .right .device-screens .device-screen.phone {
+        top: 45%; }
+        @media only screen and (max-width: 768px) {
+          .work-container .modal .case-study.vssl .main .content .job-desc .right .device-screens .device-screen.phone {
+            left: 33%; } }
       .work-container .modal .case-study.vssl .main .content .job-desc {
         margin-bottom: 200px; }
       .work-container .modal .case-study.vssl .widgets .widget {
