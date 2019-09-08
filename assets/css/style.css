@@ -424,7 +424,7 @@ body.nav-open {
           left: 0;
           top: 0;
           width: 100% !important;
-          height: 80% !important;
+          height: 70% !important;
           z-index: 101; }
           @media only screen and (min-width: 769px) {
             .section.intro .container .top-canvas .sketch {
@@ -434,17 +434,12 @@ body.nav-open {
           position: absolute;
           top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%, -70%);
-          -ms-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+          -webkit-transform: translate(-50%, -80%);
+          -ms-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
           z-index: 100;
           color: whitesmoke;
           font-family: 'Montserrat', Helvetica, Arial, sans-serif; }
-          @media only screen and (min-width: 769px) {
-            .section.intro .container .top-canvas .top-text {
-              -webkit-transform: translate(-50%, -80%);
-              -ms-transform: translate(-50%, -80%);
-              transform: translate(-50%, -80%); } }
         .section.intro .container .top-canvas .top-heading {
           font-family: 'gobold_thinregular', Helvetica, Arial, sans-serif;
           text-transform: uppercase;
@@ -488,8 +483,11 @@ body.nav-open {
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-          bottom: 25px;
+          bottom: 90px;
           z-index: 100; }
+          @media only screen and (min-width: 769px) {
+            .section.intro .container .top-canvas .scroll-down-wrap {
+              bottom: 25px; } }
           .section.intro .container .top-canvas .scroll-down-wrap .scroll-down-link {
             width: 60px;
             height: 60px;
