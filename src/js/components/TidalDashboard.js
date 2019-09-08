@@ -92,7 +92,7 @@ class TidalDashboard extends Component {
                         </div>
 
                         <div className="mockup-full-pg cs-block">
-                            <img src="./assets/img/work/tidal-dashboard/mockup-imac-gold-trans.png" />
+                            <img src="./assets/img/work/tidal-dashboard/mockup-imac-gold-trans-2.png" />
                         </div>
 
                         <div className="screens cs-block">
