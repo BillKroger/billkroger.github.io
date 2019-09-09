@@ -60,6 +60,12 @@ class Vssl extends Component {
 
     }
 
+    componentDidMount() {
+        const input = document.getElementById('orderAmt');
+        input.addEventListener('keypress', this.numbersOnly, false);
+        input.addEventListener('paste', function(e) {e.preventDefault();}, false);
+    }
+
     calcPercent() {
         const {value} = this.state;
         let percent;
@@ -82,6 +88,15 @@ class Vssl extends Component {
         let calc = this.state.calc;
         calc[name] = value;
         this.setState({'calc': calc});
+    }
+
+    numbersOnly(evt) {
+        const charCode = evt.charCode;
+        if (charCode !== 0) {
+            if (charCode < 48 || charCode > 57) {
+                evt.preventDefault();
+            }
+        }
     }
 
     validateForm() {
@@ -133,10 +148,7 @@ class Vssl extends Component {
         const stepH = stepB - stepG;
         const stepI = stepH / calcNumPayments;
 
-        console.log({stepA, stepB, stepC, stepD, stepE, stepF, stepG, stepH, stepI});
-
         const monthlyPayments = stepI + stepA;
-        console.log({monthlyPayments});
 
         if (isNaN(monthlyPayments)) {
             calcOutputAmt = 0;
