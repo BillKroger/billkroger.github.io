@@ -58,9 +58,9 @@
 
     scrollBtn.onclick = function() {
         const anchor = this.getAttribute('href').replace(/[#]/, '');
-        document.getElementById(anchor).scrollIntoView({
-            behavior: 'smooth'
-        });
+        // document.getElementById(anchor).scrollIntoView({
+        //     behavior: 'smooth'
+        // });
         return false;
     };
 
@@ -105,6 +105,13 @@ $(document).ready(function() {
         } else {
             $("#header").removeClass("active");
         }
+    });
+
+    $('#scroll-btn').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).position().top
+        }, 300, 'swing');
     });
 
     // $(window).on("load scroll resize orientationchange", function() {
