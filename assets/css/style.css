@@ -737,13 +737,7 @@ body.nav-open {
       height: 100%;
       position: relative; }
     .section.contact .inner {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      width: 100%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      width: 100%; }
       .section.contact .inner h4 {
         font-size: 2rem;
         margin: 0 0 15px;
@@ -870,7 +864,7 @@ body.nav-open {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left 30%;
-        filter: brightness(0.4) grayscale(0);
+        filter: brightness(0.3) grayscale(0);
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
@@ -940,23 +934,26 @@ body.nav-open {
           position: relative;
           z-index: 2;
           -webkit-transform-style: preserve-3d;
-          -webkit-backface-visibility: hidden; }
+          -webkit-backface-visibility: hidden;
+          font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+          text-shadow: 0 0 8px rgba(34, 34, 34, 0.75); }
           .work-container .portfolio-item a .text span.name {
             display: block;
             font-size: 1.5rem;
-            color: whitesmoke; }
+            color: whitesmoke;
+            font-weight: 400;
+            letter-spacing: -0.5px; }
             @media only screen and (min-width: 769px) {
               .work-container .portfolio-item a .text span.name {
-                font-size: 2rem; } }
+                font-size: 1.8rem; } }
           .work-container .portfolio-item a .text span.client {
-            font-size: 1rem;
-            color: #eee; }
-            @media only screen and (min-width: 769px) {
-              .work-container .portfolio-item a .text span.client {
-                font-size: 1.2rem; } }
+            font-size: 1.2rem;
+            color: #eee;
+            font-weight: 200;
+            padding-left: 2px; }
       @media only screen and (min-width: 769px) {
         .work-container .portfolio-item a:hover .bg-image {
-          filter: brightness(0.4) grayscale(0);
+          filter: brightness(0.3) grayscale(0);
           -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
           transform: scale(1.05); }

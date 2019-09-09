@@ -543,14 +543,7 @@
 		}
 		
 		.inner {
-			position: absolute;
-			top: 60%;
-			left: 50%;
 			width: 100%;
-			@include transform(translate(-50%,-50%));
-			//@media only screen and (min-width: 769px) {
-			//	top: 50%;
-			//}
 			
 			h4 {
 				font-size: 2rem;

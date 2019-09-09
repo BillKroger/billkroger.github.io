@@ -39,7 +39,7 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: left 30%;
-				filter: brightness(0.4) grayscale(0.0);
+				filter: brightness(0.3) grayscale(0.0);
 				@include transform(scale(1.05));
 				position: absolute;
 				top: 0;
@@ -101,20 +101,23 @@
 					z-index: 2;
 					-webkit-transform-style: preserve-3d;
 					-webkit-backface-visibility: hidden;
+					font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+					text-shadow: 0 0 8px rgba(34,34,34,0.75);
 					&.name {
 						display: block;
 						font-size: 1.5rem;
 						color: $color-light;
+						font-weight: 400;
+						letter-spacing: -0.5px;
 						@media only screen and (min-width: 769px) {
-							font-size: 2rem;
+							font-size: 1.8rem;
 						}
 					}
 					&.client {
-						font-size: 1rem;
+						font-size: 1.2rem;
 						color: #eee;
-						@media only screen and (min-width: 769px) {
-							font-size: 1.2rem;
-						}
+						font-weight: 200;
+						padding-left: 2px;
 					}
 				}
 			}
@@ -123,7 +126,7 @@
 			&:hover {
 				@media only screen and (min-width: 769px) {
 					.bg-image {
-						filter: brightness(0.4) grayscale(0.0);
+						filter: brightness(0.3) grayscale(0.0);
 						@include transform(scale(1.05));
 					}
 					.logo {
