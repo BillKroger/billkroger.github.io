@@ -76,7 +76,7 @@ class TidalStyleguide extends Component {
                             </div>
                             <div className="single-screen">
                                 <strong>About page</strong>
-                                <img src="./assets/img/work/tidal-marketing/about-page.jpg" />
+                                <img src="./assets/img/work/tidal-marketing/about-page-2.jpg" />
                             </div>
                             <div className="single-screen">
                                 <strong>Contact page</strong>
