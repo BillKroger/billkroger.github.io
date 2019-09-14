@@ -38,7 +38,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #f5f5f5; }
+  background-color: #222; }
 
 .container {
   width: 100%; }
@@ -327,6 +327,8 @@ body.nav-open {
   width: 100%;
   display: table;
   padding: 0; }
+  .section:not(.intro) {
+    background-color: #f5f5f5; }
   .section:not(.work):not(.intro) {
     padding-left: 17.5px;
     padding-right: 17.5px; }
@@ -1623,8 +1625,7 @@ body.nav-open {
 
 #work {
   font-family: 'Gilroy W05 Light', sans-serif;
-  padding: 0;
-  margin-bottom: 40px; }
+  padding: 0; }
   @media only screen and (min-width: 769px) {
     #work {
       padding-left: 75px;
