@@ -79,13 +79,13 @@ class WorkContainer extends Component {
         })
     }
 
-    renderLink(spec) {
+    renderLink(spec, delay) {
         const image = spec.image ? spec.image : null;
         const logo = spec.logo ? spec.logo : null;
         const style = {...spec.style, backgroundImage: `url(${image})` };
 
         return (
-            <div className="portfolio-item">
+            <div className="portfolio-item" data-aos="fade-right" data-aos-once="true" data-aos-delay={delay} data-aos-offset="0">
                 <a className="modal-link" role="button" onClick={this.showModal.bind(this, spec.view_name)}>
                     <div className="bg-image" style={style}></div>
                     <div className="logo"><img src={logo} /></div>
@@ -99,8 +99,11 @@ class WorkContainer extends Component {
     }
 
     renderLinks() {
+        let i, delay = 0;
         return portfolioWorks.map(item => {
-            return this.renderLink(item);
+            delay += 50;
+            i++;
+            return this.renderLink(item, delay);
         })
     }
 
