@@ -5,7 +5,7 @@ class TidalDashboard extends Component {
 
     render() {
         return (
-            <div className="case-study tidal-dashboard">
+            <div id="case-study-modal" className="case-study tidal-dashboard">
 
                 <div className="header">
                     <div className="center">

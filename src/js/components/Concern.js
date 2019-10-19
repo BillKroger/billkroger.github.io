@@ -5,7 +5,7 @@ class Concern extends Component {
 
     render() {
         return (
-            <div className="case-study concern">
+            <div id="case-study-modal" className="case-study concern">
 
                 <div className="header">
                     <div className="center">

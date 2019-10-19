@@ -5,11 +5,11 @@ class TidalStyleguide extends Component {
 
     render() {
         return (
-            <div className="case-study tidal-marketing">
+            <div id="case-study-modal" className="case-study tidal-marketing">
 
                 <div className="header">
                     <div className="center">
-                        <h1>Tid.al Marketing Sites</h1>
+                        <h1>Marketing Sites</h1>
                         <img src="./assets/img/work/tidal-dashboard/tidal-labs-wh.png" />
                     </div>
                 </div>

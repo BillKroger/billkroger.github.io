@@ -275,7 +275,7 @@ class Vssl extends Component {
 
     render() {
         return (
-            <div className="case-study vssl">
+            <div id="case-study-modal" className="case-study vssl">
 
                 <div className="header">
                     <div className="center">
